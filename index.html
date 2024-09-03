@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
     <title>Software ERP Indonesia - IDMETAFORA ERP</title>
+
+    <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
@@ -24,104 +32,15 @@
       href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
       rel="stylesheet"
     />
-
-    <style>
-      .custom-border {
-        background-color: #e0f7ff;
-        padding: 20px;
-        border-radius: 100px;
-        border: 2px solid black;
-        /* position: relative; */
-      }
-
-      .custom-card {
-        border-radius: 80px;
-        border: 2px solid #e74c3c;
-        padding: 50px;
-      }
-
-      .rocket {
-        position: absolute;
-        top: -30px;
-        left: -50px;
-        width: 100px;
-      }
-
-      .circle {
-        position: absolute;
-        bottom: -40px;
-        left: -60px;
-        width: 150px;
-        height: 150px;
-        background-color: white;
-        border-radius: 50%;
-        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
-      }
-
-      .circle1 {
-        position: absolute;
-        bottom: 240px;
-        right: -300px;
-        width: 300px;
-        height: 300px;
-        background-color: white;
-        border-radius: 50%;
-        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
-      }
-
-      .circle2 {
-        position: absolute;
-        bottom: 150px;
-        right: 350px;
-        width: 50px;
-        height: 50px;
-        background-color: red;
-        border-radius: 50px 0 0 5px;
-        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
-      }
-
-      .glow {
-        position: absolute;
-        top: -20px;
-        right: -40px;
-        width: 50px;
-        height: 50px;
-        background-color: rgba(255, 255, 255, 0.3);
-        border-radius: 50%;
-        filter: blur(20px);
-      }
-
-      /* Ubah warna tombol prev dan next */
-      .carousel-control-prev-icon,
-      .carousel-control-next-icon {
-        background-color: black;
-        /* Ubah warna sesuai keinginan, ini adalah warna biru */
-        border-radius: 50%;
-        border: 2px solid black;
-        width: 40px;
-        height: 40px;
-      }
-
-      /* Ubah warna latar belakang area di sekitar ikon */
-      .carousel-control-prev,
-      .carousel-control-next {
-        background-color: rgba(255, 255, 255, 0.5);
-        /* Ubah warna background tombol */
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-      }
-    </style>
   </head>
 
   <body>
     <!-- Navbar -->
-
     <nav
       class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow border-bottom animate__animated animate__fadeIn"
     >
       <!-- Logo -->
-      <a class="navbar-brand" href="/"
+      <a class="navbar-brand" href="index.html"
         ><img src="assets/logo.png" width="100%" height="50" alt=""
       /></a>
 
@@ -142,7 +61,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="/"
+            <a class="nav-link" href="index.html"
               >Home <span class="sr-only">(current)</span></a
             >
           </li>
@@ -159,41 +78,39 @@
               ERP System
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="/purchasing_system_page.html"
+              <a class="dropdown-item" href="purchasing_system_page.html"
                 >Purchasing System</a
               >
-              <a class="dropdown-item" href="/warehouse_management_page.html"
+              <a class="dropdown-item" href="warehouse_management_page.html"
                 >Warehouse Management System</a
               >
-              <a class="dropdown-item" href="/point_of_sales.html"
+              <a class="dropdown-item" href="point_of_sales.html"
                 >Point Of Sale System</a
               >
-              <a class="dropdown-item" href="/finance_and_budgeting.html"
+              <a class="dropdown-item" href="finance_and_budgeting.html"
                 >Finance & Budgeting System</a
               >
-              <a class="dropdown-item" href="/accounting_system.html"
+              <a class="dropdown-item" href="accounting_system.html"
                 >Accounting System</a
               >
-              <a class="dropdown-item" href="/legal_and_administration.html"
+              <a class="dropdown-item" href="legal_and_administration.html"
                 >Legal & Administration System
               </a>
-              <a class="dropdown-item" href="/audit_system.html"
-                >Audit System</a
-              >
-              <a class="dropdown-item" href="/tax_system.html">Tax System</a>
-              <a class="dropdown-item" href="/bussiness_intelligence.html"
+              <a class="dropdown-item" href="audit_system.html">Audit System</a>
+              <a class="dropdown-item" href="tax_system.html">Tax System</a>
+              <a class="dropdown-item" href="bussiness_intelligence.html"
                 >Bussines inteligence</a
               >
-              <a class="dropdown-item" href="/pharmacy_system.html"
+              <a class="dropdown-item" href="pharmacy_system.html"
                 >Pharmacy System</a
               >
-              <a class="dropdown-item" href="/architect_management.html"
+              <a class="dropdown-item" href="architect_management.html"
                 >Architect Management System</a
               >
-              <a class="dropdown-item" href="/project_management_system.html"
+              <a class="dropdown-item" href="project_management_system.html"
                 >Project Management System</a
               >
-              <a class="dropdown-item" href="/frequently_asked_questions.html"
+              <a class="dropdown-item" href="frequently_asked_questions.html"
                 >Frequently Asked Questions</a
               >
             </div>
@@ -214,22 +131,40 @@
               Web Development
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="/web_development_services.html"
+              <a class="dropdown-item" href="web_development_services.html"
                 >Web Development Service</a
               >
-              <a class="dropdown-item" href="/web_development_pricelist.html"
+              <a class="dropdown-item" href="web_development_pricelist.html"
                 >Web Development Pricelist</a
               >
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/iot.html">Internet Of Things</a>
+            <a class="nav-link" href="iot.html">Internet Of Things</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/tech_news.html">Tech News</a>
+            <a class="nav-link" href="tech_news.html">Tech News</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Our Company</a>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Our Company
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="about_us.html">About Us</a>
+              <a class="dropdown-item" href="our_team.html">Our Teams</a>
+              <a class="dropdown-item" href="career.html"
+                >Career in IDMETAFORA</a
+              >
+              <a class="dropdown-item" href="contact_us.html">Contact</a>
+            </div>
           </li>
           <!-- Tambahkan margin pada tombol untuk memberikan jarak dari menu -->
           <li class="nav-item">
@@ -248,7 +183,6 @@
         </ul>
       </div>
     </nav>
-
     <!-- End Navbar -->
 
     <header
@@ -316,66 +250,75 @@
       </div>
     </header>
 
-    <section class="py-5 border-bottom">
+    <!-- Company -->
+    <section class="py-4 border-bottom">
       <div class="container">
-        <div class="d-flex justify-content-center" style="gap: 30px">
-          <img
-            src="assets/company/pertamina.png"
-            width="10%"
-            alt=""
-            class="img-fluid"
-          />
-          <img
-            src="assets/company/mubadala.png"
-            width="10%"
-            alt=""
-            class="img-fluid"
-          />
-          <img
-            src="assets/company/candra.png"
-            width="10%"
-            alt=""
-            class="img-fluid"
-          />
-          <img
-            src="assets/company/molindo.png"
-            width="10%"
-            alt=""
-            class="img-fluid"
-          />
-          <img
-            src="assets/company/indonesia_power.png"
-            width="10%"
-            alt=""
-            class="img-fluid"
-          />
-          <img
-            src="assets/company/pesona.png"
-            width="5%"
-            alt=""
-            class="img-fluid"
-          />
-          <img
-            src="assets/company/brin.png"
-            width="5%"
-            alt=""
-            class="img-fluid"
-          />
-          <img
-            src="assets/company/batan.png"
-            width="5%"
-            alt=""
-            class="img-fluid"
-          />
-          <img
-            src="assets/company/semen.png"
-            width="5%"
-            alt=""
-            class="img-fluid"
-          />
+        <div class="row">
+          <div class="col-md-12">
+            <div
+              class="d-flex flex-wrap justify-content-center align-items-center"
+              style="gap: 15px"
+            >
+              <img
+                src="assets/company/pertamina.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+              <img
+                src="assets/company/mubadala.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+              <img
+                src="assets/company/candra.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+              <img
+                src="assets/company/molindo.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+              <img
+                src="assets/company/indonesia_power.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+              <img
+                src="assets/company/pesona.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+              <img
+                src="assets/company/brin.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+              <img
+                src="assets/company/batan.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+              <img
+                src="assets/company/semen.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
+    <!-- End Company -->
 
     <section class="py-5 bg-light border-bottom" data-aos="fade-up">
       <div class="container col-md-8">
@@ -405,11 +348,10 @@
             >
               <div class="">
                 <div class="d-flex justify-content-center align-items-center">
-                  <h5 class="p-2"><b>200</b></h5>
                   <img src="assets/img1.png" alt="" />
                 </div>
                 <div class="text-center">
-                  <p><b>PERUSAHAAN</b></p>
+                  <p class="font-weight-bold">200 <br />PERUSAHAAN</p>
                   <h6 class="text-center">
                     Lebih dari <b>200 bisnis perusahaan</b> menggunakan solusi
                     perangkat lunak ERP kami.
@@ -426,11 +368,13 @@
             >
               <div class="">
                 <div class="d-flex justify-content-center align-items-center">
-                  <h5 class="p-2"><b>10 Tahun</b></h5>
                   <img src="assets/img3.png" alt="" />
                 </div>
                 <div class="text-center">
-                  <p><b>IMPLEMENTASI</b></p>
+                  <p class="py-2 font-weight-bold">
+                    10 Tahun <br />
+                    IMPLEMENTASI
+                  </p>
                   <h6 class="text-center">
                     Lebih dari <b>satu dekade</b>, kami mengimplementasi
                     perangkat lunak ERP di Indonesia dan secara global.
@@ -447,11 +391,13 @@
             >
               <div class="">
                 <div class="d-flex justify-content-center align-items-center">
-                  <h5 class="p-2"><b>1 Juta</b></h5>
                   <img src="assets/img2.png" alt="" />
                 </div>
                 <div class="text-center">
-                  <p class="py-2"><b>PENGGUNA</b></p>
+                  <p class="py-2 font-weight-bold">
+                    1 Juta <br />
+                    PENGGUNA
+                  </p>
                   <h6 class="text-center">
                     Kami telah membantu lebih dari <b>1.000.000</b> pengguna di
                     ekosistem kami dengan teknologi kami.
@@ -467,354 +413,724 @@
     <section class="py-5 border-bottom">
       <div class="container col-md-12">
         <div class="row">
+          <img
+            src="assets/home_img/acc/1.png"
+            alt=""
+            class="img-fluid"
+            style="position: absolute; right: 0px; width: 5%"
+          />
+
+          <img
+            src="assets/home_img/acc/2.png"
+            alt=""
+            class="img-fluid"
+            style="position: absolute; bottom: 0px; left: 0px; width: 5%"
+          />
           <div class="col-md-12 text-center py-5">
             <h2 class="font-weight-bold">Ekosistem ERP perangkat lunak kami</h2>
             <img
               src="assets/imgEkosistem.png"
-              width="50%"
+              width="80%"
               alt=""
               class="img-fluid mx-auto d-block py-5"
               data-aos="zoom-in"
             />
           </div>
         </div>
-        <div class="row"></div>
       </div>
     </section>
 
-    <section
-      class="py-5 mb-5 border-bottom"
-      style="
-        background-image: url('assets/bgProduct.png');
-        background-size: cover;
-        background-position: center;
-      "
-    >
-      <h2 class="text-center mb-5 font-weight-bold">Program Kami</h2>
-      <div class="container col-md-8">
-        <img
-          src="assets/imgAcc3.png"
-          alt=""
-          class="position-absolute"
-          style="bottom: 500px; left: -230px; width: 10%"
-        />
-        <div
-          class="col-md-12"
-          style="
-            background-color: #eff4f6;
-            border-radius: 200px;
-            border: 1px solid black;
-            padding: 50px;
-          "
-        >
-          <div class="row justify-content-center">
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-              <div class="custom-card text-center p-3 bg-white">
-                <img
-                  src="assets/product/img1.png"
-                  class="img-fluid mb-4"
-                  width="50%"
-                  alt="Purchasing System"
-                />
-                <p class="" style="font-size: 14px; font-weight: bold">
-                  Purchasing System
-                </p>
-                <p class="" style="font-size: 12px">
-                  Alat yang membantu Anda mengelola penganggaran keuangan &
-                  mengontrol penganggaran.
-                </p>
-              </div>
-            </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-              <div class="custom-card text-center p-3 bg-white">
-                <img
-                  src="assets/product/img2.png"
-                  class="img-fluid mb-4"
-                  width="50%"
-                  alt="Accounting System"
-                />
-                <p class="" style="font-size: 14px; font-weight: bold">
-                  Accounting System
-                </p>
-                <p class="" style="font-size: 12px">
-                  Sistem ini memberikan wawasan penting yang membantu tim
-                  manajemen perusahaan mengambil banyak keputusan.
-                </p>
-              </div>
-            </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
-              <div class="custom-card text-center p-3 bg-white">
-                <img
-                  src="assets/Product/img3.png"
-                  class="img-fluid mb-4"
-                  width="50%"
-                  alt="Business Intelligence"
-                />
-                <p class="" style="font-size: 14px; font-weight: bold">
-                  Business Intelligence
-                </p>
-                <p class="" style="font-size: 12px">
-                  Bantu perusahaan membuat keputusan yang lebih baik dengan
-                  menampilkan data terkini dan historis dalam konteks bisnis
-                  mereka.
-                </p>
-              </div>
-            </div>
-          </div>
+    <section class="py-5 border-bottom" style="background-color: #e1f5ff">
+      <div class="container col-12 text-center">
+        <div class="row">
           <img
-            src="assets/imgAcc1.png"
-            class="rocket"
-            alt="Rocket"
-            width="100%"
+            src="assets/home_img/acc/3.png"
+            alt=""
+            class="img-fluid"
+            style="position: absolute; right: 0px; width: 15%"
           />
-          <div class="circle"></div>
-          <div class="glow"></div>
-          <!-- <div class="circle1"></div> -->
+
+          <img
+            src="assets/home_img/acc/4.png"
+            alt=""
+            class="img-fluid"
+            style="position: absolute; right: 0px; width: 8%; padding-top: 35%"
+          />
+
+          <img
+            src="assets/home_img/acc/5.png"
+            alt=""
+            class="img-fluid"
+            style="
+              position: absolute;
+              right: 0px;
+              width: 15%;
+              padding-right: 5%;
+            "
+          />
+
+          <img
+            src="assets/home_img/acc/6.png"
+            alt=""
+            class="img-fluid"
+            style="position: absolute; left: 100px; width: 10%"
+          />
+
+          <img
+            src="assets/home_img/acc/7.png"
+            alt=""
+            class="img-fluid"
+            style="position: absolute; top: -100px; left: 0px; width: 6%"
+          />
+          <div class="col-md-12">
+            <h2 class="text-center mb-5 font-weight-bold">Program Kami</h2>
+          </div>
         </div>
 
-        <div class="row"></div>
+        <div class="row justify-content-center">
+          <div
+            class="col-md-10"
+            style="
+              background-color: #f4f9ff;
+              border-radius: 200px;
+              border: 1px solid black;
+              padding: 70px;
+            "
+          >
+            <div class="row py-3" id="programContent">
+              <img
+                src="assets/home_img/acc/8.png"
+                alt=""
+                class="img-fluid"
+                style="
+                  position: absolute;
+                  bottom: 0px;
+                  left: -100px;
+                  width: 25%;
+                "
+              />
+
+              <div
+                class="col-md-4 mb-4"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <div
+                  class="text-center p-2 bg-white h-100"
+                  style="border-radius: 50px; border: 2px solid red"
+                >
+                  <img
+                    src="assets/home_img/product/1.png"
+                    class="img-fluid mb-2"
+                    width="50%"
+                    alt="Purchasing System"
+                  />
+                  <p class="" style="font-size: 14px; font-weight: bold">
+                    Purchasing System
+                  </p>
+                  <p class="" style="font-size: 12px">
+                    Alat yang membantu Anda mengelola penganggaran keuangan &
+                    mengontrol penganggaran.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="col-md-4 mb-4"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div
+                  class="text-center p-2 bg-white h-100"
+                  style="border-radius: 50px; border: 2px solid red"
+                >
+                  <img
+                    src="assets/home_img/product/2.png"
+                    class="img-fluid mb-2"
+                    width="50%"
+                    alt="Warehouse Management System"
+                  />
+                  <p class="" style="font-size: 14px; font-weight: bold">
+                    Warehouse Management
+                  </p>
+                  <p class="" style="font-size: 12px">
+                    Sistem ini memberikan wawasan penting yang membantu tim
+                    manajemen perusahaan mengambil banyak keputusan.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="col-md-4 mb-4"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <div
+                  class="text-center p-2 bg-white h-100"
+                  style="border-radius: 50px; border: 2px solid red"
+                >
+                  <img
+                    src="assets/home_img/product/3.png"
+                    class="img-fluid mb-2"
+                    width="50%"
+                    alt="Business Intelligence"
+                  />
+                  <p class="" style="font-size: 14px; font-weight: bold">
+                    Business Intelligence
+                  </p>
+                  <p class="" style="font-size: 12px">
+                    Bantu perusahaan membuat keputusan yang lebih baik dengan
+                    menampilkan data terkini dan historis dalam konteks bisnis
+                    mereka.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Konten Tambahan yang Disembunyikan -->
+            <div class="collapse" id="additionalContent">
+              <div class="row py-3">
+                <div
+                  class="col-md-4 mb-4"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  <div
+                    class="text-center p-2 bg-white h-100"
+                    style="border-radius: 50px; border: 2px solid red"
+                  >
+                    <img
+                      src="assets/home_img/product/4.png"
+                      class="img-fluid mb-2"
+                      width="50%"
+                      alt="Tax System"
+                    />
+                    <p class="" style="font-size: 14px; font-weight: bold">
+                      Tax System
+                    </p>
+                    <p class="" style="font-size: 12px">
+                      Alat yang membantu Anda menghitung GST, PPN, dan
+                      penghitungan pajak lainnya.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="col-md-4 mb-4"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  <div
+                    class="text-center p-2 bg-white h-100"
+                    style="border-radius: 50px; border: 2px solid red"
+                  >
+                    <img
+                      src="assets/home_img/product/5.png"
+                      class="img-fluid mb-2"
+                      width="50%"
+                      alt="Audit System"
+                    />
+                    <p class="" style="font-size: 14px; font-weight: bold">
+                      Audit System
+                    </p>
+                    <p class="" style="font-size: 12px">
+                      Deteksi penipuan secara internal. Membantu manajemen
+                      internal untuk mengendalikan dan mengelola perusahaan.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="col-md-4 mb-4"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  <div
+                    class="text-center p-2 bg-white h-100"
+                    style="border-radius: 50px; border: 2px solid red"
+                  >
+                    <img
+                      src="assets/home_img/product/6.png"
+                      class="img-fluid mb-2"
+                      width="50%"
+                      alt="Legal Administration"
+                    />
+                    <p class="" style="font-size: 14px; font-weight: bold">
+                      Legal Administration
+                    </p>
+                    <p class="" style="font-size: 12px">
+                      Kelola data kredensial di perusahaan. Permudah tim untuk
+                      berbagi data dengan orang-orang tertentu yang perlu
+                      mengaksesnya.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row py-5">
+                <div
+                  class="col-md-4 mb-4"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  <div
+                    class="text-center p-2 bg-white h-90"
+                    style="border-radius: 50px; border: 2px solid red"
+                  >
+                    <img
+                      src="assets/home_img/product/9.png"
+                      class="img-fluid mb-2"
+                      width="50%"
+                      alt="Accounting System"
+                    />
+                    <p class="" style="font-size: 14px; font-weight: bold">
+                      Accounting System
+                    </p>
+                    <p class="" style="font-size: 12px">
+                      Sistem ini memberikan wawasan penting yang membantu tim
+                      manajemen perusahaan mengambil banyak keputusan.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="col-md-4 mb-4"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  <div
+                    class="text-center p-2 bg-white h-100"
+                    style="border-radius: 50px; border: 2px solid red"
+                  >
+                    <img
+                      src="assets/home_img/product/11.png"
+                      class="img-fluid mb-2"
+                      width="50%"
+                      alt="Finance & Budgeting System"
+                    />
+                    <p class="" style="font-size: 14px; font-weight: bold">
+                      Finance & Budgeting System
+                    </p>
+                    <p class="" style="font-size: 12px">
+                      Deteksi penipuan secara internal. Membantu manajemen
+                      internal untuk mengendalikan dan mengelola perusahaan.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="col-md-4 mb-4"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  <div
+                    class="text-center p-2 bg-white h-100"
+                    style="border-radius: 50px; border: 2px solid red"
+                  >
+                    <img
+                      src="assets/home_img/product/10.png"
+                      class="img-fluid mb-2"
+                      width="50%"
+                      alt="Point Of Sales"
+                    />
+                    <p class="" style="font-size: 14px; font-weight: bold">
+                      Point Of Sales
+                    </p>
+                    <p class="" style="font-size: 12px">
+                      Saat transaksi terjadi, berikan pengalaman ritel yang luar
+                      biasa dengan POS Retail
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row py-3">
+                <div
+                  class="col-md-4 mb-4"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  <div
+                    class="text-center p-2 bg-white h-100"
+                    style="border-radius: 50px; border: 2px solid red"
+                  >
+                    <img
+                      src="assets/home_img/product/7.png"
+                      class="img-fluid mb-2"
+                      width="50%"
+                      alt="Marketplace Omnichannel"
+                    />
+                    <p class="" style="font-size: 14px; font-weight: bold">
+                      Marketplace <br />
+                      Omnichannel
+                    </p>
+                    <p class="" style="font-size: 12px">
+                      Melakukan integrasi di berbagai saluran pasar. Kelola data
+                      dari berbagai marketplace seperti Shopee, Tokopedia dan
+                      berbagai situs lainnya dalam satu sistem.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="col-md-4 mb-4"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  <div
+                    class="text-center p-2 bg-white h-100"
+                    style="border-radius: 50px; border: 2px solid red"
+                  >
+                    <img
+                      src="assets/home_img/product/8.png"
+                      class="img-fluid mb-2"
+                      width="50%"
+                      alt="Office Operation Management"
+                    />
+                    <p class="" style="font-size: 14px; font-weight: bold">
+                      Office Operation Management
+                    </p>
+                    <p class="" style="font-size: 12px">
+                      sistem bisnis untuk menciptakan tingkat efisiensi setinggi
+                      mungkin dalam suatu organisasi. Membantu merencanakan,
+                      memantau, dan mengoordinasikan operasi produksi atau
+                      layanan, mendigitalkan alur kerja harian karyawan yang
+                      terlibat
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="col-md-4 mb-4"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  <div
+                    class="text-center p-2 bg-white h-100"
+                    style="border-radius: 50px; border: 2px solid red"
+                  >
+                    <img
+                      src="assets/home_img/product/12.png"
+                      class="img-fluid mb-2"
+                      width="50%"
+                      alt="Customer Relationship Management"
+                    />
+                    <p class="" style="font-size: 14px; font-weight: bold">
+                      Customer Relationship Management
+                    </p>
+                    <p class="" style="font-size: 12px">
+                      Kombinasi praktik, strategi, dan teknologi yang digunakan
+                      perusahaan untuk mengelola dan menganalisis interaksi
+                      pelanggan guna meningkatkan hubungan, retensi, dan
+                      pertumbuhan penjualan.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tombol Show More -->
+            <button
+              id="showMoreBtn"
+              class="btn btn-primary mt-4"
+              data-toggle="collapse"
+              data-target="#additionalContent"
+              aria-expanded="false"
+              aria-controls="additionalContent"
+            >
+              Show More
+            </button>
+          </div>
+        </div>
       </div>
     </section>
 
     <section
       class="py-5"
-      style="background-image: url('assets/bgWhy.png'); background-size: cover"
+      style="
+        background-image: url('assets/home_img/bg/1.png');
+        background-size: cover;
+      "
     >
-      <div class="container col-md-9">
+      <div class="container col-md-10 py-5">
         <div class="row">
           <div class="col-md-12 text-center py-5">
-            <h2 class="font-weight-bold">
+            <p
+              class="font-weight-bold h4"
+              style="padding-top: 150px"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
               Mengapa Memilih Kami sebagai Konsultan ERP Anda?
-            </h2>
+            </p>
           </div>
-
-          <!-- Carousel Start -->
-          <div
-            id="carouselExampleControls"
-            class="carousel slide"
-            data-ride="carousel"
-          >
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="row justify-content-center">
-                  <div class="col-md-4 mb-4">
-                    <div
-                      class="p-4"
-                      style="background-color: #eff4f6; border-radius: 20px"
-                    >
-                      <div
-                        class="d-flex flex-row justify-content-right align-items-center"
-                      >
-                        <img
-                          src="assets/services/img3.png"
-                          class="img-fluid mb-2 mr-2"
-                          width="20%"
-                          alt="Terpercaya"
-                        />
-                        <p class="font-weight-bold">Terpercaya</p>
-                      </div>
-                      <p>
-                        Alat yang membantu Anda mengelola penganggaran keuangan
-                        & mengontrol penganggaran.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mb-4">
-                    <div
-                      class="p-4"
-                      style="background-color: #eff4f6; border-radius: 20px"
-                    >
-                      <div
-                        class="d-flex flex-row justify-content-right align-items-center"
-                      >
-                        <img
-                          src="assets/services/img2.png"
-                          class="img-fluid mb-2 mr-2"
-                          width="20%"
-                          alt="Garansi Pemeliharaan"
-                        />
-                        <p class="font-weight-bold">Garansi Pemeliharaan</p>
-                      </div>
-                      <p>
-                        Sistem ini memberikan wawasan penting yang membantu tim
-                        manajemen perusahaan mengambil banyak keputusan.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mb-4">
-                    <div
-                      class="p-4"
-                      style="background-color: #eff4f6; border-radius: 20px"
-                    >
-                      <div
-                        class="d-flex flex-row justify-content-right align-items-center"
-                      >
-                        <img
-                          src="assets/services/img1.png"
-                          class="img-fluid mb-2 mr-2"
-                          width="20%"
-                          alt="Pengguna Tanpa Batas"
-                        />
-                        <p class="font-weight-bold">Pengguna Tanpa Batas</p>
-                      </div>
-                      <p>
-                        Bantu perusahaan membuat keputusan yang lebih baik
-                        dengan menampilkan data terkini dan historis dalam
-                        konteks bisnis mereka.
-                      </p>
-                    </div>
-                  </div>
-                </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div
+              class="p-4 mb-4 h-90"
+              style="background-color: #eff4f6; border-radius: 20px"
+            >
+              <div
+                class="d-flex flex-row justify-content-right align-items-center"
+              >
+                <img
+                  src="assets/services/img3.png"
+                  class="img-fluid mb-2 mr-2"
+                  width="20%"
+                  alt="Terpercaya"
+                />
+                <p class="font-weight-bold">Terpercaya</p>
               </div>
-
-              <div class="carousel-item">
-                <!-- Isi dengan item lain jika diperlukan -->
-                <div class="row justify-content-center">
-                  <div class="col-md-4 mb-4">
-                    <div
-                      class="p-4"
-                      style="background-color: #eff4f6; border-radius: 20px"
-                    >
-                      <div
-                        class="d-flex flex-row justify-content-right align-items-center"
-                      >
-                        <img
-                          src="assets/services/img3.png"
-                          class="img-fluid mb-2 mr-2"
-                          width="20%"
-                          alt="Terpercaya"
-                        />
-                        <p class="font-weight-bold">Terpercaya</p>
-                      </div>
-                      <p>
-                        Alat yang membantu Anda mengelola penganggaran keuangan
-                        & mengontrol penganggaran.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mb-4">
-                    <div
-                      class="p-4"
-                      style="background-color: #eff4f6; border-radius: 20px"
-                    >
-                      <div
-                        class="d-flex flex-row justify-content-right align-items-center"
-                      >
-                        <img
-                          src="assets/services/img2.png"
-                          class="img-fluid mb-2 mr-2"
-                          width="20%"
-                          alt="Garansi Pemeliharaan"
-                        />
-                        <p class="font-weight-bold">Garansi Pemeliharaan</p>
-                      </div>
-                      <p>
-                        Sistem ini memberikan wawasan penting yang membantu tim
-                        manajemen perusahaan mengambil banyak keputusan.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mb-4">
-                    <div
-                      class="p-4"
-                      style="background-color: #eff4f6; border-radius: 20px"
-                    >
-                      <div
-                        class="d-flex flex-row justify-content-right align-items-center"
-                      >
-                        <img
-                          src="assets/services/img1.png"
-                          class="img-fluid mb-2 mr-2"
-                          width="20%"
-                          alt="Pengguna Tanpa Batas"
-                        />
-                        <p class="font-weight-bold">Pengguna Tanpa Batas</p>
-                      </div>
-                      <p>
-                        Bantu perusahaan membuat keputusan yang lebih baik
-                        dengan menampilkan data terkini dan historis dalam
-                        konteks bisnis mereka.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <p>
+                Kami berkomitmen menjadikan IDMETAFORA sebagai Perangkat Lunak
+                ERP terbaik di Indonesia.
+              </p>
             </div>
-
-            <!-- Navigasi Carousel -->
-            <a
-              class="carousel-control-prev"
-              href="#carouselExampleControls"
-              role="button"
-              data-slide="prev"
-              style="
-                top: 30%;
-                transform: translateY(-50%);
-                transform: translateX(-50%);
-              "
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a
-              class="carousel-control-next"
-              href="#carouselExampleControls"
-              role="button"
-              data-slide="next"
-              style="
-                top: 30%;
-                transform: translateY(-50%);
-                transform: translateX(50%);
-              "
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only">Next</span>
-            </a>
           </div>
-          <!-- Carousel End -->
+
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+            <div
+              class="p-4 mb-4"
+              style="background-color: #eff4f6; border-radius: 20px"
+            >
+              <div
+                class="d-flex flex-row justify-content-right align-items-center"
+              >
+                <img
+                  src="assets/services/img1.png"
+                  class="img-fluid mb-2 mr-2"
+                  width="20%"
+                  alt="Terpercaya"
+                />
+                <p class="font-weight-bold">Garansi Pemeliharaan</p>
+              </div>
+              <p>
+                Tim kami berkomitmen untuk mendukung setiap klien untuk
+                menyesuaikan ERP kami dengan alur bisnis Anda hingga berhasil.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+            <div
+              class="p-4 mb-4"
+              style="background-color: #eff4f6; border-radius: 20px"
+            >
+              <div
+                class="d-flex flex-row justify-content-right align-items-center"
+              >
+                <img
+                  src="assets/services/img2.png"
+                  class="img-fluid mb-2 mr-2"
+                  width="20%"
+                  alt="Garansi Pemeliharaan"
+                />
+                <p class="font-weight-bold">Garansi Pemeliharaan</p>
+              </div>
+              <p>
+                Tanpa Biaya Tambahan Per Pengguna, Anda dapat dengan mudah
+                menambahkan pengguna baru di ERP tanpa dikenakan biaya tambahan.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div
+              class="p-4 mb-4"
+              style="background-color: #eff4f6; border-radius: 20px"
+            >
+              <div
+                class="d-flex flex-row justify-content-right align-items-center"
+              >
+                <img
+                  src="assets/services/img4.png"
+                  class="img-fluid mb-2 mr-2"
+                  width="20%"
+                  alt="Pengguna Tanpa Batas"
+                />
+                <p class="font-weight-bold">Sistem Modular</p>
+              </div>
+              <p>
+                Kami dapat menginstal ERP kami di modul khusus perusahaan Anda
+                dengan fitur-fitur yang hanya Anda perlukan berdasarkan ukuran,
+                struktur, alur bisnis, dan rencana perusahaan Anda.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+            <div
+              class="p-4 mb-4"
+              style="background-color: #eff4f6; border-radius: 20px"
+            >
+              <div
+                class="d-flex flex-row justify-content-right align-items-center"
+              >
+                <img
+                  src="assets/services/img5.png"
+                  class="img-fluid mb-2 mr-2"
+                  width="20%"
+                  alt="Pengguna Tanpa Batas"
+                />
+                <p class="font-weight-bold">Berkelanjutan</p>
+              </div>
+              <p>
+                ERP framework kami dirancang dengan baik untuk membuat rencana
+                pengembangan yang kompleks. Ketika Anda memiliki rencana untuk
+                membuat perusahaan Anda lebih besar di masa depan, ERP Framework
+                kami dirancang untuk itu.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+            <div
+              class="p-4 mb-4"
+              style="background-color: #eff4f6; border-radius: 20px"
+            >
+              <div
+                class="d-flex flex-row justify-content-right align-items-center"
+              >
+                <img
+                  src="assets/services/img10.png"
+                  class="img-fluid mb-2 mr-2"
+                  width="20%"
+                  alt="Pengguna Tanpa Batas"
+                />
+                <p class="font-weight-bold">ERP Awan</p>
+              </div>
+              <p>
+                Cloud ERP memungkinkan pengguna di perusahaan Anda mengakses
+                data terbaru secara real-time dari setiap departemen bisnis
+                dengan cepat dan mudah dari mana saja dan perangkat apa saja.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div
+              class="p-4 mb-4"
+              style="background-color: #eff4f6; border-radius: 20px"
+            >
+              <div
+                class="d-flex flex-row justify-content-right align-items-center"
+              >
+                <img
+                  src="assets/services/img7.png"
+                  class="img-fluid mb-2 mr-2"
+                  width="20%"
+                  alt="Pengguna Tanpa Batas"
+                />
+                <p class="font-weight-bold">Aman</p>
+              </div>
+              <p>
+                Dengan kerangka kerja berstandar tinggi, ERP kami dirancang
+                dengan kepedulian yang tinggi terhadap keamanan.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+            <div
+              class="p-4 mb-4"
+              style="background-color: #eff4f6; border-radius: 20px"
+            >
+              <div
+                class="d-flex flex-row justify-content-right align-items-center"
+              >
+                <img
+                  src="assets/services/img9.png"
+                  class="img-fluid mb-2 mr-2"
+                  width="20%"
+                  alt="Pengguna Tanpa Batas"
+                />
+                <p class="font-weight-bold">Dukungan Tim yang Kuat</p>
+              </div>
+              <p>
+                Dengan tim yang sangat berpengalaman, tim pengembangan kami
+                berkomitmen untuk mendukung kebutuhan Anda.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+            <div
+              class="p-4 mb-4"
+              style="background-color: #eff4f6; border-radius: 20px"
+            >
+              <div
+                class="d-flex flex-row justify-content-right align-items-center"
+              >
+                <img
+                  src="assets/services/img6.png"
+                  class="img-fluid mb-2 mr-2"
+                  width="20%"
+                  alt="Pengguna Tanpa Batas"
+                />
+                <p class="font-weight-bold">Mudah untuk ditingkatkan</p>
+              </div>
+              <p>
+                Setelah Anda menginstal beberapa modul di perusahaan Anda, di
+                masa depan Anda dapat menambahkan lebih banyak modul tergantung
+                pada model bisnis Anda.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div
+              class="p-4 mb-4"
+              style="background-color: #eff4f6; border-radius: 20px"
+            >
+              <div
+                class="d-flex flex-row justify-content-right align-items-center"
+              >
+                <img
+                  src="assets/services/img8.png"
+                  class="img-fluid mb-2 mr-2"
+                  width="20%"
+                  alt="Pengguna Tanpa Batas"
+                />
+                <p class="font-weight-bold">Efisien Dalam Biaya</p>
+              </div>
+              <p>Bayar hanya modul yang digunakan perusahaan Anda.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section
-      class="py-5"
-      style="
-        background-image: url('assets/bgFlow.png');
-        background-size: cover;
-        background-position: start;
-      "
-    >
-      <div class="container col-md-10">
+    <section class="py-5" style="background-color: #e7f4fa">
+      <div class="container col-md-10 py-5">
+        <img
+          src="assets/home_img/acc/10.png"
+          alt=""
+          class="img-fluid"
+          style="position: absolute; bottom: 0px; left: -110px; width: 10%"
+        />
         <img
           src="assets/imgAccF3.png"
           alt=""
           class="position-absolute"
-          style="bottom: 130px; left: 330px; width: 70%"
+          style="bottom: 20px; left: -10px; width: 70%"
         />
-
-        <div class="row align-items-center">
-          <!-- Bagian Kiri -->
-          <div class="col-md-4 mb-4">
-            <h3 class="text-primary">
+        <img
+          src="assets/home_img/acc/9.png"
+          alt=""
+          class="img-fluid"
+          style="position: absolute; top: 13%; left: 200px"
+          width="10%"
+        />
+        <div class="row justify-content-center py-5">
+          <div class="col-md-8 text-center">
+            <p class="font-weight-bold h3" style="color: #508ca5">
               Bagaimana Perjalanan Bekerja Bersama Kami?
-            </h3>
+            </p>
             <p>
               Perjalanan bersama kami dimulai dengan memahami kebutuhan Anda,
               diikuti oleh desain, implementasi, dan dukungan ERP untuk
               kesuksesan bisnis Anda.
             </p>
           </div>
+        </div>
 
-          <!-- Bagian Tengah -->
+        <div class="row">
           <div class="col-md-4">
             <div class="row">
-              <!-- Card Konsultasi -->
               <div class="col-md-12 mb-4">
                 <div class="card shadow bg-white" style="border-radius: 20px">
                   <div
@@ -827,7 +1143,7 @@
                       alt="Konsultasi"
                       class="img-fluid mb-3"
                     />
-                    <h4 class="card-title font-weight-bold">Konsultasi</h4>
+                    <p class="card-title font-weight-bold h5">1.Konsultasi</p>
                     <p class="card-text" style="font-size: 12px">
                       Perencanaan dan briefing dengan tim kami untuk membuat web
                       custom sesuai keinginan Anda dengan kualitas terbaik dan
@@ -840,40 +1156,55 @@
           </div>
 
           <div class="col-md-4">
-            <!-- Card Proyek Kontrak -->
-            <div class="col-md-12 mb-4" data-aos="fade-up" data-aos-delay="100">
-              <div class="card shadow bg-white" style="border-radius: 20px">
-                <div class="card-body text-center">
-                  <img
-                    src="assets/flow/img2.png"
-                    alt="Proyek Kontrak"
-                    class="img-fluid mb-3"
-                  />
-                  <h5 class="card-title font-weight-bold">Proyek Kontrak</h5>
-                  <p class="card-text" style="font-size: 12px">
-                    Membuat MoU dengan Anda dan kemudian tim kami akan
-                    mengembangkan proyek khusus seperti permintaan Anda.
-                  </p>
+            <div class="row">
+              <div class="col-md-12 mb-4">
+                <div class="card shadow bg-white" style="border-radius: 20px">
+                  <div
+                    class="card-body text-center"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                  >
+                    <img
+                      src="assets/flow/img2.png"
+                      alt="Proyek Kontrak"
+                      class="img-fluid mb-3"
+                    />
+                    <h5 class="card-title font-weight-bold">
+                      2.Proyek Kontrak
+                    </h5>
+                    <p class="card-text" style="font-size: 12px">
+                      Membuat MoU dengan Anda dan kemudian tim kami akan
+                      mengembangkan proyek khusus seperti permintaan Anda.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
+          </div>
 
-            <!-- Card Layanan Pemeliharaan -->
-            <div class="col-md-12" data-aos="fade-up" data-aos-delay="100">
-              <div class="card shadow bg-white" style="border-radius: 20px">
-                <div class="card-body text-center">
-                  <img
-                    src="assets/flow/img3.png"
-                    alt="Layanan Pemeliharaan"
-                    class="img-fluid mb-3"
-                  />
-                  <h4 class="card-title font-weight-bold">
-                    Layanan Pemeliharaan
-                  </h4>
-                  <p class="card-text" style="font-size: 12px">
-                    Setelah proyek selesai, kami akan memelihara web Anda agar
-                    tetap berfungsi dan minim kesalahan.
-                  </p>
+          <div class="col-md-4">
+            <div class="row">
+              <!-- Card Konsultasi -->
+              <div class="col-md-12 mb-4">
+                <div class="card shadow bg-white" style="border-radius: 20px">
+                  <div
+                    class="card-body text-center"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                  >
+                    <img
+                      src="assets/flow/img3.png"
+                      alt="Layanan Pemeliharaan"
+                      class="img-fluid mb-3"
+                    />
+                    <p class="card-title font-weight-bold h5">
+                      3.Layanan Pemeliharaan
+                    </p>
+                    <p class="card-text p-1" style="font-size: 13px">
+                      Setelah proyek selesai, kami akan memelihara web Anda agar
+                      tetap berfungsi dan minim kesalahan.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -890,9 +1221,9 @@
         background-position: center;
       "
     >
-      <div class="container col-md-6">
-        <div class="row">
-          <div class="col-md-12 text-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 text-center">
             <h1 class="text-center">Apa kata Mereka?</h1>
 
             <!-- Carousel Start -->
@@ -906,13 +1237,31 @@
                   <div
                     class="d-flex justify-content-center align-items-center mt-3 mb-3"
                   >
-                    <p class="m-0" style="max-width: 600px">
-                      Pelayanan dari tim IDMETAFORA sangat responsif, cepat dan
+                    <p class="m-0" style="max-width: 100%">
+                      <i class="fa-solid fa-quote-left"></i>
+                      Pelayanan dari tim IDMETAFORA sangat responsif, cepat, dan
                       sangat membantu. Kami banyak terbantu dari proses awal
                       pemesanan hingga selesai. Penjelasan dari tim IDMETAFORA
                       sangat membantu kami dan hasil pekerjaannya juga sangat
-                      memuaskan.
+                      memuaskan. <i class="fa-solid fa-quote-right"></i>
                     </p>
+                  </div>
+
+                  <div
+                    class="d-flex flex-column justify-content-center align-items-center mt-3 mb-3"
+                  >
+                    <img
+                      src="assets/home_img/testi/1.png"
+                      alt=""
+                      class="img-fluid"
+                      style="max-width: 150px"
+                    />
+                    <img
+                      src="assets/imgStar.png"
+                      alt=""
+                      class="img-fluid mt-2"
+                      style="max-width: 100px"
+                    />
                   </div>
                 </div>
                 <div class="carousel-item">
@@ -920,13 +1269,30 @@
                   <div
                     class="d-flex justify-content-center align-items-center mt-3 mb-3"
                   >
-                    <p class="m-0" style="max-width: 600px">
-                      Pelayanan dari tim IDMETAFORA sangat responsif, cepat dan
+                    <p class="m-0" style="max-width: 100%">
+                      Pelayanan dari tim IDMETAFORA sangat responsif, cepat, dan
                       sangat membantu. Kami banyak terbantu dari proses awal
                       pemesanan hingga selesai. Penjelasan dari tim IDMETAFORA
                       sangat membantu kami dan hasil pekerjaannya juga sangat
                       memuaskan.
                     </p>
+                  </div>
+
+                  <div
+                    class="d-flex flex-column justify-content-center align-items-center mt-3 mb-3"
+                  >
+                    <img
+                      src="assets/home_img/testi/1.png"
+                      alt=""
+                      class="img-fluid"
+                      style="max-width: 150px"
+                    />
+                    <img
+                      src="assets/imgStar.png"
+                      alt=""
+                      class="img-fluid mt-2"
+                      style="max-width: 100px"
+                    />
                   </div>
                 </div>
               </div>
@@ -937,9 +1303,10 @@
               role="button"
               data-slide="prev"
               style="
-                top: 15%;
-                transform: translateY(-50%);
-                transform: translateX(-80%);
+                background-color: rgba(0, 0, 0, 0.5);
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
               "
             >
               <span
@@ -956,9 +1323,10 @@
               role="button"
               data-slide="next"
               style="
-                top: 15%;
-                transform: translateY(-50%);
-                transform: translateX(80%);
+                background-color: rgba(0, 0, 0, 0.5);
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
               "
             >
               <span
@@ -967,13 +1335,6 @@
               ></span>
               <span class="sr-only">Next</span>
             </a>
-
-            <div
-              class="d-flex flex-column justify-content-center align-items-center mt-3 mb-3"
-            >
-              <img src="assets/imgPeople.png" alt="" width="50%" />
-              <img src="assets/ imgStar.png" alt="" />
-            </div>
           </div>
         </div>
       </div>
@@ -990,20 +1351,30 @@
         <img
           src="assets/imgAccF1.png"
           alt=""
-          class="position-absolute"
-          style="bottom: -20px; left: 150px; width: 100%"
+          class="position-absolute img-fluid"
+          style="top: 0px; right: 0px; width: 80%"
         />
 
         <div class="row">
           <div class="col-md-6 d-flex flex-column justify-content-end">
-            <p class="" style="color: white; font-size: 18px">
+            <p class="" style="font-size: 18px">
               <b>IDMETAFORA</b>
             </p>
-            <p class="" style="color: white; font-size: 16px">
+            <p class="" style="font-size: 16px">
               <b>IDMETAFORA</b> adalah Perusahaan Solusi TI, bisnis utama kami
               adalah Pengembangan ERP. Kami juga mendukung klien kami dalam
               bidang Internet of Things, dan Desain & Pengembangan Web.
             </p>
+
+            <div class="mb-5">
+              <span class="mr-3">
+                <i class="fa-solid fa-phone"></i> +62 896 6423 0232</span
+              >
+
+              <span>
+                <i class="fa-solid fa-envelope"></i> info@idmetafora.com</span
+              >
+            </div>
           </div>
           <div class="col-md-6">
             <div
@@ -1075,21 +1446,21 @@
 
     <footer class="py-3" style="background-color: #e7f4fa">
       <div class="container">
-        <div class="row">
-          <div class="col-md-4">
+        <div class="row align-items-center text-center text-md-left">
+          <div class="col-md-4 mb-3 mb-md-0">
             <img
               src="assets/logo.png"
               alt="Logo"
               width="50%"
-              class="img-fluid mb-3"
+              class="img-fluid"
             />
           </div>
-          <div class="col-md-4 text-center">
+          <div class="col-md-4 mb-3 mb-md-0">
             <h6>© 2014-2024 PT Metafora Indonesia Teknologi</h6>
           </div>
 
-          <div class="col-md-4 text-right">
-            <div class="mx-4">
+          <div class="col-md-4 text-center text-md-right">
+            <div class="mx-2 mx-md-4">
               <a href="#"><i class="bi bi-instagram mx-2"></i></a>
               <a href="#"><i class="bi bi-facebook mx-2"></i></a>
               <a href="#"> <i class="bi bi-linkedin mx-2"></i></a>
@@ -1107,8 +1478,26 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.6/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+<script
+  src="https://kit.fontawesome.com/f606adbcd6.js"
+  crossorigin="anonymous"
+></script>
+
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
   // Inisialisasi AOS
   AOS.init();
+</script>
+
+<script>
+  var showMoreBtn = document.getElementById("showMoreBtn");
+  var additionalContent = document.getElementById("additionalContent");
+
+  showMoreBtn.addEventListener("click", function () {
+    if (additionalContent.classList.contains("show")) {
+      showMoreBtn.textContent = "Show More";
+    } else {
+      showMoreBtn.textContent = "Show Less";
+    }
+  });
 </script>

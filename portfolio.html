@@ -15,6 +15,16 @@
       rel="stylesheet"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+
     <style>
       .custom-border {
         background-color: #e0f7ff;
@@ -111,7 +121,7 @@
       class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow border-bottom animate__animated animate__fadeIn"
     >
       <!-- Logo -->
-      <a class="navbar-brand" href="/"
+      <a class="navbar-brand" href="index.html"
         ><img src="assets/logo.png" width="100%" height="50" alt=""
       /></a>
 
@@ -132,7 +142,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="/"
+            <a class="nav-link" href="index.html"
               >Home <span class="sr-only">(current)</span></a
             >
           </li>
@@ -149,47 +159,45 @@
               ERP System
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="/purchasing_system_page.html"
+              <a class="dropdown-item" href="purchasing_system_page.html"
                 >Purchasing System</a
               >
-              <a class="dropdown-item" href="/warehouse_management_page.html"
+              <a class="dropdown-item" href="warehouse_management_page.html"
                 >Warehouse Management System</a
               >
-              <a class="dropdown-item" href="/point_of_sales.html"
+              <a class="dropdown-item" href="point_of_sales.html"
                 >Point Of Sale System</a
               >
-              <a class="dropdown-item" href="/finance_and_budgeting.html"
+              <a class="dropdown-item" href="finance_and_budgeting.html"
                 >Finance & Budgeting System</a
               >
-              <a class="dropdown-item" href="/accounting_system.html"
+              <a class="dropdown-item" href="accounting_system.html"
                 >Accounting System</a
               >
-              <a class="dropdown-item" href="/legal_and_administration.html"
+              <a class="dropdown-item" href="legal_and_administration.html"
                 >Legal & Administration System
               </a>
-              <a class="dropdown-item" href="/audit_system.html"
-                >Audit System</a
-              >
-              <a class="dropdown-item" href="/tax_system.html">Tax System</a>
-              <a class="dropdown-item" href="/bussiness_intelligence.html"
+              <a class="dropdown-item" href="audit_system.html">Audit System</a>
+              <a class="dropdown-item" href="tax_system.html">Tax System</a>
+              <a class="dropdown-item" href="bussiness_intelligence.html"
                 >Bussines inteligence</a
               >
-              <a class="dropdown-item" href="/pharmacy_system.html"
+              <a class="dropdown-item" href="pharmacy_system.html"
                 >Pharmacy System</a
               >
-              <a class="dropdown-item" href="/architect_management.html"
+              <a class="dropdown-item" href="architect_management.html"
                 >Architect Management System</a
               >
-              <a class="dropdown-item" href="/project_management_system.html"
+              <a class="dropdown-item" href="project_management_system.html"
                 >Project Management System</a
               >
-              <a class="dropdown-item" href="/frequently_asked_questions.html"
+              <a class="dropdown-item" href="frequently_asked_questions.html"
                 >Frequently Asked Questions</a
               >
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/portfolio.html">Portfolio</a>
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
           </li>
           <li class="nav-item dropdown">
             <a
@@ -204,22 +212,40 @@
               Web Development
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="/web_development_services.html"
+              <a class="dropdown-item" href="web_development_services.html"
                 >Web Development Service</a
               >
-              <a class="dropdown-item" href="/web_development_pricelist.html"
+              <a class="dropdown-item" href="web_development_pricelist.html"
                 >Web Development Pricelist</a
               >
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/iot.html">Internet Of Things</a>
+            <a class="nav-link" href="iot.html">Internet Of Things</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/tech_news.html">Tech News</a>
+            <a class="nav-link" href="tech_news.html">Tech News</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Our Company</a>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Our Company
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="about_us.html">About Us</a>
+              <a class="dropdown-item" href="our_team.html">Our Teams</a>
+              <a class="dropdown-item" href="career.html"
+                >Career in IDMETAFORA</a
+              >
+              <a class="dropdown-item" href="contact_us.html">Contact</a>
+            </div>
           </li>
           <!-- Tambahkan margin pada tombol untuk memberikan jarak dari menu -->
           <li class="nav-item">
@@ -243,175 +269,209 @@
 
     <header class="border-bottom" style="background-color: #e6f7ff">
       <div class="container">
-        <div class="col-md-12">
-          <img
-            src="assets/porto_img/header/img1.png"
-            alt=""
-            class="position-absolute"
-            style="bottom: 50px; left: 150px; width: 8%"
-          />
-          <img
-            src="assets/porto_img/header/img0.png"
-            alt=""
-            class="position-absolute"
-            style="bottom: 0px; right: -75px; width: 5%"
-          />
+        <img
+          src="assets/porto_img/acc/1.png"
+          alt=""
+          class="img-fluid d-none d-md-block"
+          style="position: absolute; right: 0px"
+          width="4%"
+        />
 
-          <img
-            src="assets/porto_img/header/img2.png"
-            alt=""
-            class="position-absolute"
-            style="top: 250px; right: 250px; width: 8%"
-          />
-
-          <img
-            src="assets/porto_img/header/img3.png"
-            alt=""
-            class="position-absolute"
-            style="bottom: 150px; right: 150px; width: 8%"
-          />
+        <div class="row justify-content-center">
           <div
-            class="col-md-4 position-absolute"
-            style="bottom: 200px; font-weight: bold; left: 0px"
+            class="col-md-8 text-center pt-5"
+            data-aos="fade-down"
+            data-aos-delay="100"
           >
-            Setiap proyek yang kami kerjakan menghasilkan pengalaman. Mari kita
-            lihat portofolio kami sebagai referensi kualitas kerja kami.
+            <p class="font-weight-bold h1">
+              Our <span class="text-danger">Portfolio</span>
+            </p>
+            <p class="font-weight-bold">
+              Setiap proyek yang kami kerjakan menghasilkan pengalaman. Mari
+              kita lihat portofolio kami sebagai referensi kualitas kerja kami.
+            </p>
           </div>
+        </div>
 
-          <img
-            src="assets/porto_img/header/img.png"
-            alt=""
-            class="position-absolute"
-            style="top: 20px; right: 270px; width: 8%"
-          />
-
-          <img
-            src="assets/porto_img/header/img.png"
-            alt=""
-            class="position-absolute"
-            style="bottom: 300px; left: -30px; width: 8%"
-          />
-          <div class="col-md-12">
-            <img src="assets/porto_img/imgHeader.png" alt="" width="100%" />
+        <div class="row justify-content-center">
+          <div class="col-md-10" data-aos="fade-down" data-aos-delay="200">
+            <div class="row text-center">
+              <div class="col-4 col-md-2 align-self-center">
+                <img
+                  src="assets/porto_img/header/img1.png"
+                  alt=""
+                  class="img-fluid d-none d-md-block"
+                  width="70%"
+                />
+              </div>
+              <div class="col-12 col-md-8">
+                <img
+                  src="assets/porto_img/imgHeader.png"
+                  alt=""
+                  class="img-fluid"
+                  style="max-width: 90%"
+                />
+              </div>
+              <div class="col-4 col-md-2 align-self-center">
+                <img
+                  src="assets/porto_img/header/img2.png"
+                  alt=""
+                  class="img-fluid d-none d-md-block"
+                  width="90%"
+                />
+                <img
+                  src="assets/porto_img/header/img3.png"
+                  alt=""
+                  class="img-fluid d-none d-md-block"
+                  width="90%"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </header>
 
-    <section class="py-5 border-bottom">
+    <!-- Company -->
+    <section class="py-4 border-bottom">
       <div class="container">
-        <div class="d-flex justify-content-center" style="gap: 30px">
-          <img
-            src="assets/company/pertamina.png"
-            width="10%"
-            alt=""
-            class="img-fluid"
-          />
-          <img
-            src="assets/company/mubadala.png"
-            width="10%"
-            alt=""
-            class="img-fluid"
-          />
-          <img
-            src="assets/company/candra.png"
-            width="10%"
-            alt=""
-            class="img-fluid"
-          />
-          <img
-            src="assets/company/molindo.png"
-            width="10%"
-            alt=""
-            class="img-fluid"
-          />
-          <img
-            src="assets/company/indonesia_power.png"
-            width="10%"
-            alt=""
-            class="img-fluid"
-          />
-          <img
-            src="assets/company/pesona.png"
-            width="5%"
-            alt=""
-            class="img-fluid"
-          />
-          <img
-            src="assets/company/brin.png"
-            width="5%"
-            alt=""
-            class="img-fluid"
-          />
-          <img
-            src="assets/company/batan.png"
-            width="5%"
-            alt=""
-            class="img-fluid"
-          />
-          <img
-            src="assets/company/semen.png"
-            width="5%"
-            alt=""
-            class="img-fluid"
-          />
+        <div class="row">
+          <div class="col-md-12">
+            <div
+              class="d-flex flex-wrap justify-content-center align-items-center"
+              style="gap: 15px"
+            >
+              <img
+                src="assets/company/pertamina.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+              <img
+                src="assets/company/mubadala.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+              <img
+                src="assets/company/candra.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+              <img
+                src="assets/company/molindo.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+              <img
+                src="assets/company/indonesia_power.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+              <img
+                src="assets/company/pesona.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+              <img
+                src="assets/company/brin.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+              <img
+                src="assets/company/batan.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+              <img
+                src="assets/company/semen.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
+    <!-- End Company -->
 
     <section class="py-5 border-bottom" style="background-color: #e6f7ff">
       <div class="container">
         <div class="row">
-          <div class="col-md-12 text-center py-3">
+          <div
+            class="col-md-12 text-center py-3"
+            data-aos="fade-down"
+            data-aos-delay="200"
+          >
             <h1>
               <span class="font-weight-bold">Our </span
               ><span class="text-danger font-weight-bold">Portfolio</span>
             </h1>
           </div>
-          <img
-            src="assets/porto_img/porto/imgACC.png"
-            alt=""
-            class="position-absolute"
-            style="top: 200%; right: 0px; width: 100%"
-          />
         </div>
         <div class="row align-items-center">
           <div class="col-md-6 text-center">
             <img
               src="assets/porto_img/porto/bgPortoL.png"
               alt=""
-              class="position-absolute"
-              style="top: -30%; left: 100%"
+              class="img-fluid d-none d-md-block"
+              style="position: absolute; top: -30%; left: 100%"
               width="100%"
             />
             <img
               src="assets/porto_img/porto/bgPortoR.png"
               alt=""
-              class="position-absolute"
-              style="top: 170%; right: 0%"
+              class="img-fluid d-none d-md-block"
+              style="position: absolute; top: 170%; right: 0%"
               width="100%"
             />
-
-            <h3 class="font-weight-bold py-3">Chandra Asri</h3>
-            <img src="assets/company/candra.png" alt="" class="py-3" />
-            <p>
-              <a href="https://idmetafora.com/chandra_asri/"
-                >careers.capcx.com</a
-              >
-            </p>
-            <p class="font-weight-bold">Use service: Web Design.</p>
+            <div data-aos="fade-right" data-aos-delay="300">
+              <h3 class="font-weight-bold py-3">Chandra Asri</h3>
+              <img
+                src="assets/company/candra.png"
+                alt=""
+                class="img-fluid py-3"
+              />
+              <p>
+                <a href="https://idmetafora.com/chandra_asri/"
+                  >careers.capcx.com</a
+                >
+              </p>
+              <p class="font-weight-bold">Use service: Web Design.</p>
+            </div>
           </div>
-          <div class="col-md-6 p-5">
-            <img src="assets/porto_img/porto/img3C.png" alt="" width="90%" />
+          <div class="col-md-6 p-5" data-aos="fade-up" data-aos-delay="300">
+            <img
+              src="assets/porto_img/porto/img3C.png"
+              alt=""
+              width="90%"
+              class="img-fluid"
+            />
           </div>
         </div>
 
         <div class="row align-items-center">
-          <div class="col-md-6">
-            <img src="assets/porto_img/porto/img0M.png" alt="" width="90%" />
+          <div class="col-md-6" data-aos="fade-right" data-aos-delay="300">
+            <img
+              src="assets/porto_img/porto/img0M.png"
+              alt=""
+              width="90%"
+              class="img-fluid"
+            />
           </div>
 
-          <div class="col-md-6 text-center">
+          <div
+            class="col-md-6 text-center p-5"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <h4 class="font-weight-bold py-3">
               MOLINDO Group (PT Madusari Murni Indah Tbk)
             </h4>
@@ -419,7 +479,7 @@
               MOLINDO Group (PT Madusari Murni Indah Tbk) is a producer of food
               grade ethanol and CO2.
             </h6>
-            <img src="assets/company/molindo.png" alt="" />
+            <img src="assets/company/molindo.png" alt="" class="img-fluid" />
             <p><a href="https://molindo.co.id/">molindo.co.id</a></p>
             <p class="font-weight-bold">Use service: Web Design.</p>
           </div>
@@ -427,74 +487,119 @@
       </div>
     </section>
 
-    <section class="py-5 border-bottom">
-      <div class="container">
+    <section class="pt-5 border-bottom">
+      <div class="container col-md-12">
+        <img
+          src="assets/porto_img/porto/imgAcc4.png"
+          alt=""
+          class="img-fluid d-none d-md-block"
+          style="position: absolute; bottom: -200px; right: -0px"
+          width="10%"
+        />
+
+        <img
+          src="assets/porto_img/porto/imgAcc3.png"
+          alt=""
+          class="img-fluid d-none d-md-block"
+          style="position: absolute; bottom: -0px; left: -0px"
+          width="15%"
+        />
+
+        <img
+          src="assets/porto_img/porto/imgAcc2.png"
+          alt=""
+          class="img-fluid d-none d-md-block"
+          style="position: absolute; top: -100px; left: -0px"
+          width="10%"
+        />
+
         <div class="row align-items-center">
           <div class="col-md-6 text-center">
             <img
               src="assets/porto_img/porto/bgPortoL.png"
               alt=""
-              class="position-absolute"
-              style="top: -10%; left: 100%"
+              class="img-fluid d-none d-md-block"
+              style="position: absolute; top: -10%; left: 100%"
               width="100%"
             />
             <img
               src="assets/porto_img/porto/bgPortoR.png"
               alt=""
-              class="position-absolute"
-              style="top: 130%; right: 10%"
+              class="img-fluid d-none d-md-block"
+              style="position: absolute; top: 130%; right: 10%"
               width="90%"
             />
-
-            <img
-              src="assets/porto_img/porto/imgAcc2.png"
-              alt=""
-              class="position-absolute"
-              style="top: -150px; left: -70px"
-              width="20%"
-            />
-            <h3 class="font-weight-bold py-3">Glueck Manamart</h3>
-            <img src="assets/company/gluck.png" alt="" class="py-3" />
-            <p><a href="https://glueckmanamart.com/">glueckmanamart.com</a></p>
-            <p class="font-weight-bold">Use service: Web Design.</p>
+            <div data-aos="fade-right" data-aos-delay="400">
+              <h3 class="font-weight-bold py-3">Glueck Manamart</h3>
+              <img
+                src="assets/company/gluck.png"
+                alt=""
+                class="img-fluid py-3"
+              />
+              <p>
+                <a href="https://glueckmanamart.com/">glueckmanamart.com</a>
+              </p>
+              <p class="font-weight-bold">Use service: Web Design.</p>
+            </div>
           </div>
-          <div class="col-md-6 p-5">
-            <img src="assets/porto_img/porto/img4G.png" alt="" width="90%" />
+          <div class="col-md-6 p-5" data-aos="fade-up" data-aos-delay="500">
+            <img
+              src="assets/porto_img/porto/img4G.png"
+              alt=""
+              width="90%"
+              class="img-fluid"
+            />
           </div>
         </div>
 
         <div class="row align-items-center">
-          <div class="col-md-6">
-            <img
-              src="assets/porto_img/porto/imgAcc3.png"
-              alt=""
-              class="position-absolute"
-              style="bottom: -50px; left: -80px"
-              width="30%"
-            />
-            <img src="assets/porto_img/porto/img5A.png" alt="" width="90%" />
-          </div>
-
-          <div class="col-md-6 text-center">
-            <img
-              src="assets/porto_img/porto/imgAcc4.png"
-              alt=""
-              class="position-absolute"
-              style="bottom: -350px; right: -60px"
-              width="30%"
-            />
-            <h1>PT KIYA SINERGI ASIA</h1>
-            <h6>
-              An innovative prefabricated building solution. For more people,
-              more houses, & less money.
-            </h6>
-            <img src="assets/company/arsifab.png" alt="" />
-            <p>
-              <a href="https://idmetafora.com/works/arsifab/home.aspx"
-                >idmetafora.com/works/arsifab/home.aspx</a
+          <div class="col-md-12">
+            <div class="row align-items-center">
+              <div class="col-md-6" data-aos="fade-right" data-aos-delay="400">
+                <img
+                  src="assets/porto_img/porto/img5A.png"
+                  alt=""
+                  width="90%"
+                  class="img-fluid"
+                />
+              </div>
+              <!-- <div class="col-md-6 text-center p-5">
+                <h4 class="font-weight-bold py-3">
+                  MOLINDO Group (PT Madusari Murni Indah Tbk)
+                </h4>
+                <h6 class="font-weight-light py-3">
+                  MOLINDO Group (PT Madusari Murni Indah Tbk) is a producer of food
+                  grade ethanol and CO2.
+                </h6>
+                <img src="assets/company/molindo.png" alt="" class="img-fluid" />
+                <p><a href="https://molindo.co.id/">molindo.co.id</a></p>
+                <p class="font-weight-bold">Use service: Web Design.</p>
+              </div> -->
+              <div
+                class="col-md-6 text-center p-5"
+                data-aos="fade-up"
+                data-aos-delay="500"
               >
-            </p>
-            <p>Use service: Web Development & System Information.</p>
+                <p class="font-weight-bold h3">PT KIYA SINERGI ASIA</p>
+                <h6>
+                  An innovative prefabricated building solution. For more
+                  people, more houses, & less money.
+                </h6>
+                <img
+                  src="assets/company/arsifab.png"
+                  alt=""
+                  class="img-fluid"
+                />
+                <p>
+                  <a href="https://idmetafora.com/works/arsifab/home.aspx"
+                    >idmetafora.com/works/arsifab/home.aspx</a
+                  >
+                </p>
+                <p class="font-weight-bold">
+                  Use service: Web Development & System Information.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -507,153 +612,225 @@
             <img
               src="assets/porto_img/porto/bgPortoL.png"
               alt=""
-              class="position-absolute"
-              style="top: -30%; left: 100%"
+              class="img-fluid d-none d-md-block"
+              style="position: absolute; top: -30%; left: 100%"
               width="100%"
             />
             <img
               src="assets/porto_img/porto/bgPortoR.png"
               alt=""
-              class="position-absolute"
-              style="top: 150%; right: 0%"
+              class="img-fluid d-none d-md-block"
+              style="position: absolute; top: 150%; right: 0%"
               width="100%"
             />
-            <h3 class="font-weight-bold py-3">PT. Bhinneka Citra Prima</h3>
-            <img src="assets/porto_img//porto/img1.png" alt="" class="py-3" />
-            <p><a href="https://bcpkontraktor.com/">bcpkontraktor.com</a></p>
-            <p class="font-weight-bold">Use service: Web Design.</p>
+            <div data-aos="fade-right" data-aos-delay="400">
+              <h3 class="font-weight-bold py-3">PT. Bhinneka Citra Prima</h3>
+              <img
+                src="assets/porto_img//porto/img1.png"
+                alt=""
+                class="img-fluid py-3"
+              />
+              <p><a href="https://bcpkontraktor.com/">bcpkontraktor.com</a></p>
+              <p class="font-weight-bold">Use service: Web Design.</p>
+            </div>
           </div>
-          <div class="col-md-6 p-5">
-            <img src="assets/porto_img/porto/img1B.png" alt="" width="90%" />
+          <div class="col-md-6 p-5" data-aos="fade-up" data-aos-delay="500">
+            <img
+              src="assets/porto_img/porto/img1B.png"
+              alt=""
+              width="90%"
+              class="img-fluid"
+            />
           </div>
         </div>
 
         <div class="row align-items-center">
-          <div class="col-md-6">
-            <img src="assets/porto_img/porto/img2U.png" alt="" width="90%" />
+          <div class="col-md-6" data-aos="fade-right" data-aos-delay="400">
+            <img
+              src="assets/porto_img/porto/img2U.png"
+              alt=""
+              width="90%"
+              class="img-fluid"
+            />
           </div>
 
-          <div class="col-md-6 text-center">
-            <h1>Unison Healthcare</h1>
-            <img src="assets/porto_img//porto/img2.png" alt="" />
+          <div
+            class="col-md-6 text-center"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <p class="font-weight-bold h2">Unison Healthcare</p>
+            <img
+              src="assets/porto_img//porto/img2.png"
+              alt=""
+              class="img-fluid"
+            />
             <p>
               <a href="https://registration.unison-healthcare.com/"
                 >registration.unison-healthcare.com</a
               >
             </p>
-            <p>Use service: Web Design.</p>
+            <p class="font-weight-bold">Use service: Web Design.</p>
           </div>
         </div>
       </div>
     </section>
 
     <section class="py-5 border-bottom">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-6 text-center">
-            <img
-              src="assets/porto_img/porto/bgPortoL.png"
-              alt=""
-              class="position-absolute"
-              style="top: -10%; left: 100%"
-              width="100%"
-            />
-            <img
-              src="assets/porto_img/porto/bgPortoR.png"
-              alt=""
-              class="position-absolute"
-              style="top: 130%; right: 0%"
-              width="100%"
-            />
-            <h3 class="font-weight-bold py-3">PT Piranha Multi Talenta</h3>
-            <h6>
-              PT Piranha Multi Talenta is an Accounting and Taxation Training
-              and Course service.
-            </h6>
-            <img src="assets/company/piranha.png" alt="" class="py-3" />
-            <p>
-              <a href="https://piranhasmartcenter.com/"
-                >piranhasmartcenter.com</a
-              >
-            </p>
-            <p class="font-weight-bold">Use service: Web Design.</p>
-          </div>
-          <div class="col-md-6 p-5">
-            <img src="assets/porto_img/porto/img6P.png" alt="" width="90%" />
+      <div class="container col-md-12">
+        <img
+          src="assets/porto_img/acc/2.png"
+          alt=""
+          class="img-fluid d-none d-md-block"
+          style="position: absolute; top: -10%; right: 0%"
+          width="8%"
+        />
+
+        <img
+          src="assets/porto_img/acc/3.png"
+          alt=""
+          class="img-fluid d-none d-md-block"
+          style="position: absolute; top: -20%; left: 0%"
+          width="6%"
+        />
+
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <div class="row align-items-center">
+              <div class="col-md-6 text-center">
+                <img
+                  src="assets/porto_img/porto/bgPortoL.png"
+                  alt=""
+                  class="img-fluid d-none d-md-block"
+                  style="position: absolute; top: -10%; left: 100%"
+                  width="100%"
+                />
+                <img
+                  src="assets/porto_img/porto/bgPortoR.png"
+                  alt=""
+                  class="img-fluid d-none d-md-block"
+                  style="position: absolute; top: 130%; right: 12%"
+                  width="100%"
+                />
+                <div data-aos="fade-right" data-aos-delay="400">
+                  <h3 class="font-weight-bold py-3">
+                    PT Piranha Multi Talenta
+                  </h3>
+                  <h6>
+                    PT Piranha Multi Talenta is an Accounting and Taxation
+                    Training and Course service.
+                  </h6>
+                  <img src="assets/company/piranha.png" alt="" class="py-3" />
+                  <p>
+                    <a href="https://piranhasmartcenter.com/"
+                      >piranhasmartcenter.com</a
+                    >
+                  </p>
+                  <p class="font-weight-bold">Use service: Web Design.</p>
+                </div>
+              </div>
+              <div class="col-md-6 p-5" data-aos="fade-up" data-aos-delay="500">
+                <img
+                  src="assets/porto_img/porto/img6P.png"
+                  alt=""
+                  width="90%"
+                />
+              </div>
+            </div>
           </div>
         </div>
 
         <div class="row align-items-center">
-          <div class="col-md-6">
+          <div class="col-md-6" data-aos="fade-right" data-aos-delay="400">
             <img src="assets/porto_img/porto/img7A.png" alt="" width="90%" />
           </div>
 
-          <div class="col-md-6 text-center">
-            <h1>PT Albasia Batang Sejahtera</h1>
+          <div
+            class="col-md-6 text-center"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <p class="font-weight-bold h2">PT Albasia Batang Sejahtera</p>
             <h6>
               PT Albasia Batang Sejahtera is one of the companies engaged in the
               Wood Industry in Batang, Central Java Province.
             </h6>
             <img src="assets/company/abs.png" alt="" />
             <p><a href="https://albasiabatang.com/">albasiabatang.com</a></p>
-            <p>Use service: Web Design.</p>
+            <p class="font-weight-bold">Use service: Web Design.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section
-      class="py-5 border-bottom"
-      style="
-        background-image: url('assets/porto_img/bgPorto1.png');
-        background-size: cover;
-        background-position: center;
-      "
-    >
+    <section class="py-5 border-bottom" style="background-color: #e7f4fa">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-6 text-center">
             <img
               src="assets/porto_img/porto/bgPortoL.png"
               alt=""
-              class="position-absolute"
-              style="top: -10%; left: 100%"
+              class="img-fluid d-none d-md-block"
+              style="position: absolute; top: -10%; left: 100%"
               width="100%"
             />
             <img
               src="assets/porto_img/porto/bgPortoR.png"
               alt=""
-              class="position-absolute"
-              style="top: 115%; right: 0%"
+              class="img-fluid d-none d-md-block"
+              style="position: absolute; top: 115%; right: 0%"
               width="100%"
             />
-            <h3 class="font-weight-bold py-3">
-              PT Migas Mandiri Pratama MMP Kaltim
-            </h3>
-            <h6>
-              Regional-Owned Enterprises are engaged in the oil and gas sector
-              which is 100% owned by the East Kalimantan Provincial Government.
-            </h6>
-            <img src="assets/company/migas.png" alt="" class="py-3" />
-            <p><a href="https://mmpkaltim.co.id/">mmpkaltim.co.id</a></p>
-            <p class="font-weight-bold">Use service: Web Design.</p>
+            <div data-aos="fade-right" data-aos-delay="400">
+              <h3 class="font-weight-bold py-3">
+                PT Migas Mandiri Pratama MMP Kaltim
+              </h3>
+              <h6>
+                Regional-Owned Enterprises are engaged in the oil and gas sector
+                which is 100% owned by the East Kalimantan Provincial
+                Government.
+              </h6>
+              <img
+                src="assets/company/migas.png"
+                alt=""
+                class="img-fluid py-3"
+              />
+              <p><a href="https://mmpkaltim.co.id/">mmpkaltim.co.id</a></p>
+              <p class="font-weight-bold">Use service: Web Design.</p>
+            </div>
           </div>
-          <div class="col-md-6 p-5">
-            <img src="assets/porto_img/porto/img8M.png" alt="" width="90%" />
+          <div class="col-md-6 p-5" data-aos="fade-up" data-aos-delay="500">
+            <img
+              src="assets/porto_img/porto/img8M.png"
+              alt=""
+              width="90%"
+              class="img-fluid"
+            />
           </div>
         </div>
 
         <div class="row align-items-center">
-          <div class="col-md-6">
-            <img src="assets/porto_img/porto/img9S.png" alt="" width="90%" />
+          <div class="col-md-6" data-aos="fade-right" data-aos-delay="400">
+            <img
+              src="assets/porto_img/porto/img9S.png"
+              alt=""
+              width="90%"
+              class="img-fluid"
+            />
           </div>
 
-          <div class="col-md-6 text-center">
-            <h1>SpeeQual Sdn.Bhd Malaysia</h1>
+          <div
+            class="col-md-6 text-center"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <p class="font-weight-bold h2">SpeeQual Sdn.Bhd Malaysia</p>
             <h6>One of Language Services Company from Malaysia.</h6>
-            <img src="assets/company/speequal.png" alt="" />
+            <img src="assets/company/speequal.png" alt="" class="img-fluid" />
             <p><a href="https://speequal.com/">www.speequal.com</a></p>
-            <p>Use service: Web Design & Web Development.</p>
+            <p class="font-weight-bold">
+              Use service: Web Design & Web Development.
+            </p>
           </div>
         </div>
       </div>
@@ -673,47 +850,64 @@
             <img
               src="assets/porto_img/porto/bgPortoL.png"
               alt=""
-              class="position-absolute"
-              style="top: -50%; left: 100%"
+              class="img-fluid d-none d-md-block"
+              style="position: absolute; top: -50%; left: 100%"
               width="100%"
             />
             <img
               src="assets/porto_img/porto/bgPortoR.png"
               alt=""
-              class="position-absolute"
-              style="top: 150%; right: 0%"
+              class="img-fluid d-none d-md-block"
+              style="position: absolute; top: 150%; right: 0%"
               width="100%"
             />
-            <h3 class="font-weight-bold py-3">Photobylocal.com</h3>
-            <h6>
-              Professional Pre Wedding Photographer Specialist based in
-              Yogyakarta, Indonesia.
-            </h6>
-            <!-- <img src="assets/company/migas.png" alt="" class="py-3"> -->
-            <p><a href="https://photobylocal.com/">photobylocal.com</a></p>
-            <p class="font-weight-bold">Use service: Web Development.</p>
+            <div data-aos="fade-right" data-aos-delay="400">
+              <h3 class="font-weight-bold py-3">Photobylocal.com</h3>
+              <h6>
+                Professional Pre Wedding Photographer Specialist based in
+                Yogyakarta, Indonesia.
+              </h6>
+              <p><a href="https://photobylocal.com/">photobylocal.com</a></p>
+              <p class="font-weight-bold">Use service: Web Development.</p>
+            </div>
           </div>
-          <div class="col-md-6 p-5">
-            <img src="assets/porto_img/porto/img10P.png" alt="" width="90%" />
+          <div class="col-md-6 p-5" data-aos="fade-up" data-aos-delay="500">
+            <img
+              src="assets/porto_img/porto/img10P.png"
+              alt=""
+              width="90%"
+              class="img-fluid"
+            />
           </div>
         </div>
 
         <div class="row align-items-center">
-          <div class="col-md-6">
-            <img src="assets/porto_img/porto/img11S.png" alt="" width="90%" />
+          <div class="col-md-6" data-aos="fade-right" data-aos-delay="400">
+            <img
+              src="assets/porto_img/porto/img11S.png"
+              alt=""
+              width="90%"
+              class="img-fluid"
+            />
           </div>
 
-          <div class="col-md-6 text-center">
-            <h1>PT Star Software Indonesia</h1>
+          <div
+            class="col-md-6 text-center"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <p class="font-weight-bold h2">PT Star Software Indonesia</p>
             <h6>
               One of Global Company from Switzerland which has a branch in
               Indonesia.
             </h6>
-            <img src="assets/company/star.png" alt="" />
+            <img src="assets/company/star.png" alt="" class="img-fluid" />
             <p>
               <a href="https://star-indonesia.id/">www.star-indonesia.id</a>
             </p>
-            <p>Use service: Web Design & Development.</p>
+            <p class="font-weight-bold">
+              Use service: Web Design & Development.
+            </p>
           </div>
         </div>
       </div>
@@ -730,20 +924,30 @@
         <img
           src="assets/imgAccF1.png"
           alt=""
-          class="position-absolute"
-          style="bottom: -20px; left: 150px; width: 100%"
+          class="position-absolute img-fluid"
+          style="top: 0px; right: 0px; width: 80%"
         />
 
         <div class="row">
           <div class="col-md-6 d-flex flex-column justify-content-end">
-            <p class="" style="color: white; font-size: 18px">
+            <p class="" style="font-size: 18px">
               <b>IDMETAFORA</b>
             </p>
-            <p class="" style="color: white; font-size: 16px">
+            <p class="" style="font-size: 16px">
               <b>IDMETAFORA</b> adalah Perusahaan Solusi TI, bisnis utama kami
               adalah Pengembangan ERP. Kami juga mendukung klien kami dalam
               bidang Internet of Things, dan Desain & Pengembangan Web.
             </p>
+
+            <div class="mb-5">
+              <span class="mr-3">
+                <i class="fa-solid fa-phone"></i> +62 896 6423 0232</span
+              >
+
+              <span>
+                <i class="fa-solid fa-envelope"></i> info@idmetafora.com</span
+              >
+            </div>
           </div>
           <div class="col-md-6">
             <div
@@ -815,21 +1019,21 @@
 
     <footer class="py-3" style="background-color: #e7f4fa">
       <div class="container">
-        <div class="row">
-          <div class="col-md-4">
+        <div class="row align-items-center text-center text-md-left">
+          <div class="col-md-4 mb-3 mb-md-0">
             <img
               src="assets/logo.png"
               alt="Logo"
               width="50%"
-              class="img-fluid mb-3"
+              class="img-fluid"
             />
           </div>
-          <div class="col-md-4 text-center">
+          <div class="col-md-4 mb-3 mb-md-0">
             <h6>© 2014-2024 PT Metafora Indonesia Teknologi</h6>
           </div>
 
-          <div class="col-md-4 text-right">
-            <div class="mx-4">
+          <div class="col-md-4 text-center text-md-right">
+            <div class="mx-2 mx-md-4">
               <a href="#"><i class="bi bi-instagram mx-2"></i></a>
               <a href="#"><i class="bi bi-facebook mx-2"></i></a>
               <a href="#"> <i class="bi bi-linkedin mx-2"></i></a>
@@ -846,3 +1050,14 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.6/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script
+  src="https://kit.fontawesome.com/f606adbcd6.js"
+  crossorigin="anonymous"
+></script>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  // Inisialisasi AOS
+  AOS.init();
+</script>

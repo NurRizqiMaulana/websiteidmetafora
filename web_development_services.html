@@ -24,104 +24,15 @@
       href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
       rel="stylesheet"
     />
-
-    <style>
-      .custom-border {
-        background-color: #e0f7ff;
-        padding: 20px;
-        border-radius: 100px;
-        border: 2px solid black;
-        /* position: relative; */
-      }
-
-      .custom-card {
-        border-radius: 80px;
-        border: 2px solid #e74c3c;
-        padding: 50px;
-      }
-
-      .rocket {
-        position: absolute;
-        top: -30px;
-        left: -50px;
-        width: 100px;
-      }
-
-      .circle {
-        position: absolute;
-        bottom: -40px;
-        left: -60px;
-        width: 150px;
-        height: 150px;
-        background-color: white;
-        border-radius: 50%;
-        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
-      }
-
-      .circle1 {
-        position: absolute;
-        bottom: 240px;
-        right: -300px;
-        width: 300px;
-        height: 300px;
-        background-color: white;
-        border-radius: 50%;
-        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
-      }
-
-      .circle2 {
-        position: absolute;
-        bottom: 150px;
-        right: 350px;
-        width: 50px;
-        height: 50px;
-        background-color: red;
-        border-radius: 50px 0 0 5px;
-        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
-      }
-
-      .glow {
-        position: absolute;
-        top: -20px;
-        right: -40px;
-        width: 50px;
-        height: 50px;
-        background-color: rgba(255, 255, 255, 0.3);
-        border-radius: 50%;
-        filter: blur(20px);
-      }
-
-      /* Ubah warna tombol prev dan next */
-      .carousel-control-prev-icon,
-      .carousel-control-next-icon {
-        background-color: black;
-        /* Ubah warna sesuai keinginan, ini adalah warna biru */
-        border-radius: 50%;
-        border: 2px solid black;
-        width: 40px;
-        height: 40px;
-      }
-
-      /* Ubah warna latar belakang area di sekitar ikon */
-      .carousel-control-prev,
-      .carousel-control-next {
-        background-color: rgba(255, 255, 255, 0.5);
-        /* Ubah warna background tombol */
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-      }
-    </style>
   </head>
 
   <body>
     <!-- Navbar -->
-
     <nav
       class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow border-bottom animate__animated animate__fadeIn"
     >
       <!-- Logo -->
-      <a class="navbar-brand" href="/"
+      <a class="navbar-brand" href="index.html"
         ><img src="assets/logo.png" width="100%" height="50" alt=""
       /></a>
 
@@ -142,7 +53,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="/"
+            <a class="nav-link" href="index.html"
               >Home <span class="sr-only">(current)</span></a
             >
           </li>
@@ -159,47 +70,45 @@
               ERP System
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="/purchasing_system_page.html"
+              <a class="dropdown-item" href="purchasing_system_page.html"
                 >Purchasing System</a
               >
-              <a class="dropdown-item" href="/warehouse_management_page.html"
+              <a class="dropdown-item" href="warehouse_management_page.html"
                 >Warehouse Management System</a
               >
-              <a class="dropdown-item" href="/point_of_sales.html"
+              <a class="dropdown-item" href="point_of_sales.html"
                 >Point Of Sale System</a
               >
-              <a class="dropdown-item" href="/finance_and_budgeting.html"
+              <a class="dropdown-item" href="finance_and_budgeting.html"
                 >Finance & Budgeting System</a
               >
-              <a class="dropdown-item" href="/accounting_system.html"
+              <a class="dropdown-item" href="accounting_system.html"
                 >Accounting System</a
               >
-              <a class="dropdown-item" href="/legal_and_administration.html"
+              <a class="dropdown-item" href="legal_and_administration.html"
                 >Legal & Administration System
               </a>
-              <a class="dropdown-item" href="/audit_system.html"
-                >Audit System</a
-              >
-              <a class="dropdown-item" href="/tax_system.html">Tax System</a>
-              <a class="dropdown-item" href="/bussiness_intelligence.html"
+              <a class="dropdown-item" href="audit_system.html">Audit System</a>
+              <a class="dropdown-item" href="tax_system.html">Tax System</a>
+              <a class="dropdown-item" href="bussiness_intelligence.html"
                 >Bussines inteligence</a
               >
-              <a class="dropdown-item" href="/pharmacy_system.html"
+              <a class="dropdown-item" href="pharmacy_system.html"
                 >Pharmacy System</a
               >
-              <a class="dropdown-item" href="/architect_management.html"
+              <a class="dropdown-item" href="architect_management.html"
                 >Architect Management System</a
               >
-              <a class="dropdown-item" href="/project_management_system.html"
+              <a class="dropdown-item" href="project_management_system.html"
                 >Project Management System</a
               >
-              <a class="dropdown-item" href="/frequently_asked_questions.html"
+              <a class="dropdown-item" href="frequently_asked_questions.html"
                 >Frequently Asked Questions</a
               >
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/portfolio.html">Portfolio</a>
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
           </li>
           <li class="nav-item dropdown">
             <a
@@ -214,22 +123,40 @@
               Web Development
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="/web_development_services.html"
+              <a class="dropdown-item" href="web_development_services.html"
                 >Web Development Service</a
               >
-              <a class="dropdown-item" href="/web_development_pricelist.html"
+              <a class="dropdown-item" href="web_development_pricelist.html"
                 >Web Development Pricelist</a
               >
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/iot.html">Internet Of Things</a>
+            <a class="nav-link" href="iot.html">Internet Of Things</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/tech_news.html">Tech News</a>
+            <a class="nav-link" href="tech_news.html">Tech News</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Our Company</a>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Our Company
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="about_us.html">About Us</a>
+              <a class="dropdown-item" href="our_team.html">Our Teams</a>
+              <a class="dropdown-item" href="career.html"
+                >Career in IDMETAFORA</a
+              >
+              <a class="dropdown-item" href="contact_us.html">Contact</a>
+            </div>
           </li>
           <!-- Tambahkan margin pada tombol untuk memberikan jarak dari menu -->
           <li class="nav-item">
@@ -248,22 +175,13 @@
         </ul>
       </div>
     </nav>
-
     <!-- End Navbar -->
 
-    <header
-      class="py-3 border-bottom"
-      style="
-        background-image: url('assets/assets/bgHeader.png');
-        background-size: cover;
-        background-position: center;
-      "
-    >
+    <header class="py-3 border-bottom" style="background-color: #e7f4fa">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-6">
             <h1 class="font-weight-bold">
-              <span class="text-danger">Web Development</span> Services
               <span class="text-primary">IDMETAFORA</span>
             </h1>
             <h6
@@ -321,148 +239,172 @@
       </div>
     </header>
 
-    <section class="py-5 border-bottom">
+    <!-- Company -->
+    <section class="py-4 border-bottom">
       <div class="container">
-        <div class="d-flex justify-content-center" style="gap: 30px">
-          <img
-            src="assets/company/pertamina.png"
-            width="10%"
-            alt=""
-            class="img-fluid"
-          />
-          <img
-            src="assets/company/mubadala.png"
-            width="10%"
-            alt=""
-            class="img-fluid"
-          />
-          <img
-            src="assets/company/candra.png"
-            width="10%"
-            alt=""
-            class="img-fluid"
-          />
-          <img
-            src="assets/company/molindo.png"
-            width="10%"
-            alt=""
-            class="img-fluid"
-          />
-          <img
-            src="assets/company/indonesia_power.png"
-            width="10%"
-            alt=""
-            class="img-fluid"
-          />
-          <img
-            src="assets/company/pesona.png"
-            width="5%"
-            alt=""
-            class="img-fluid"
-          />
-          <img
-            src="assets/company/brin.png"
-            width="5%"
-            alt=""
-            class="img-fluid"
-          />
-          <img
-            src="assets/company/batan.png"
-            width="5%"
-            alt=""
-            class="img-fluid"
-          />
-          <img
-            src="assets/company/semen.png"
-            width="5%"
-            alt=""
-            class="img-fluid"
-          />
+        <div class="row">
+          <div class="col-md-12">
+            <div
+              class="d-flex flex-wrap justify-content-center align-items-center"
+              style="gap: 15px"
+            >
+              <img
+                src="assets/company/pertamina.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+              <img
+                src="assets/company/mubadala.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+              <img
+                src="assets/company/candra.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+              <img
+                src="assets/company/molindo.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+              <img
+                src="assets/company/indonesia_power.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+              <img
+                src="assets/company/pesona.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+              <img
+                src="assets/company/brin.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+              <img
+                src="assets/company/batan.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+              <img
+                src="assets/company/semen.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
+    <!-- End Company -->
 
+    <!--Pencapaian Kami-->
     <section class="py-5 bg-light border-bottom" data-aos="fade-up">
-      <div class="container col-md-8">
-        <img
-          src="assets/imgAcc1.png"
-          alt=""
-          class="position-absolute"
-          style="bottom: 300px; left: -100px; width: 20%"
-        />
-
-        <img
-          src="assets/imgAcc.png"
-          alt=""
-          class="position-absolute"
-          style="bottom: 10px; left: -20px; width: 80px"
-        />
-        <div class="row">
-          <div class="col-md-12 py-5">
+      <div class="container col-md-12">
+        <div class="row justify-content-center">
+          <div class="col-md-10 py-5">
+            <img
+              src="assets/webds_img/acc/7.png"
+              alt=""
+              class="img-fluid"
+              style="position: absolute; top: 0px; left: 0px"
+              width="20%"
+            />
+            <img
+              src="assets/webds_img/acc/8.png"
+              alt=""
+              class="img-fluid"
+              style="position: absolute; top: 0px; right: 0px"
+              width="15%"
+            />
             <h2 class="text-center font-weight-bold">
               Pencapaian Kami dalam Angka
             </h2>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-            <div
-              class="p-4 card shadow mb-5 bg-white"
-              style="border-radius: 20px"
-            >
-              <div class="">
-                <div class="d-flex justify-content-center align-items-center">
-                  <h5 class="p-2"><b>10</b></h5>
-                  <img src="assets/webds_img/icon/1.png" alt="" />
-                </div>
-                <div class="text-center">
-                  <p><b>10 TAHUN BERJALAN</b></p>
-                  <h6 class="text-center">
-                    Kami menjalankan bisnis dan pertumbuhan dengan dukungan dari
-                    semua mitra
-                  </h6>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-            <div
-              class="p-4 card shadow mb-5 bg-white"
-              style="border-radius: 20px"
-            >
-              <div class="">
-                <div class="d-flex justify-content-center align-items-center">
-                  <h5 class="p-2"><b>100+</b></h5>
-                  <img src="assets/webds_img/icon/2.png" alt="" />
-                </div>
-                <div class="text-center">
-                  <p><b>100+ PROYEK SELESAI</b></p>
-                  <h6 class="text-center">
-                    Untuk mendukung setiap klien kami dan menyelesaikan setiap
-                    masalah dengan teknologi
-                  </h6>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                <div
+                  class="p-2 card shadow mb-5 bg-white"
+                  style="border-radius: 20px"
+                >
+                  <div class="">
+                    <div class="p-3 text-center">
+                      <img
+                        src="assets/webds_img/icon/1.png"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="text-center">
+                      <p><b>10 TAHUN BERJALAN</b></p>
+                      <h6 class="text-center">
+                        Kami menjalankan bisnis dan pertumbuhan dengan dukungan
+                        dari semua mitra
+                      </h6>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
 
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-            <div
-              class="p-4 card shadow mb-5 bg-white"
-              style="border-radius: 20px"
-            >
-              <div class="">
-                <div class="d-flex justify-content-center align-items-center">
-                  <h5 class="p-2"><b>85%+</b></h5>
-                  <img src="assets/webds_img/icon/3.png" alt="" />
+              <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <div
+                  class="p-2 card shadow mb-5 bg-white"
+                  style="border-radius: 20px"
+                >
+                  <div class="">
+                    <div class="p-3 text-center">
+                      <img
+                        src="assets/webds_img/icon/2.png"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="text-center">
+                      <p><b>100+ PROYEK SELESAI</b></p>
+                      <h6 class="text-center">
+                        Untuk mendukung setiap klien kami dan menyelesaikan
+                        setiap masalah dengan teknologi
+                      </h6>
+                    </div>
+                  </div>
                 </div>
-                <div class="text-center">
-                  <p class="py-2"><b>85%+ PESANAN BERULANG</b></p>
-                  <h6 class="text-center">
-                    Lebih dari 85% klien kami kembali kepada kami dan meminta
-                    proyek lain.
-                  </h6>
+              </div>
+
+              <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                <div
+                  class="p-2 card shadow mb-5 bg-white"
+                  style="border-radius: 20px"
+                >
+                  <div class="">
+                    <div class="p-3 text-center">
+                      <img
+                        src="assets/webds_img/icon/3.png"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="text-center">
+                      <p class="py-2"><b>85%+ PESANAN BERULANG</b></p>
+                      <h6 class="text-center">
+                        Lebih dari 85% klien kami kembali kepada kami dan
+                        meminta proyek lain.
+                      </h6>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -470,19 +412,33 @@
         </div>
       </div>
     </section>
+    <!--End Pencapaian Kami-->
 
+    <!--Pengalaman Kami-->
     <section class="py-5 border-bottom" style="background-color: #e7f4fa">
-      <div class="container col-md-10 py-5">
-        <div class="row pb-5">
-          <div class="col-md-6 py-5 align-self-center">
-            <img
-              src="assets/webds_img/acc/3.png"
-              alt=""
-              class="position-absolute"
-              style="bottom: -100px; left: -110px"
-              width="10%"
-            />
+      <div class="container-fluid col-md-12">
+        <img
+          src="assets/webds_img/acc/0.png"
+          alt=""
+          width="100%"
+          class="img-fluid"
+          style="position: absolute; left: 0px; top: 200px"
+        />
+        <img
+          src="assets/webds_img/acc/3.png"
+          alt=""
+          width="5%"
+          class="img-fluid"
+          style="position: absolute; left: 0px; top: 100px"
+        />
 
+        <div class="row pb-5">
+          <div
+            class="col-md-4 py-5 align-self-center"
+            style="padding-left: 100px"
+            data-aos="fade-right"
+            data-aos-delay="100"
+          >
             <p class="font-weight-bold h3">Pengalaman Kami</p>
 
             <p class="font-weight-light h6 py-3">
@@ -495,71 +451,68 @@
             </a>
           </div>
 
-          <img
-            src="assets/webds_img/acc/0.png"
-            alt=""
-            class="position-absolute"
-            style="left: -100px"
-            width="100%"
-          />
-
-          <div class="col-md-6">
+          <div
+            class="col-md-8"
+            style="
+              border-radius: 100px 0px 0px 0px;
+              background-color: #bce0f1;
+              padding: 80px;
+            "
+          >
+            <img
+              src="assets/webds_img/acc/2.png"
+              alt=""
+              width="8%"
+              class="img-fluid"
+              style="position: absolute; right: 0px; top: 50px"
+            />
             <div class="row">
-              <img
-                src="assets/webds_img/acc/1.png"
-                alt=""
-                class="position-absolute"
-                style="top: -20px; right: -100px"
-                width="120%"
-              />
-
-              <img
-                src="assets/webds_img/acc/2.png"
-                alt=""
-                class="position-absolute"
-                style="top: -50px; right: -100px"
-                width="10%"
-              />
-              <div class="col-md-4">
+              <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
                 <img
                   src="assets/webds_img/porto/1.png"
                   alt=""
                   class="img-fluid"
+                  width="100%"
                 />
               </div>
-              <div class="col-md-4">
+              <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
                 <img
                   src="assets/webds_img/porto/2.png"
                   alt=""
                   class="img-fluid"
+                  width="100%"
                 />
               </div>
-              <div class="col-md-4">
+              <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
                 <img
                   src="assets/webds_img/porto/3.png"
                   alt=""
                   class="img-fluid"
+                  width="100%"
                 />
               </div>
-              <div class="col-md-4">
+              <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
                 <img
                   src="assets/webds_img/porto/4.png"
                   alt=""
                   class="img-fluid"
+                  width="100%"
                 />
               </div>
-              <div class="col-md-4">
+              <div class="col-md-4" data-aos="fade-up" data-aos-delay="500">
                 <img
                   src="assets/webds_img/porto/5.png"
                   alt=""
                   class="img-fluid"
+                  width="100%"
                 />
               </div>
-              <div class="col-md-4">
+              <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
                 <img
                   src="assets/webds_img/porto/6.png"
                   alt=""
                   class="img-fluid"
+                  width="100%"
                 />
               </div>
             </div>
@@ -567,68 +520,93 @@
         </div>
       </div>
     </section>
+    <!--End Pengalaman Kami-->
 
+    <!--Apa yang Bisa Anda Minta-->
     <section class="py-5 border-bottom">
-      <div class="container col-md-9">
+      <div class="container col-md-12">
         <img
-          src="assets/webds_img/acc/4.png"
+          src="assets/webds_img/acc/10.png"
           alt=""
-          class="position-absolute"
-          style="bottom: -280px; left: -160px"
-          width="25%"
+          width="10%"
+          class="img-fluid"
+          style="position: absolute; right: 0px; bottom: 0px"
         />
+
         <div class="row">
-          <div class="col-md-12 text-center py-5">
+          <div
+            class="col-md-12 text-center py-5"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <h2 class="font-weight-bold">Apa yang Bisa Anda Minta?</h2>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div
-              class="p-4 card shadow mb-5 bg-white"
-              style="border-radius: 20px"
-            >
-              <div class="">
-                <div class="text-center">
-                  <img src="assets/webds_img/img1.png" alt="" width="80%" />
-                </div>
-                <div class="text-center">
-                  <p class="font-weight-bold">
-                    DESAIN WEBSITE YANG MENAKJUBKAN
-                  </p>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="row">
+              <div
+                class="col-md-4 mb-4"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div
+                  class="p-4 card shadow mb-5 bg-white h-100"
+                  style="border-radius: 20px"
+                >
+                  <div class="">
+                    <div class="text-center">
+                      <img src="assets/webds_img/img1.png" alt="" width="80%" />
+                    </div>
+                    <div class="text-center">
+                      <p class="font-weight-bold">
+                        DESAIN WEBSITE YANG MENAKJUBKAN
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
 
-          <div class="col-md-4">
-            <div
-              class="p-4 card shadow mb-5 bg-white"
-              style="border-radius: 20px"
-            >
-              <div class="">
-                <div class="text-center">
-                  <img src="assets/webds_img/img2.jpg" alt="" width="80%" />
-                </div>
-                <div class="text-center">
-                  <p class="font-weight-bold">MENGEMBANGKAN SISTEM INFORMASI</p>
+              <div
+                class="col-md-4 mb-4"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <div
+                  class="p-4 card shadow mb-5 bg-white h-100"
+                  style="border-radius: 20px"
+                >
+                  <div class="">
+                    <div class="text-center">
+                      <img src="assets/webds_img/img2.jpg" alt="" width="80%" />
+                    </div>
+                    <div class="text-center">
+                      <p class="font-weight-bold">
+                        MENGEMBANGKAN SISTEM INFORMASI
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div
-              class="p-4 card shadow mb-5 bg-white"
-              style="border-radius: 20px"
-            >
-              <div class="">
-                <div class="text-center">
-                  <img src="assets/webds_img/img3.png" alt="" width="80%" />
-                </div>
-                <div class="text-center">
-                  <p class="font-weight-bold">
-                    MENGEMBANGKAN APLIKASI INTERNET OF THINGS
-                  </p>
+              <div
+                class="col-md-4 mb-4"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                <div
+                  class="p-4 card shadow mb-5 bg-white h-100"
+                  style="border-radius: 20px"
+                >
+                  <div class="">
+                    <div class="text-center">
+                      <img src="assets/webds_img/img3.png" alt="" width="80%" />
+                    </div>
+                    <div class="text-center">
+                      <p class="font-weight-bold">
+                        MENGEMBANGKAN APLIKASI INTERNET OF THINGS
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -636,101 +614,141 @@
         </div>
       </div>
     </section>
+    <!--End Apa yang Bisa Anda Minta-->
 
-    <section class="py-5 border-bottom" style="background-color: #e7f4fa">
-      <div class="container col-md-10">
+    <!--Bagaimana Kami Bekerja-->
+    <section class="py-5" style="background-color: #e7f4fa">
+      <div class="container col-md-12 py-5">
         <img
-          src="assets/webds_img/acc/6.png"
+          src="assets/webds_img/acc/4.png"
           alt=""
-          class="position-absolute"
-          width="110%"
-          style="bottom: -50px; left: -180px"
+          width="20%"
+          class="img-fluid"
+          style="position: absolute; left: 0px; top: -350px"
+        />
+        <img
+          src="assets/home_img/acc/10.png"
+          alt=""
+          class="img-fluid"
+          style="position: absolute; bottom: 0px; left: -0px; width: 8%"
         />
         <img
           src="assets/imgAccF3.png"
           alt=""
           class="position-absolute"
-          style="bottom: 130px; left: 330px; width: 70%"
+          style="bottom: 20px; right: 0px; width: 60%"
         />
-        <div class="row align-items-center">
-          <!-- Bagian Kiri -->
-          <div class="col-md-4 mb-4">
-            <img
-              src="assets/webds_img/acc/5.png"
-              alt=""
-              class="position-absolute"
-              style="bottom: -50px; left: -110px"
-              width="30%"
-            />
-            <h3 class="text-primary">
+        <img
+          src="assets/home_img/acc/9.png"
+          alt=""
+          class="img-fluid"
+          style="position: absolute; top: 13%; left: 200px"
+          width="10%"
+        />
+        <div class="row justify-content-center py-5">
+          <div class="col-md-8 text-center">
+            <p class="font-weight-bold h3" style="color: #508ca5">
               Bagaimana Perjalanan Bekerja Bersama Kami?
-            </h3>
+            </p>
             <p>
               Perjalanan bersama kami dimulai dengan memahami kebutuhan Anda,
               diikuti oleh desain, implementasi, dan dukungan ERP untuk
               kesuksesan bisnis Anda.
             </p>
           </div>
-
-          <!-- Bagian Tengah -->
-          <div class="col-md-4">
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
             <div class="row">
-              <!-- Card Konsultasi -->
-              <div class="col-md-12 mb-4">
-                <div class="card shadow bg-white" style="border-radius: 20px">
-                  <div class="card-body text-center">
-                    <img
-                      src="assets/flow/img1.png"
-                      alt="Konsultasi"
-                      class="img-fluid mb-3"
-                    />
-                    <h4 class="card-title font-weight-bold">Konsultasi</h4>
-                    <p class="card-text" style="font-size: 12px">
-                      Perencanaan dan briefing dengan tim kami untuk membuat web
-                      custom sesuai keinginan Anda dengan kualitas terbaik dan
-                      harga tepat.
-                    </p>
+              <div class="col-md-4">
+                <div class="row">
+                  <div class="col-md-12 mb-4">
+                    <div
+                      class="card shadow bg-white"
+                      style="border-radius: 20px"
+                    >
+                      <div
+                        class="card-body text-center"
+                        data-aos="fade-up"
+                        data-aos-delay="100"
+                      >
+                        <img
+                          src="assets/flow/img1.png"
+                          alt="Konsultasi"
+                          class="img-fluid mb-3"
+                        />
+                        <p class="card-title font-weight-bold h5">
+                          1.Konsultasi
+                        </p>
+                        <p class="card-text" style="font-size: 12px">
+                          Perencanaan dan briefing dengan tim kami untuk membuat
+                          web custom sesuai keinginan Anda dengan kualitas
+                          terbaik dan harga tepat.
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
 
-          <div class="col-md-4">
-            <!-- Card Proyek Kontrak -->
-            <div class="col-md-12 mb-4">
-              <div class="card shadow bg-white" style="border-radius: 20px">
-                <div class="card-body text-center">
-                  <img
-                    src="assets/flow/img2.png"
-                    alt="Proyek Kontrak"
-                    class="img-fluid mb-3"
-                  />
-                  <h5 class="card-title font-weight-bold">Proyek Kontrak</h5>
-                  <p class="card-text" style="font-size: 12px">
-                    Membuat MoU dengan Anda dan kemudian tim kami akan
-                    mengembangkan proyek khusus seperti permintaan Anda.
-                  </p>
+              <div class="col-md-4">
+                <div class="row">
+                  <div class="col-md-12 mb-4">
+                    <div
+                      class="card shadow bg-white"
+                      style="border-radius: 20px"
+                    >
+                      <div
+                        class="card-body text-center"
+                        data-aos="fade-up"
+                        data-aos-delay="200"
+                      >
+                        <img
+                          src="assets/flow/img2.png"
+                          alt="Proyek Kontrak"
+                          class="img-fluid mb-3"
+                        />
+                        <h5 class="card-title font-weight-bold">
+                          2.Proyek Kontrak
+                        </h5>
+                        <p class="card-text" style="font-size: 12px">
+                          Membuat MoU dengan Anda dan kemudian tim kami akan
+                          mengembangkan proyek khusus seperti permintaan Anda.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <!-- Card Layanan Pemeliharaan -->
-            <div class="col-md-12">
-              <div class="card shadow bg-white" style="border-radius: 20px">
-                <div class="card-body text-center">
-                  <img
-                    src="assets/flow/img3.png"
-                    alt="Layanan Pemeliharaan"
-                    class="img-fluid mb-3"
-                  />
-                  <h4 class="card-title font-weight-bold">
-                    Layanan Pemeliharaan
-                  </h4>
-                  <p class="card-text" style="font-size: 12px">
-                    Setelah proyek selesai, kami akan memelihara web Anda agar
-                    tetap berfungsi dan minim kesalahan.
-                  </p>
+              <div class="col-md-4">
+                <div class="row">
+                  <!-- Card Konsultasi -->
+                  <div class="col-md-12 mb-4">
+                    <div
+                      class="card shadow bg-white"
+                      style="border-radius: 20px"
+                    >
+                      <div
+                        class="card-body text-center"
+                        data-aos="fade-up"
+                        data-aos-delay="300"
+                      >
+                        <img
+                          src="assets/flow/img3.png"
+                          alt="Layanan Pemeliharaan"
+                          class="img-fluid mb-3"
+                        />
+                        <p class="card-title font-weight-bold h5">
+                          3.Layanan Pemeliharaan
+                        </p>
+                        <p class="card-text p-1" style="font-size: 13px">
+                          Setelah proyek selesai, kami akan memelihara web Anda
+                          agar tetap berfungsi dan minim kesalahan.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -738,6 +756,7 @@
         </div>
       </div>
     </section>
+    <!-- End Bagaimana Kami Bekerja-->
 
     <section class="py-5" style="background-color: #e7f4fa">
       <div class="container col-md-8 py-5">
@@ -750,7 +769,9 @@
             </p>
             <p class="font-weight-light py-3 text-left">- Eleanor Roosevelt</p>
             <a href="/portfolio.html"
-              ><button class="btn btn-primary">Looks Our Portfolio</button>
+              ><button class="btn btn-primary">
+                Looks Our Portfolio <i class="fa-solid fa-arrow-right"></i>
+              </button>
             </a>
           </div>
         </div>
@@ -768,20 +789,30 @@
         <img
           src="assets/imgAccF1.png"
           alt=""
-          class="position-absolute"
-          style="bottom: -20px; left: 150px; width: 100%"
+          class="position-absolute img-fluid"
+          style="top: 0px; right: 0px; width: 80%"
         />
 
         <div class="row">
           <div class="col-md-6 d-flex flex-column justify-content-end">
-            <p class="" style="color: white; font-size: 18px">
+            <p class="" style="font-size: 18px">
               <b>IDMETAFORA</b>
             </p>
-            <p class="" style="color: white; font-size: 16px">
+            <p class="" style="font-size: 16px">
               <b>IDMETAFORA</b> adalah Perusahaan Solusi TI, bisnis utama kami
               adalah Pengembangan ERP. Kami juga mendukung klien kami dalam
               bidang Internet of Things, dan Desain & Pengembangan Web.
             </p>
+
+            <div class="mb-5">
+              <span class="mr-3">
+                <i class="fa-solid fa-phone"></i> +62 896 6423 0232</span
+              >
+
+              <span>
+                <i class="fa-solid fa-envelope"></i> info@idmetafora.com</span
+              >
+            </div>
           </div>
           <div class="col-md-6">
             <div
@@ -853,21 +884,21 @@
 
     <footer class="py-3" style="background-color: #e7f4fa">
       <div class="container">
-        <div class="row">
-          <div class="col-md-4">
+        <div class="row align-items-center text-center text-md-left">
+          <div class="col-md-4 mb-3 mb-md-0">
             <img
               src="assets/logo.png"
               alt="Logo"
               width="50%"
-              class="img-fluid mb-3"
+              class="img-fluid"
             />
           </div>
-          <div class="col-md-4 text-center">
+          <div class="col-md-4 mb-3 mb-md-0">
             <h6>© 2014-2024 PT Metafora Indonesia Teknologi</h6>
           </div>
 
-          <div class="col-md-4 text-right">
-            <div class="mx-4">
+          <div class="col-md-4 text-center text-md-right">
+            <div class="mx-2 mx-md-4">
               <a href="#"><i class="bi bi-instagram mx-2"></i></a>
               <a href="#"><i class="bi bi-facebook mx-2"></i></a>
               <a href="#"> <i class="bi bi-linkedin mx-2"></i></a>
