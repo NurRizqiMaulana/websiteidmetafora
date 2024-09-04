@@ -24,135 +24,10 @@
       href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
       rel="stylesheet"
     />
-
-    <style>
-      .custom-border {
-        background-color: #e0f7ff;
-        padding: 20px;
-        border-radius: 100px;
-        border: 2px solid black;
-        /* position: relative; */
-      }
-
-      .custom-card {
-        border-radius: 80px;
-        border: 2px solid #e74c3c;
-        padding: 50px;
-      }
-
-      .rocket {
-        position: absolute;
-        top: -30px;
-        left: -50px;
-        width: 100px;
-      }
-
-      .circle {
-        position: absolute;
-        bottom: -40px;
-        left: -60px;
-        width: 150px;
-        height: 150px;
-        background-color: white;
-        border-radius: 50%;
-        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
-      }
-
-      .circle1 {
-        position: absolute;
-        bottom: 240px;
-        right: -300px;
-        width: 300px;
-        height: 300px;
-        background-color: white;
-        border-radius: 50%;
-        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
-      }
-
-      .circle2 {
-        position: absolute;
-        bottom: 150px;
-        right: 350px;
-        width: 50px;
-        height: 50px;
-        background-color: red;
-        border-radius: 50px 0 0 5px;
-        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
-      }
-
-      .glow {
-        position: absolute;
-        top: -20px;
-        right: -40px;
-        width: 50px;
-        height: 50px;
-        background-color: rgba(255, 255, 255, 0.3);
-        border-radius: 50%;
-        filter: blur(20px);
-      }
-
-      /* Ubah warna tombol prev dan next */
-      .carousel-control-prev-icon,
-      .carousel-control-next-icon {
-        background-color: black;
-        /* Ubah warna sesuai keinginan, ini adalah warna biru */
-        border-radius: 50%;
-        border: 2px solid black;
-        width: 40px;
-        height: 40px;
-      }
-
-      /* Ubah warna latar belakang area di sekitar ikon */
-      .carousel-control-prev,
-      .carousel-control-next {
-        background-color: rgba(255, 255, 255, 0.5);
-        /* Ubah warna background tombol */
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-      }
-
-      .card-custom-1 {
-        width: 300px;
-        height: 200px;
-        background-color: #3498db;
-        border-radius: 50% 30% 60% 40% / 40% 60% 30% 50%;
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-        margin: 20px;
-      }
-
-      .card-custom-2 {
-        width: 300px;
-        height: 200px;
-        background-color: #3498db;
-        border-radius: 30% 50% 40% 60% / 60% 40% 50% 30%;
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-        margin: 20px;
-      }
-
-      .card-custom-3 {
-        width: 300px;
-        height: 200px;
-        background-color: #3498db;
-        border-radius: 60% 40% 30% 50% / 50% 30% 60% 40%;
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-        margin: 20px;
-      }
-
-      .card-custom-4 {
-        width: 300px;
-        height: 200px;
-        background-color: #3498db;
-        border-radius: 40% 60% 50% 30% / 30% 50% 40% 60%;
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-        margin: 20px;
-      }
-    </style>
   </head>
 
   <body>
     <!-- Navbar -->
-
     <nav
       class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow border-bottom animate__animated animate__fadeIn"
     >
@@ -262,8 +137,26 @@
           <li class="nav-item">
             <a class="nav-link" href="tech_news.html">Tech News</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Our Company</a>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Our Company
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="about_us.html">About Us</a>
+              <a class="dropdown-item" href="our_team.html">Our Teams</a>
+              <a class="dropdown-item" href="career.html"
+                >Career in IDMETAFORA</a
+              >
+              <a class="dropdown-item" href="contact_us.html">Contact</a>
+            </div>
           </li>
           <!-- Tambahkan margin pada tombol untuk memberikan jarak dari menu -->
           <li class="nav-item">
@@ -282,534 +175,667 @@
         </ul>
       </div>
     </nav>
-
     <!-- End Navbar -->
 
     <!-- Content -->
 
-    <header
-      class="border-bottom border-top py-5"
-      style="background-color: #d8eafe"
-    >
-      <div class="container col-md-10 pb-5">
-        <img
-          src="assets/bi_img/acc/1.png"
-          alt=""
-          class="position-absolute"
-          style="top: -20%; right: -100px"
-          width="60%"
-        />
-
+    <header class="border-bottom border-top" style="background-color: #d8eafe">
+      <div class="container col-md-12">
         <img
           src="assets/bi_img/acc/2.png"
           alt=""
-          class="position-absolute"
-          style="top: -20%; left: -110px"
-          width="10%"
+          class="img-fluid"
+          style="position: absolute; top: 0px; left: 0px"
+          width="7%"
         />
 
-        <div class="row align-items-center">
-          <div class="col-md-6">
-            <p class="font-weight-bold h1">
-              <span class="" style="color: #41496e"
-                >Jasa Pembuatan Sistem
-                <span
-                  style="
-                    text-decoration: underline;
-                    text-decoration-thickness: 15px;
-                    text-decoration-color: red;
-                  "
-                  >Busin</span
-                >sss
-                <span
-                  style="
-                    text-decoration: underline;
-                    text-decoration-thickness: 15px;
-                    text-decoration-color: #1090cb;
-                  "
-                  >Intelligence</span
-                ></span
-              >
-            </p>
-            <p class="font-weight-normal h6 py-3">
-              Jasa Pembuatan Sistem Business Intelligence merupakan salah satu
-              layanan yang ditawarkan oleh Tim IDMETAFORA. Hubungi Kami
-            </p>
-            <a href="#"
-              ><button
-                type="button"
+        <div class="row justify-content-center">
+          <div class="col-md-12">
+            <div class="row align-items-center">
+              <div class="col-md-6 mb-4" style="padding-left: 100px">
+                <p
+                  class="font-weight-bold h1 py-4"
+                  data-aos="fade-right"
+                  data-aos-delay="100"
+                >
+                  <span class="" style="color: #41496e"
+                    >Jasa Pembuatan Sistem
+                    <span
+                      style="
+                        text-decoration: underline;
+                        text-decoration-thickness: 15px;
+                        text-decoration-color: red;
+                      "
+                      >Busin</span
+                    >sss
+                    <span
+                      style="
+                        text-decoration: underline;
+                        text-decoration-thickness: 15px;
+                        text-decoration-color: #1090cb;
+                      "
+                      >Intelligence</span
+                    ></span
+                  >
+                </p>
+                <p
+                  class="font-weight-normal h6 py-3"
+                  data-aos="fade-right"
+                  data-aos-delay="200"
+                >
+                  Jasa Pembuatan Sistem Business Intelligence merupakan salah
+                  satu layanan yang ditawarkan oleh Tim IDMETAFORA. Hubungi Kami
+                </p>
+                <a href="#"
+                  ><button
+                    type="button"
+                    style="
+                      color: white;
+                      background-color: #007bff;
+                      border-color: #007bff;
+                      border-radius: 20px;
+                      padding: 5px 20px;
+                    "
+                    data-aos="fade-right"
+                    data-aos-delay="300"
+                  >
+                    <i class="fa-solid fa-rocket"></i>
+                    Hubungi Kami
+                  </button></a
+                >
+              </div>
+              <div
+                class="col-md-6"
                 style="
-                  color: white;
-                  background-color: #007bff;
-                  border-color: #007bff;
-                  border-radius: 20px;
-                  padding: 5px 20px;
+                  border-radius: 250px 0px 0px 250px;
+                  background-color: #1090cb;
+                  padding: 50px;
                 "
               >
-                Hubungi Kami
-              </button></a
-            >
-          </div>
-          <div class="col-md-6 d-none d-md-block">
-            <img
-              src="assets/bi_img/imgHeader.png"
-              alt=""
-              class="img-fluid"
-              width="100%"
-            />
+                <div
+                  class="align-self-end"
+                  data-aos="fade-down"
+                  data-aos-delay="400"
+                >
+                  <img
+                    src="assets/bi_img/imgHeader.png"
+                    alt=""
+                    class="img-fluid"
+                    width="80%"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </header>
 
-    <section class="py-5 border-bottom">
-      <div class="container col-md-10">
-        <div class="d-flex justify-content-center" style="gap: 30px">
-          <img
-            src="assets/company/pertamina.png"
-            width="10%"
-            alt=""
-            class="img-fluid"
-          />
-          <img
-            src="assets/company/mubadala.png"
-            width="10%"
-            alt=""
-            class="img-fluid"
-          />
-          <img
-            src="assets/company/candra.png"
-            width="10%"
-            alt=""
-            class="img-fluid"
-          />
-          <img
-            src="assets/company/molindo.png"
-            width="10%"
-            alt=""
-            class="img-fluid"
-          />
-          <img
-            src="assets/company/indonesia_power.png"
-            width="10%"
-            alt=""
-            class="img-fluid"
-          />
-          <img
-            src="assets/company/pesona.png"
-            width="5%"
-            alt=""
-            class="img-fluid"
-          />
-          <img
-            src="assets/company/brin.png"
-            width="5%"
-            alt=""
-            class="img-fluid"
-          />
-          <img
-            src="assets/company/batan.png"
-            width="5%"
-            alt=""
-            class="img-fluid"
-          />
-          <img
-            src="assets/company/semen.png"
-            width="5%"
-            alt=""
-            class="img-fluid"
-          />
+    <!-- Company -->
+    <section class="py-4 border-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div
+              class="d-flex flex-wrap justify-content-center align-items-center"
+              style="gap: 15px"
+            >
+              <img
+                src="assets/company/pertamina.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+              <img
+                src="assets/company/mubadala.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+              <img
+                src="assets/company/candra.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+              <img
+                src="assets/company/molindo.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+              <img
+                src="assets/company/indonesia_power.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+              <img
+                src="assets/company/pesona.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+              <img
+                src="assets/company/brin.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+              <img
+                src="assets/company/batan.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+              <img
+                src="assets/company/semen.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
+    <!-- End Company -->
 
-    <section class="pb-5 border-bottom" style="background-color: #d8eafe">
-      <img
-        src="assets/accounting_img/acc/1.png"
-        alt=""
-        width="100%"
-        class="position-absolute"
-      />
-
-      <div class="container col-md-8">
+    <!-- Core Erp -->
+    <section class="pb-5 border-bottom">
+      <div class="container col-md-12">
+        <img
+          src="assets/accounting_img/acc/1.png"
+          alt=""
+          width="100%"
+          class="img-fluid"
+          style="position: absolute; left: 0px"
+        />
         <img
           src="assets/bi_img/acc/3.png"
           alt=""
-          class="position-absolute"
-          style="top: 5%; right: -25%"
-          width="10%"
+          class="img-fluid"
+          style="position: absolute; top: 0px; right: 0px"
+          width="8%"
         />
+
         <div class="row">
-          <div class="col-md-12 py-3">
-            <h1 class="text-center font-weight-bold">
+          <div class="col-md-12 py-5">
+            <p
+              class="text-center font-weight-bold h2"
+              data-aos="fade-down"
+              data-aos-delay="100"
+            >
               Core <span class="text-danger">Erp</span>
-            </h1>
+            </p>
           </div>
         </div>
-        <div class="row py-5">
-          <div class="col-md-12 text-justify p-5">
-            <h4 class="text-center" style="font-size: 20px">
+        <div class="row justify-content-center pb-5">
+          <div class="col-md-9 text-justify py-5">
+            <p
+              class="text-center"
+              style="font-size: 20px"
+              data-aos="fade-down"
+              data-aos-delay="200"
+            >
               <span class="font-weight-bold pb-5"
-                >"ERP (Enterprise Resource Planning)</span
+                ><i class="fa-solid fa-quote-left"></i> ERP (Enterprise Resource
+                Planning)</span
               >
               adalah sebuah model system informasi yang memberikan kemungkinan
               bagi sebuah organisasi atau perusahaan untuk mengotomisasi dan
               mengintegrasikan proses-proses dalam bisnis utamanya. Sistem ini
               membantu perusahaan atau organisasi dalam mengatur proses
               bisnisnya agar menjadi satu kesatuan yang terintegrasi seperti
-              purchasing, warehouse, finance, audit, sales, dan lain
-              sebagainya."
-            </h4>
+              purchasing, warehouse, finance, audit, sales, dan lain sebagainya.
+              <i class="fa-solid fa-quote-right"></i>
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="py-5 border-bottom" style="background-color: #c4ecff">
-      <div class="container col-md-10">
+    <!-- Manfaat Sistem Business Intelligence -->
+    <section class="py-5 border-bottom" style="background-color: #e7f4fa">
+      <div class="container col-md-12">
+        <img
+          src="assets/bi_img/acc/7.png"
+          alt=""
+          class="img-fluid"
+          style="position: absolute; right: 0px; bottom: 0px"
+          width="6%"
+        />
         <div class="row">
           <div class="col-md-12 text-center">
-            <img
-              src="assets/tax_img/acc/4.png"
-              alt=""
-              class="position-absolute"
-              style="bottom: 0px; left: -210px"
-              width=" 10%"
-            />
-
-            <p class="font-weight-bold h3">
-              Manfaat Sistem Business Intelligence <br />
+            <p
+              class="font-weight-bold h4"
+              data-aos="fade-down"
+              data-aos-delay="100"
+            >
+              Manfaat Sistem Business Intelligence
               <span class="text-primary">IDMETAFORA</span>
             </p>
           </div>
         </div>
-        <div class="row justify-content-center py-5 text-center">
-          <div class="col-md-3">
-            <div
-              class="shadow p-3"
-              style="border-radius: 20px; background-color: #eff4f6"
-            >
-              <div class="">
-                <img src="assets/bi_img/icon/1.png" alt="" width="30%" />
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <div class="row py-5 text-center">
+              <div
+                class="col-md-3 mb-4"
+                data-aos="fade-down"
+                data-aos-delay="200"
+              >
+                <div
+                  class="shadow p-3 bg-white h-100"
+                  style="border-radius: 20px; border: 1px solid #004aad"
+                >
+                  <div class="">
+                    <img
+                      src="assets/bi_img/icon/1.png"
+                      alt=""
+                      class="img-fluid"
+                      width="50%"
+                    />
+                  </div>
+                  <div>
+                    <p class="font-weight-bold">
+                      Manfaat Sistem Business Intelligence 1
+                    </p>
+                    <p>
+                      Pencatatan transaksi dapat tetap berlangsung tanpa
+                      internet dan sistem akan menyingkronkan data ketika
+                      koneksi internet kembali.
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div>
-                <p class="font-weight-bold">
-                  Manfaat Sistem Business Intelligence 1
-                </p>
-                <p>
-                  Pencatatan transaksi dapat tetap berlangsung tanpa internet
-                  dan sistem akan menyingkronkan data ketika koneksi internet
-                  kembali.
-                </p>
-              </div>
-            </div>
-          </div>
 
-          <div class="col-md-3">
-            <div
-              class="shadow p-3"
-              style="border-radius: 20px; background-color: #eff4f6"
-            >
-              <div class="">
-                <img src="assets/bi_img/icon/2.png" alt="" width="30%" />
+              <div
+                class="col-md-3 mb-4"
+                data-aos="fade-down"
+                data-aos-delay="300"
+              >
+                <div
+                  class="shadow p-3 bg-white h-100"
+                  style="border-radius: 20px; border: 1px solid #004aad"
+                >
+                  <div class="">
+                    <img
+                      src="assets/bi_img/icon/2.png"
+                      alt=""
+                      class="img-fluid"
+                      width="50%"
+                    />
+                  </div>
+                  <div>
+                    <p class="font-weight-bold">
+                      Manfaat Sistem Business Intelligence 2
+                    </p>
+                    <p class="">
+                      Anda bisa mengelola pelanggan dan penjualan dari semua
+                      cabang, serta mengaskses informasi lainnya secara
+                      real-time.
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div>
-                <p class="font-weight-bold">
-                  Manfaat Sistem Business Intelligence 2
-                </p>
-                <p class="">
-                  Anda bisa mengelola pelanggan dan penjualan dari semua cabang,
-                  serta mengaskses informasi lainnya secara real-time.
-                </p>
-              </div>
-            </div>
-          </div>
 
-          <div class="col-md-3">
-            <div
-              class="shadow p-3"
-              style="border-radius: 20px; background-color: #eff4f6"
-            >
-              <div class="">
-                <img src="assets/bi_img/icon/3.png" alt="" width="30%" />
+              <div
+                class="col-md-3 mb-4"
+                data-aos="fade-down"
+                data-aos-delay="400"
+              >
+                <div
+                  class="shadow p-3 bg-white h-100"
+                  style="border-radius: 20px; border: 1px solid #004aad"
+                >
+                  <div class="">
+                    <img
+                      src="assets/bi_img/icon/3.png"
+                      alt=""
+                      class="img-fluid"
+                      width="50%"
+                    />
+                  </div>
+                  <div>
+                    <p class="font-weight-bold">
+                      Manfaat Sistem Business Intelligence 3
+                    </p>
+                    <p class="">
+                      Software kasir ini dapat digunakan di perangkat apapun
+                      selama terkoneksi internet. Anda bisa memantau penjualan
+                      kapanpun dan di manapun.
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div>
-                <p class="font-weight-bold">
-                  Manfaat Sistem Business Intelligence 3
-                </p>
-                <p class="">
-                  Software kasir ini dapat digunakan di perangkat apapun selama
-                  terkoneksi internet. Anda bisa memantau penjualan kapanpun dan
-                  di manapun.
-                </p>
-              </div>
-            </div>
-          </div>
 
-          <div class="col-md-3">
-            <div
-              class="shadow p-3"
-              style="border-radius: 20px; background-color: #eff4f6"
-            >
-              <div class="">
-                <img src="assets/bi_img/icon/4.png" alt="" width="30%" />
-              </div>
-              <div>
-                <p class="font-weight-bold">
-                  Manfaat Sistem Business Intelligence 4
-                </p>
-                <p class="">
-                  Dengan data yang tersentralisasi, Anda bisa meninjau performa
-                  bisnis Anda melalui tampilan analitik yang lengkap.
-                </p>
+              <div
+                class="col-md-3 mb-4"
+                data-aos="fade-down"
+                data-aos-delay="500"
+              >
+                <div
+                  class="shadow p-3 bg-white h-100"
+                  style="border-radius: 20px; border: 1px solid #004aad"
+                >
+                  <div class="">
+                    <img
+                      src="assets/bi_img/icon/4.png"
+                      alt=""
+                      class="img-fluid"
+                      width="50%"
+                    />
+                  </div>
+                  <div>
+                    <p class="font-weight-bold">
+                      Manfaat Sistem Business Intelligence 4
+                    </p>
+                    <p class="">
+                      Dengan data yang tersentralisasi, Anda bisa meninjau
+                      performa bisnis Anda melalui tampilan analitik yang
+                      lengkap.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </section>
+    <!--End Manfaat-->
+
+    <!-- Fitur-Fitur -->
+    <section class="py-5">
+      <div class="container col-md-12 pb-5">
         <div class="row">
-          <div class="col-md-12 text-center">
-            <a href="" class="btn btn-primary text-center"> Know More</a>
-            <img
-              src="assets/bi_img/acc/7.png"
-              alt=""
-              class="position-absolute"
-              style="right: -105px; top: 0px"
-              width="6%"
-            />
+          <div class="col-md-12">
+            <h2
+              class="text-center mb-5 font-weight-bold pt-5"
+              data-aos="fade-down"
+              data-aos-delay="100"
+            >
+              <span class="text-danger">Fitur-Fitur <br /></span>Sistem Business
+              Intelligence
+              <span class="text-primary"> IDMETAFORA</span>
+            </h2>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <img
+            src="assets/bi_img/acc/4.png"
+            class="img-fluid"
+            width="40%"
+            alt=""
+            style="position: absolute; bottom: -40px"
+          />
+          <div
+            class="col-md-6"
+            style="
+              border-radius: 150px;
+              border: 1px solid black;
+              background-color: #f4f9ff;
+              padding: 50px;
+            "
+          >
+            <div class="row">
+              <div
+                class="col-md-6 mb-4"
+                data-aos="fade-down"
+                data-aos-delay="200"
+              >
+                <div
+                  class="text-center p-3 bg-white shadow"
+                  style="border-radius: 50px; border: 2px solid red"
+                >
+                  <img
+                    src="assets/bi_img/icon/f1.png"
+                    class="img-fluid"
+                    width="50%"
+                    alt="Fitur Sistem Business Intelligence 1"
+                  />
+                  <p class="pt-3" style="font-size: 14px; font-weight: bold">
+                    Fitur Sistem Business Intelligence 1
+                  </p>
+                  <p>
+                    Fitur yang memudahkan anda dalam pengkategorian sebuah
+                    produk yang anda miliki.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="col-md-6 mb-4"
+                data-aos="fade-down"
+                data-aos-delay="300"
+              >
+                <div
+                  class="text-center p-3 bg-white shadow"
+                  style="border-radius: 50px; border: 2px solid red"
+                >
+                  <img
+                    src="assets/bi_img/icon/f2.png"
+                    class="img-fluid"
+                    width="50%"
+                    alt="Fitur Sistem Business Intelligence 2"
+                  />
+                  <p class="pt-3" style="font-size: 14px; font-weight: bold">
+                    Fitur Sistem Business Intelligence 2
+                  </p>
+                  <p>
+                    Fitur pencarian untuk memudahkan anda dalam mencari produk
+                    yang ingin anda tampilkan.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="col-md-6 mb-4"
+                data-aos="fade-down"
+                data-aos-delay="400"
+              >
+                <div
+                  class="text-center p-3 bg-white shadow"
+                  style="border-radius: 50px; border: 2px solid red"
+                >
+                  <img
+                    src="assets/bi_img/icon/f3.png"
+                    class="img-fluid"
+                    width="50%"
+                    alt="Fitur Sistem Business Intelligence 3"
+                  />
+                  <p class="pt-3" style="font-size: 14px; font-weight: bold">
+                    Fitur Sistem Business Intelligence 3
+                  </p>
+                  <p>
+                    Kelola data barang setiap saat yang masuk kedalam gudang
+                    penyimpanan anda.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="col-md-6 mb-4"
+                data-aos="fade-down"
+                data-aos-delay="500"
+              >
+                <div
+                  class="text-center p-3 bg-white shadow"
+                  style="border-radius: 50px; border: 2px solid red"
+                >
+                  <img
+                    src="assets/bi_img/icon/f4.png"
+                    class="img-fluid"
+                    width="50%"
+                    alt="Fitur Sistem Business Intelligence"
+                  />
+                  <p class="pt-3" style="font-size: 14px; font-weight: bold">
+                    Fitur Sistem Business Intelligence 4
+                  </p>
+                  <p>
+                    Kelola data barang setiap saat yang keluar kedalam gudang
+                    pneyimpanan anda.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- End Fitur-->
 
-    <section class="py-5 border-bottom">
-      <h2 class="text-center mb-5 font-weight-bold pt-5">
-        <span class="text-danger">Fitur-Fitur <br /></span> Business
-        Intelligence <span class="text-primary"> IDMETAFORA</span>
-      </h2>
-      <div class="container col-md-8 pb-5">
-        <img
-          src="assets/bi_img/acc/4.png"
-          alt=""
-          class="position-absolute"
-          style="bottom: -40px; left: 90px"
-          width="80%"
-        />
-
-        <img
-          src="assets/bi_img/acc/8.png"
-          alt=""
-          class="position-absolute"
-          style="top: -50px; left: -210px"
-          width="10%"
-        />
-
-        <img
-          src="assets/bi_img/acc/9.png"
-          alt=""
-          class="position-absolute"
-          style="top: -50px; right: -210px"
-          width="9%"
-        />
-        <div
-          class="col-md-12"
-          style="
-            background-color: #eff4f6;
-            border-radius: 200px;
-            border: 1px solid black;
-            padding: 50px;
-          "
-        >
-          <div class="row justify-content-center">
-            <div class="col-md-4 mb-4">
-              <div class="custom-card text-center p-3 bg-white">
-                <img
-                  src="assets/audit_img/icon/5.png"
-                  class="img-fluid"
-                  width="50%"
-                  alt="Purchasing System"
-                />
-                <p class="" style="font-size: 14px; font-weight: bold">
-                  Fitur Sistem Business Intelligence 1
-                </p>
-                <p>
-                  Fitur yang memudahkan anda dalam pengkategorian sebuah produk
-                  yang anda miliki.
-                </p>
-              </div>
-            </div>
-            <div class="col-md-4 mb-4">
-              <div class="custom-card text-center p-3 bg-white">
-                <img
-                  src="assets/audit_img/icon/6.png"
-                  class="img-fluid"
-                  width="50%"
-                  alt="Accounting System"
-                />
-                <p class="" style="font-size: 14px; font-weight: bold">
-                  Fitur Sistem Business Intelligence 2
-                </p>
-                <p>
-                  Fitur pencarian untuk memudahkan anda dalam mencari produk
-                  yang ingin anda tampilkan.
-                </p>
-              </div>
-            </div>
-            <div class="col-md-4 mb-4">
-              <div class="custom-card text-center p-3 bg-white">
-                <img
-                  src="assets/audit_img/icon/7.png"
-                  class="img-fluid"
-                  width="50%"
-                  alt="Business Intelligence"
-                />
-                <p class="" style="font-size: 14px; font-weight: bold">
-                  Fitur Sistem Business Intelligence 3
-                </p>
-                <p>
-                  Kelola data barang setiap saat yang masuk kedalam gudang
-                  pneyimpanan anda.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
+    <!-- Nilai-Nilai Per businesses Kami -->
     <section
-      class="pb-5 border-bottom"
+      class="py-5 border-bottom"
       style="
         background-image: url('assets/pos_img/bgPos2.png');
         background-size: cover;
         background-position: center;
       "
     >
-      <div class="container col-md-8">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <p class="mb-5 font-weight-bold py-5 h3">
-              NIlai-Nilai Perusahaan Kami
-            </p>
-            <img
-              src="assets/bi_img/acc/5.png"
-              alt=""
-              class="position-absolute"
-              style="top: 0; right: 0"
-              width="10%"
-            />
-            <img
-              src="assets/bi_img/acc/6.png"
-              alt=""
-              class="position-absolute"
-              style="top: 0; left: 0"
-              width="25%"
-            />
+      <div class="container col-md-12">
+        <div class="row justify-content-center">
+          <div class="col-md-10 text-center">
+            <div data-aos="fade-down" data-aos-delay="200">
+              <p class="mb-5 font-weight-bold py-5 h2">
+                NIlai-Nilai Perusahaan Kami
+              </p>
+              <img
+                src="assets/bi_img/acc/5.png"
+                alt=""
+                class="position-absolute"
+                style="top: 0; right: 0"
+                width="10%"
+              />
+              <img
+                src="assets/bi_img/acc/6.png"
+                alt=""
+                class="position-absolute"
+                style="top: 0; left: -20px"
+                width="25%"
+              />
+            </div>
           </div>
         </div>
-        <div class="col-md-12">
-          <div class="row">
-            <div class="col-md-6 mb-4">
-              <div class="text-center p-3">
-                <img
-                  src="assets/accounting_img/acc/4.png"
-                  alt=""
-                  class="position-absolute"
-                  style="bottom: 50px; left: -5px"
-                  width="30%"
-                />
-                <img
-                  src="assets/audit_img/acc/8.png"
-                  alt=""
-                  class="position-absolute"
-                  style="bottom: 100px; left: -30%"
-                  width="20%"
-                />
-                <img
-                  src="assets/bi_img/imgPeople.png"
-                  class="img-fluid mb-4"
-                  width="100%"
-                  alt="image nilai"
-                />
+
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 mb-4">
+                <div class="text-center p-3">
+                  <img
+                    src="assets/accounting_img/acc/4.png"
+                    alt=""
+                    class="img-fluid"
+                    style="position: absolute; bottom: 30%; left: -5px"
+                    width="30%"
+                  />
+
+                  <img
+                    src="assets/bi_img/imgPeople.png"
+                    class="img-fluid mb-4"
+                    width="100%"
+                    alt="image nilai"
+                    data-aos="fade-right"
+                    data-aos-delay="100"
+                  />
+                </div>
               </div>
-            </div>
-            <div class="col-md-6 mb-4">
-              <div class="row">
-                <div class="col-md-12 d-flex justify-content-center">
-                  <div class="">
-                    <img
-                      src="assets/iot_img/value/img.png"
-                      alt=""
-                      width="80px"
-                    />
-                  </div>
-                  <div class="row px-3">
-                    <div class="col-md-12">
-                      <h5><b>Cepat</b></h5>
-                      <p class="font-weight-light">
-                        Meningkatnya jumlah perangkat yang terhubung memengaruhi
-                        setiap area kehidupan kita
-                      </p>
+              <div class="col-md-6 mb-4">
+                <div class="row">
+                  <div
+                    class="col-md-12 mb-5 d-flex justify-content-center"
+                    data-aos="fade-down"
+                    data-aos-delay="200"
+                  >
+                    <div class="">
+                      <img
+                        src="assets/iot_img/value/img.png"
+                        alt=""
+                        width="80px"
+                      />
+                    </div>
+                    <div class="row px-3">
+                      <div class="col-md-12">
+                        <p class="font-weight-bold h5">Cepat</p>
+                        <p class="font-weight-light">
+                          Meningkatnya jumlah perangkat yang terhubung
+                          memengaruhi setiap area kehidupan kita
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="row">
-                <div class="col-md-12 d-flex justify-content-center">
-                  <div class="">
-                    <img
-                      src="assets/iot_img/value/img1.png"
-                      alt=""
-                      width="80px"
-                    />
-                  </div>
-                  <div class="row px-3">
-                    <div class="col-md-12">
-                      <h5><b>Spirit</b></h5>
-                      <p class="font-weight-light">
-                        Memberikan pekerjaan dan pelayanan terbaik.
-                      </p>
+                <div class="row">
+                  <div
+                    class="col-md-12 mb-5 d-flex justify-content-center"
+                    data-aos="fade-down"
+                    data-aos-delay="300"
+                  >
+                    <div class="">
+                      <img
+                        src="assets/iot_img/value/img1.png"
+                        alt=""
+                        width="80px"
+                      />
+                    </div>
+                    <div class="row px-3">
+                      <div class="col-md-12">
+                        <p class="font-weight-bold h5">Spirit</p>
+                        <p class="font-weight-light">
+                          Memberikan pekerjaan dan pelayanan terbaik.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="row">
-                <div class="col-md-12 d-flex justify-content-center">
-                  <div class="">
-                    <img
-                      src="assets/iot_img/value/img3.png"
-                      alt=""
-                      width="80px"
-                    />
-                  </div>
-                  <div class="row px-3">
-                    <div class="col-md-12">
-                      <h5><b>Otomatisasi</b></h5>
-                      <p class="font-weight-light">
-                        Bagi kami, Inovasi adalah suatu keharusan untuk membuat
-                        bisnis tetap relevan.
-                      </p>
+                <div class="row">
+                  <div
+                    class="col-md-12 mb-5 d-flex justify-content-center"
+                    data-aos="fade-down"
+                    data-aos-delay="400"
+                  >
+                    <div class="">
+                      <img
+                        src="assets/iot_img/value/img3.png"
+                        alt=""
+                        width="80px"
+                      />
+                    </div>
+                    <div class="row px-3">
+                      <div class="col-md-12">
+                        <p class="font-weight-bold h5">Otomatisasi</p>
+                        <p class="font-weight-light">
+                          Bagi kami, Inovasi adalah suatu keharusan untuk
+                          membuat bisnis tetap relevan.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="row">
-                <div class="col-md-12 d-flex justify-content-center">
-                  <div class="">
-                    <img
-                      src="assets/iot_img/value/img4.png"
-                      alt=""
-                      width="80px"
-                    />
-                  </div>
-                  <div class="row px-3">
-                    <div class="col-md-12">
-                      <h5><b>Terpercaya</b></h5>
-                      <p class="font-weight-light">
-                        Memberikan pekerjaan dan layanan terbaik.
-                      </p>
+                <div class="row">
+                  <div
+                    class="col-md-12 mb-5 d-flex justify-content-center"
+                    data-aos="fade-down"
+                    data-aos-delay="500"
+                  >
+                    <div class="">
+                      <img
+                        src="assets/iot_img/value/img4.png"
+                        alt=""
+                        width="80px"
+                      />
+                    </div>
+                    <div class="row px-3">
+                      <div class="col-md-12">
+                        <p class="font-weight-bold h5">Terpercaya</p>
+                        <p class="font-weight-light">
+                          Memberikan pekerjaan dan layanan terbaik.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -819,6 +845,7 @@
         </div>
       </div>
     </section>
+    <!-- End Nilai-Nilai Per businesses Kami -->
 
     <section class="py-5" style="background-color: #e7f4fa">
       <div class="container col-md-8">
@@ -831,20 +858,30 @@
         <img
           src="assets/imgAccF1.png"
           alt=""
-          class="position-absolute"
-          style="bottom: -20px; left: 150px; width: 100%"
+          class="position-absolute img-fluid"
+          style="top: 0px; right: 0px; width: 80%"
         />
 
         <div class="row">
           <div class="col-md-6 d-flex flex-column justify-content-end">
-            <p class="" style="color: white; font-size: 18px">
+            <p class="" style="font-size: 18px">
               <b>IDMETAFORA</b>
             </p>
-            <p class="" style="color: white; font-size: 16px">
+            <p class="" style="font-size: 16px">
               <b>IDMETAFORA</b> adalah Perusahaan Solusi TI, bisnis utama kami
               adalah Pengembangan ERP. Kami juga mendukung klien kami dalam
               bidang Internet of Things, dan Desain & Pengembangan Web.
             </p>
+
+            <div class="mb-5">
+              <span class="mr-3">
+                <i class="fa-solid fa-phone"></i> +62 896 6423 0232</span
+              >
+
+              <span>
+                <i class="fa-solid fa-envelope"></i> info@idmetafora.com</span
+              >
+            </div>
           </div>
           <div class="col-md-6">
             <div
@@ -916,21 +953,21 @@
 
     <footer class="py-3" style="background-color: #e7f4fa">
       <div class="container">
-        <div class="row">
-          <div class="col-md-4">
+        <div class="row align-items-center text-center text-md-left">
+          <div class="col-md-4 mb-3 mb-md-0">
             <img
               src="assets/logo.png"
               alt="Logo"
               width="50%"
-              class="img-fluid mb-3"
+              class="img-fluid"
             />
           </div>
-          <div class="col-md-4 text-center">
+          <div class="col-md-4 mb-3 mb-md-0">
             <h6>© 2014-2024 PT Metafora Indonesia Teknologi</h6>
           </div>
 
-          <div class="col-md-4 text-right">
-            <div class="mx-4">
+          <div class="col-md-4 text-center text-md-right">
+            <div class="mx-2 mx-md-4">
               <a href="#"><i class="bi bi-instagram mx-2"></i></a>
               <a href="#"><i class="bi bi-facebook mx-2"></i></a>
               <a href="#"> <i class="bi bi-linkedin mx-2"></i></a>
@@ -947,6 +984,11 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.6/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script
+  src="https://kit.fontawesome.com/f606adbcd6.js"
+  crossorigin="anonymous"
+></script>
 
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>

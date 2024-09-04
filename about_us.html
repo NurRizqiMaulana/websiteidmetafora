@@ -25,7 +25,129 @@
       rel="stylesheet"
     />
 
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+
     <style>
+      .timeline_area {
+        position: relative;
+        z-index: 1;
+      }
+      .single-timeline-area {
+        position: relative;
+        z-index: 1;
+        padding-left: 180px;
+      }
+      @media only screen and (max-width: 575px) {
+        .single-timeline-area {
+          padding-left: 100px;
+        }
+      }
+      .single-timeline-area .timeline-date {
+        position: absolute;
+        width: 180px;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -ms-grid-row-align: center;
+        align-items: center;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        padding-right: 60px;
+      }
+      @media only screen and (max-width: 575px) {
+        .single-timeline-area .timeline-date {
+          width: 100px;
+        }
+      }
+      .single-timeline-area .timeline-date::after {
+        position: absolute;
+        width: 3px;
+        height: 100%;
+        content: "";
+        background-color: #ebebeb;
+        top: 0;
+        right: 30px;
+        z-index: 1;
+      }
+      .single-timeline-area .timeline-date::before {
+        position: absolute;
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        background-color: #d31a1b;
+        content: "";
+        top: 50%;
+        right: 26px;
+        z-index: 5;
+        margin-top: -5.5px;
+      }
+      .single-timeline-area .timeline-date p {
+        margin-bottom: 0;
+        color: #020710;
+        font-size: 13px;
+        text-transform: uppercase;
+        font-weight: 500;
+      }
+      .single-timeline-area .single-timeline-content {
+        position: relative;
+        z-index: 1;
+        padding: 30px 30px 25px;
+        border-radius: 6px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        -webkit-box-shadow: 0 0.25rem 1rem 0 rgba(47, 91, 234, 0.125);
+        box-shadow: 0 0.25rem 1rem 0 rgba(47, 91, 234, 0.125);
+        border: 1px solid #ebebeb;
+      }
+      @media only screen and (max-width: 575px) {
+        .single-timeline-area .single-timeline-content {
+          padding: 20px;
+        }
+      }
+      .single-timeline-area .single-timeline-content .timeline-icon {
+        -webkit-transition-duration: 500ms;
+        transition-duration: 500ms;
+        width: 30px;
+        height: 30px;
+        background-color: #3f43fd;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 30px;
+        flex: 0 0 30px;
+        text-align: center;
+        max-width: 30px;
+        border-radius: 50%;
+        margin-right: 15px;
+      }
+      .single-timeline-area .single-timeline-content .timeline-icon i {
+        color: #ffffff;
+        line-height: 30px;
+      }
+      .single-timeline-area .single-timeline-content .timeline-text h6 {
+        -webkit-transition-duration: 500ms;
+        transition-duration: 500ms;
+      }
+      .single-timeline-area .single-timeline-content .timeline-text p {
+        font-size: 13px;
+        margin-bottom: 0;
+      }
+      .single-timeline-area .single-timeline-content:hover .timeline-icon,
+      .single-timeline-area .single-timeline-content:focus .timeline-icon {
+        background-color: #181a92;
+      }
+      .single-timeline-area .single-timeline-content:hover .timeline-text h6,
+      .single-timeline-area .single-timeline-content:focus .timeline-text h6 {
+        color: #3f43fd;
+      }
       .custom-border {
         background-color: #e0f7ff;
         padding: 20px;
@@ -152,7 +274,6 @@
 
   <body>
     <!-- Navbar -->
-
     <nav
       class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow border-bottom animate__animated animate__fadeIn"
     >
@@ -262,8 +383,26 @@
           <li class="nav-item">
             <a class="nav-link" href="tech_news.html">Tech News</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Our Company</a>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Our Company
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="about_us.html">About Us</a>
+              <a class="dropdown-item" href="our_team.html">Our Teams</a>
+              <a class="dropdown-item" href="career.html"
+                >Career in IDMETAFORA</a
+              >
+              <a class="dropdown-item" href="contact_us.html">Contact</a>
+            </div>
           </li>
           <!-- Tambahkan margin pada tombol untuk memberikan jarak dari menu -->
           <li class="nav-item">
@@ -282,39 +421,35 @@
         </ul>
       </div>
     </nav>
-
     <!-- End Navbar -->
 
     <!-- Content -->
-
     <header
-      class="border-bottom border-top py-5"
+      class="border-top border-bottom py-5"
       style="background-color: #d8eafe"
     >
-      <div class="container col-md-10 pb-5">
+      <div class="container col-md-10 pb-5 position-relative">
         <img
           src="assets/about_img/acc/1.png"
-          alt=""
+          alt="Decorative Image"
           class="position-absolute"
-          style="top: -16%; right: -105px"
-          width="50%"
+          style="top: -16%; right: -110px"
+          width="48%"
         />
 
         <div class="row align-items-center">
           <div class="col-md-6">
-            <p class="font-weight-bold h2 py-3">
+            <h2 class="font-weight-bold py-3">
               About <span class="text-danger">Us</span>
-            </p>
+            </h2>
             <p class="font-weight-light">
-              <span class="font-weight-bold"
-                >IDMETAFORA Indonesia Teknologi </span
-              >adalah spesialis Solusi Teknologi Informasi yang berbasis di Jawa
-              Tengah, Indonesia. Teknologi dan sistem kami digunakan untuk
-              mengelola dan mengintegrasikan proses bisnis inti. Perangkat lunak
-              perencanaan sumber daya perusahaan kami menawarkan solusi sistem
-              tunggal yang mengintegrasikan proses di seluruh bisnis. <br />
+              <strong>IDMETAFORA Indonesia Teknologi</strong> adalah spesialis
+              Solusi Teknologi Informasi yang berbasis di Jawa Tengah,
+              Indonesia. Teknologi dan sistem kami digunakan untuk mengelola dan
+              mengintegrasikan proses bisnis inti. Perangkat lunak perencanaan
+              sumber daya perusahaan kami menawarkan solusi sistem tunggal yang
+              mengintegrasikan proses di seluruh bisnis.
             </p>
-
             <p class="font-weight-light">
               IDMETAFORA menjalankan perusahaan pengembangan ERP dengan tim
               ahli. Sejak kami memulai bisnis ini, kami melayani pengembangan
@@ -334,7 +469,7 @@
           <div class="col-md-6 text-right">
             <img
               src="assets/about_img/imgHeader.png"
-              alt=""
+              alt="Header Image"
               class="img-fluid"
               width="80%"
             />
@@ -343,93 +478,110 @@
       </div>
     </header>
 
-    <section class="py-5 border-bottom">
-      <div class="container col-md-10">
-        <div class="d-flex justify-content-center" style="gap: 30px">
-          <img
-            src="assets/company/pertamina.png"
-            width="10%"
-            alt=""
-            class="img-fluid"
-          />
-          <img
-            src="assets/company/mubadala.png"
-            width="10%"
-            alt=""
-            class="img-fluid"
-          />
-          <img
-            src="assets/company/candra.png"
-            width="10%"
-            alt=""
-            class="img-fluid"
-          />
-          <img
-            src="assets/company/molindo.png"
-            width="10%"
-            alt=""
-            class="img-fluid"
-          />
-          <img
-            src="assets/company/indonesia_power.png"
-            width="10%"
-            alt=""
-            class="img-fluid"
-          />
-          <img
-            src="assets/company/pesona.png"
-            width="5%"
-            alt=""
-            class="img-fluid"
-          />
-          <img
-            src="assets/company/brin.png"
-            width="5%"
-            alt=""
-            class="img-fluid"
-          />
-          <img
-            src="assets/company/batan.png"
-            width="5%"
-            alt=""
-            class="img-fluid"
-          />
-          <img
-            src="assets/company/semen.png"
-            width="5%"
-            alt=""
-            class="img-fluid"
-          />
+    <!-- Company -->
+    <section class="py-4 border-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div
+              class="d-flex flex-wrap justify-content-center align-items-center"
+              style="gap: 15px"
+            >
+              <img
+                src="assets/company/pertamina.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+              <img
+                src="assets/company/mubadala.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+              <img
+                src="assets/company/candra.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+              <img
+                src="assets/company/molindo.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+              <img
+                src="assets/company/indonesia_power.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+              <img
+                src="assets/company/pesona.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+              <img
+                src="assets/company/brin.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+              <img
+                src="assets/company/batan.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+              <img
+                src="assets/company/semen.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
+    <!-- End Company -->
 
     <section class="border-bottom" style="background-color: #d8eafe">
       <img
         src="assets/accounting_img/acc/1.png"
         alt=""
         width="100%"
+        height="90%"
         class="position-absolute"
+        data-aos="fade-in"
+        data-aos-duration="1000"
       />
 
       <div
         class="container col-md-8 d-flex flex-column justify-content-center align-items-center"
         style="width: 100%; height: 480px"
       >
-        <div class="row">
+        <div class="row" data-aos="fade-up" data-aos-duration="1000">
           <div class="col-md-12">
             <h1 class="text-center font-weight-bold">
               Visi <span class="text-danger">Kami</span>
             </h1>
           </div>
         </div>
-        <div class="row py-5">
+        <div
+          class="row py-5"
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="1000"
+        >
           <div class="col-md-12">
             <h4 class="text-center" style="font-size: 20px">
-              <span class="font-weight-bold"
-                ><i class="fa-solid fa-quote-left"></i> Menjadi perusahaan ERP
-                terbaik di Dunia. <i class="fa-solid fa-quote-right"></i
-              ></span>
+              <span class="font-weight-bold">
+                <i class="fa-solid fa-quote-left"></i> Menjadi perusahaan ERP
+                terbaik di Dunia. <i class="fa-solid fa-quote-right"></i>
+              </span>
             </h4>
           </div>
         </div>
@@ -439,7 +591,11 @@
     <section class="pb-5 border-bottom">
       <div class="container col-md-8">
         <div class="row">
-          <div class="col-md-12 text-center">
+          <div
+            class="col-md-12 text-center"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <p class="mb-5 font-weight-bold py-5 h3">
               Misi <span class="text-danger">Kami</span>
             </p>
@@ -450,19 +606,27 @@
               class="position-absolute"
               style="top: 0; right: 0"
               width="25%"
+              data-aos="fade-in"
+              data-aos-duration="1000"
             />
           </div>
         </div>
         <div class="col-md-12">
           <div class="row">
-            <div class="col-md-6 mb-4">
+            <div
+              class="col-md-6 mb-4"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
               <div class="text-center p-3">
                 <img
                   src="assets/accounting_img/acc/4.png"
                   alt=""
                   class="position-absolute"
-                  style="bottom: 50px; left: -5px"
+                  style="bottom: 9px; left: -25px"
                   width="30%"
+                  data-aos="fade-in"
+                  data-aos-duration="1000"
                 />
 
                 <img
@@ -470,17 +634,26 @@
                   class="img-fluid mb-4"
                   width="100%"
                   alt="image nilai"
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
                 />
               </div>
             </div>
+
             <div class="col-md-6 mb-4">
-              <div class="row">
+              <div
+                class="row mb-4"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              >
                 <div class="col-md-12 d-flex justify-content-center">
                   <div class="">
                     <img
                       src="assets/about_img/icon/1.png"
                       alt=""
                       width="80px"
+                      data-aos="zoom-in"
+                      data-aos-duration="1000"
                     />
                   </div>
                   <div class="row px-3">
@@ -495,13 +668,20 @@
                 </div>
               </div>
 
-              <div class="row">
+              <div
+                class="row mb-4"
+                data-aos="fade-left"
+                data-aos-delay="300"
+                data-aos-duration="1000"
+              >
                 <div class="col-md-12 d-flex justify-content-center">
                   <div class="">
                     <img
                       src="assets/about_img/icon/2.png"
                       alt=""
                       width="80px"
+                      data-aos="zoom-in"
+                      data-aos-duration="1000"
                     />
                   </div>
                   <div class="row px-3">
@@ -516,13 +696,20 @@
                 </div>
               </div>
 
-              <div class="row">
+              <div
+                class="row mb-4"
+                data-aos="fade-left"
+                data-aos-delay="600"
+                data-aos-duration="1000"
+              >
                 <div class="col-md-12 d-flex justify-content-center">
                   <div class="">
                     <img
                       src="assets/about_img/icon/3.png"
                       alt=""
                       width="80px"
+                      data-aos="zoom-in"
+                      data-aos-duration="1000"
                     />
                   </div>
                   <div class="row px-3">
@@ -542,245 +729,272 @@
       </div>
     </section>
 
-    <section class="py-5 border-bottom" style="background-color: #e7f4fa">
-      <div class="container col-md-12">
-        <img
-          src="assets/about_img/acc/6.png"
-          alt=""
-          class="position-absolute"
-          style="top: 0px; right: 0%"
-          width="15%"
-        />
-        <div class="row">
-          <div class="col-md-12 text-center py-5">
-            <p class="h2 font-weight-bold">
-              Perjalanan <span class="text-danger">Kami</span>
-            </p>
+    <section class="timeline_area section_padding_130">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-8 col-lg-6">
+            <!-- Section Heading-->
+            <div class="section_heading text-center" data-aos="fade-up">
+              <h3 class="mt-4">Perjalanan Kami</h3>
+              <div class="line"></div>
+            </div>
           </div>
         </div>
         <div class="row">
-          <div
-            class="col-md-12 d-flex justify-content-center align-items-center"
-          >
-            <div class="col-md-3">
-              <p class="h3">2014</p>
-            </div>
-
-            <div class="col-md-3">
-              <p class="h3">2015</p>
-            </div>
-
-            <div class="col-md-3">
-              <p class="h3">2016</p>
-            </div>
-
-            <div class="col-md-3">
-              <p class="h3">2017</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-12">
-            <img
-              class="img-fluid"
-              src="assets/about_img/acc/2.png"
-              alt=""
-              width="82%"
-              style="padding-left: 20px"
-            />
-          </div>
-        </div>
-
-        <div class="row py-5">
-          <div class="col-md-12 d-flex">
-            <div class="col-md-3">
-              <div class="d-flex py-3">
-                <div class="px-1">
-                  <p class="font-weight-bold text-primary h6">01</p>
+          <div class="col-12">
+            <!-- Timeline Area-->
+            <div class="apland-timeline-area">
+              <!-- Single Timeline Content-->
+              <div class="single-timeline-area">
+                <div
+                  class="timeline-date"
+                  data-aos="fade-right"
+                  data-aos-delay="100"
+                >
+                  <p>2014</p>
                 </div>
-                <div>
-                  <p class="font-weight-bold h6">IDMETAFORA Pada Konsep</p>
-                  <p class="font-italic">-January 5th, 2014</p>
-                  <p>
-                    Pendiri kami, Bapak M Abdurrohman Alhafidz, membuat sebuah
-                    konsep untuk memulai bisnis web development.
-                  </p>
-                </div>
-              </div>
-
-              <div class="d-flex py-3">
-                <div class="px-1">
-                  <p class="font-weight-bold text-primary h6">02</p>
-                </div>
-                <div>
-                  <p class="font-weight-bold h6">Peluncuran</p>
-                  <p class="font-italic">-April 19th, 2014</p>
-                  <p>
-                    Kami memulai perjalanan sebagai pendatang baru di Industri
-                    Pengembangan Web.
-                  </p>
-                </div>
-              </div>
-
-              <div class="d-flex py-3">
-                <div class="px-1">
-                  <p class="font-weight-bold text-primary h6">03</p>
-                </div>
-                <div>
-                  <p class="font-weight-bold h6">Peluncuran Produk E-Apotek</p>
-                  <p class="font-italic">-Sept 1st, 2014</p>
-                  <p>
-                    Tim kami merasa beruntung sebagai Web Developer pendatang
-                    baru di industri ini. Dalam waktu singkat setelah kami
-                    menjalankan bisnis ini, kami mendapatkan kepercayaan untuk
-                    mengembangkan sistem yang kompleks dengan yang mengelola
-                    milyaran data dan meluncurkan produk pertama kami, E-Apotek.
-                    Sistem Manajemen Apotek yang mengelola inventaris produk,
-                    transaksi, pelaporan, dan lain-lain.
-                  </p>
+                <div class="row">
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div
+                      class="single-timeline-content d-flex"
+                      data-aos="fade-left"
+                      data-aos-delay="300"
+                    >
+                      <div class="timeline-icon">
+                        <i class="fa fa-address-card" aria-hidden="true"></i>
+                      </div>
+                      <div class="timeline-text">
+                        <h6>IDMETAFORA Pada Konsep</h6>
+                        <p>
+                          Pendiri kami, Bapak M Abdurrohman Alhafidz, membuat
+                          sebuah konsep untuk memulai bisnis web development.<br />-
+                          January 5th, 2014
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div
+                      class="single-timeline-content d-flex"
+                      data-aos="fade-left"
+                      data-aos-delay="500"
+                    >
+                      <div class="timeline-icon">
+                        <i class="fa fa-archive" aria-hidden="true"></i>
+                      </div>
+                      <div class="timeline-text">
+                        <h6>Peluncuran</h6>
+                        <p>
+                          Kami memulai perjalanan sebagai pendatang baru di
+                          Industri Pengembangan Web.<br />- April 19th, 2014
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div
+                      class="single-timeline-content d-flex"
+                      data-aos="fade-left"
+                      data-aos-delay="700"
+                    >
+                      <div class="timeline-icon">
+                        <i class="fa fa-address-book" aria-hidden="true"></i>
+                      </div>
+                      <div class="timeline-text">
+                        <h6>Peluncuran Produk E-Apotek</h6>
+                        <p>
+                          Kami dengan cepat mendapatkan kepercayaan untuk
+                          mengembangkan E-Apotek, sistem manajemen apotek yang
+                          mengelola inventaris dan transaksi.<br />- Sept 1st,
+                          2014
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <div class="col-md-3">
-              <div class="d-flex py-3">
-                <div class="px-1">
-                  <p class="font-weight-bold text-primary h6">01</p>
+              <!-- Single Timeline Content-->
+              <div class="single-timeline-area">
+                <div
+                  class="timeline-date"
+                  data-aos="fade-right"
+                  data-aos-delay="100"
+                >
+                  <p>2015</p>
                 </div>
-                <div>
-                  <p class="font-weight-bold h6">
-                    Layanan Pemasaran Digital Terbuka
-                  </p>
-                  <p class="font-italic">-June 1st, 2015</p>
-                  <p>
-                    Berdasarkan permintaan dari klien kami yang sudah ada, kami
-                    membuka layanan untuk Digital Marketing & Branding Digital.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-3">
-              <div class="d-flex py-3">
-                <div class="px-1">
-                  <p class="font-weight-bold text-primary h6">01</p>
-                </div>
-                <div>
-                  <p class="font-weight-bold h6">
-                    Meluncurkan Produk E-Budgeting
-                  </p>
-                  <p class="font-italic">-July 1st, 2016</p>
-                  <p>
-                    Salah satu tonggak sejarah yang tak terlupakan bagi
-                    IDMETAFORA adalah ketika kami meluncurkan produk baru untuk
-                    mendukung pemerintah di Indonesia, kami membangun dan
-                    meluncurkan produk E-Budgeting.
-                  </p>
+                <div class="row">
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div
+                      class="single-timeline-content d-flex"
+                      data-aos="fade-left"
+                      data-aos-delay="300"
+                    >
+                      <div class="timeline-icon">
+                        <i class="fa fa-briefcase" aria-hidden="true"></i>
+                      </div>
+                      <div class="timeline-text">
+                        <h6>Layanan Pemasaran Digital Terbuka</h6>
+                        <p>
+                          Berdasarkan permintaan dari klien kami yang sudah ada,
+                          kami membuka layanan untuk Digital Marketing &
+                          Branding Digital.<br />- June 1st, 2015
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <div class="col-md-3">
-              <div class="d-flex py-3">
-                <div class="px-1">
-                  <p class="font-weight-bold text-primary h6">01</p>
+              <!-- Single Timeline Content-->
+              <div class="single-timeline-area">
+                <div
+                  class="timeline-date"
+                  data-aos="fade-right"
+                  data-aos-delay="100"
+                >
+                  <p>2016</p>
                 </div>
-                <div>
-                  <p class="font-weight-bold h6">
-                    Meluncurkan Perencanaan E-Proyek Produk
-                  </p>
-                  <p class="font-italic">-August 1st, 2017</p>
-                  <p>
-                    Salah satu tonggak sejarah yang tak terlupakan bagi
-                    IDMETAFORA adalah ketika kami meluncurkan produk baru untuk
-                    mendukung pemerintah di Indonesia, kami membangun dan
-                    meluncurkan produk E-Budgeting.
-                  </p>
-                </div>
-              </div>
-
-              <div class="d-flex py-3">
-                <div class="px-1">
-                  <p class="font-weight-bold text-primary h6">02</p>
-                </div>
-                <div>
-                  <p class="font-weight-bold h6">
-                    Peluncuran Produk E-Controlling
-                  </p>
-                  <p class="font-italic">-Des 1 st, 2017</p>
-                  <p>
-                    Untuk mendukung dan melengkapi produk E-Budgeting &
-                    E-Product Planing, kami meluncurkan produk baru
-                    E-Controlling.
-                  </p>
+                <div class="row">
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div
+                      class="single-timeline-content d-flex"
+                      data-aos="fade-left"
+                      data-aos-delay="300"
+                    >
+                      <div class="timeline-icon">
+                        <i class="fa fa-id-card" aria-hidden="true"></i>
+                      </div>
+                      <div class="timeline-text">
+                        <h6>Meluncurkan Produk E-Budgeting</h6>
+                        <p>
+                          Salah satu tonggak sejarah yang tak terlupakan bagi
+                          IDMETAFORA adalah ketika kami meluncurkan produk baru
+                          untuk mendukung pemerintah di Indonesia, kami
+                          membangun dan meluncurkan produk E-Budgeting.<br />-
+                          July 1st, 2016
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-12 d-flex">
-            <div class="col-md-3">
-              <p class="h3">2018</p>
-            </div>
-
-            <div class="col-md-3">
-              <p class="h3">Now (2024)</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-12">
-            <img
-              class="img-fluid"
-              src="assets/about_img/acc/3.png"
-              alt=""
-              width="32%"
-              style="padding-left: 20px"
-            />
-          </div>
-        </div>
-
-        <div class="row py-5">
-          <div class="col-md-12 d-flex">
-            <div class="col-md-3">
-              <div class="d-flex py-3">
-                <div class="px-1">
-                  <p class="font-weight-bold text-primary h6">01</p>
+              <!-- Single Timeline Content-->
+              <div class="single-timeline-area">
+                <div
+                  class="timeline-date"
+                  data-aos="fade-right"
+                  data-aos-delay="100"
+                >
+                  <p>2017</p>
                 </div>
-                <div>
-                  <p class="font-weight-bold h6">Peluncuran IDMETAFORA 2.0</p>
-                  <p class="font-italic">-Jun 1 st, 2018</p>
-                  <p>
-                    Sebuah pencapaian bagi kami untuk tetap dapat bertahan dan
-                    memberikan pelayanan terbaik kepada klien kami. Selama enam
-                    tahun ini, kami mengusung tagline “Empowering You” untuk
-                    memberdayakan setiap mitra, klien, stakeholder, dan semua
-                    elemen yang berhubungan dengan IDMETAFORA.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-3">
-              <div class="d-flex py-3">
-                <div class="px-1">
-                  <p class="font-weight-bold text-primary h6">01</p>
-                </div>
-                <div>
-                  <p class="font-weight-bold h6">Empowering You</p>
-                  <p class="font-italic">-Now</p>
-                  <p>
-                    Sekarang tim kami masih dengan senang hati memberdayakan dan
-                    mendukung Anda dengan layanan kami. Mari Wujudkan Ide Anda
-                    Bersama Kami.
-                  </p>
-                  <a href="#" class="btn btn-success">Memulai Proyek</a>
+                <div class="row">
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div
+                      class="single-timeline-content d-flex"
+                      data-aos="fade-left"
+                      data-aos-delay="300"
+                    >
+                      <div class="timeline-icon">
+                        <i class="fa fa-id-card" aria-hidden="true"></i>
+                      </div>
+                      <div class="timeline-text">
+                        <h6>Meluncurkan Perencanaan E-Proyek Produk</h6>
+                        <p>
+                          Salah satu tonggak sejarah yang tak terlupakan bagi
+                          IDMETAFORA adalah ketika kami meluncurkan produk baru
+                          untuk mendukung pemerintah di Indonesia, kami
+                          membangun dan meluncurkan produk E-Proyek.<br />-
+                          August 1st, 2017
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div
+                      class="single-timeline-content d-flex"
+                      data-aos="fade-left"
+                      data-aos-delay="500"
+                    >
+                      <div class="timeline-icon">
+                        <i class="fa fa-id-card" aria-hidden="true"></i>
+                      </div>
+                      <div class="timeline-text">
+                        <h6>Peluncuran Produk E-Controlling</h6>
+                        <p>
+                          Untuk mendukung dan melengkapi produk E-Budgeting &
+                          E-Product Planning, kami meluncurkan produk baru
+                          E-Controlling.<br />- Dec 1st, 2017
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
+              <!-- Single Timeline Content-->
+              <div class="single-timeline-area">
+                <div
+                  class="timeline-date"
+                  data-aos="fade-right"
+                  data-aos-delay="100"
+                >
+                  <p>2018</p>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div
+                      class="single-timeline-content d-flex"
+                      data-aos="fade-left"
+                      data-aos-delay="300"
+                    >
+                      <div class="timeline-icon">
+                        <i class="fa fa-id-card" aria-hidden="true"></i>
+                      </div>
+                      <div class="timeline-text">
+                        <h6>Peluncuran IDMETAFORA 2.0</h6>
+                        <p>
+                          Sebuah pencapaian bagi kami untuk tetap dapat bertahan
+                          dan memberikan pelayanan terbaik kepada klien kami.
+                          Selama enam tahun ini, kami mengusung tagline
+                          “Empowering You” untuk memberdayakan setiap mitra,
+                          klien, stakeholder, dan semua elemen yang berhubungan
+                          dengan IDMETAFORA.<br />- Jun 1st, 2018
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Single Timeline Content-->
+              <div class="single-timeline-area">
+                <div
+                  class="timeline-date"
+                  data-aos="fade-right"
+                  data-aos-delay="100"
+                >
+                  <p>Now (2024)</p>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div
+                      class="single-timeline-content d-flex"
+                      data-aos="fade-left"
+                      data-aos-delay="300"
+                    >
+                      <div class="timeline-icon">
+                        <i class="fa fa-id-card" aria-hidden="true"></i>
+                      </div>
+                      <div class="timeline-text">
+                        <h6>Empowering You</h6>
+                        <p>
+                          Sekarang tim kami masih dengan senang hati
+                          memberdayakan dan mendukung Anda dengan layanan kami.
+                          Mari Wujudkan Ide Anda Bersama Kami.<br />- Now
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End of Timeline Area-->
             </div>
           </div>
         </div>
@@ -797,7 +1011,7 @@
     >
       <div class="container col-md-10 pb-5">
         <div class="row">
-          <div class="col-md-12 text-center">
+          <div class="col-md-12 text-center" data-aos="fade-up">
             <h2 class="text-center mb-5 font-weight-bold pt-5">
               <span class="">The Culture We Build in Our Planet</span>
             </h2>
@@ -808,6 +1022,7 @@
             class="position-absolute"
             style="right: -10%; top: -30%"
             width="20%"
+            data-aos="fade-right"
           />
 
           <img
@@ -816,6 +1031,7 @@
             class="position-absolute"
             style="left: -10%; top: -15%"
             width="5%"
+            data-aos="fade-left"
           />
         </div>
         <div
@@ -826,12 +1042,13 @@
             border: 1px solid black;
             padding: 50px;
           "
+          data-aos="zoom-in"
         >
           <div class="row justify-content-center">
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4" data-aos="fade-up">
               <div class="custom-card text-center p-3 bg-white">
                 <img
-                  src="assets/audit_img/icon/5.png"
+                  src="assets/about_img/icon/4.png"
                   class="img-fluid"
                   width="50%"
                   alt="Purchasing System"
@@ -839,13 +1056,13 @@
                 <p class="" style="font-size: 14px; font-weight: bold">
                   Professional
                 </p>
-                <p>Memberikan pekerjaan dan layanan terbaik.</p>
+                <p>Memberikan pekerjaan dan <br />layanan terbaik.</p>
               </div>
             </div>
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
               <div class="custom-card text-center p-3 bg-white">
                 <img
-                  src="assets/audit_img/icon/6.png"
+                  src="assets/about_img/icon/5.png"
                   class="img-fluid"
                   width="50%"
                   alt="Accounting System"
@@ -853,13 +1070,16 @@
                 <p class="" style="font-size: 14px; font-weight: bold">
                   Responsible
                 </p>
-                <p>Kami hanya mengambil proyek yang dapat kami tangani.</p>
+                <p>
+                  Kami hanya mengambil proyek <br />
+                  yang dapat kami tangani.
+                </p>
               </div>
             </div>
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
               <div class="custom-card text-center p-3 bg-white">
                 <img
-                  src="assets/audit_img/icon/7.png"
+                  src="assets/about_img/icon/6.png"
                   class="img-fluid"
                   width="50%"
                   alt="Business Intelligence"
@@ -867,7 +1087,86 @@
                 <p class="" style="font-size: 14px; font-weight: bold">
                   Solving Problem
                 </p>
-                <p>Jadilah bagian dari bisnis Anda sebagai konsultan.</p>
+                <p>Jadilah bagian dari bisnis Anda <br />sebagai konsultan.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="custom-card text-center p-3 bg-white">
+                <img
+                  src="assets/about_img/icon/7.png"
+                  class="img-fluid"
+                  width="50%"
+                  alt="Purchasing System"
+                />
+                <p class="" style="font-size: 14px; font-weight: bold">Fast</p>
+                <p>
+                  Time is money, we make it faster<br />and improve it to be
+                  better.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+              <div class="custom-card text-center p-3 bg-white">
+                <img
+                  src="assets/about_img/icon/8.png"
+                  class="img-fluid"
+                  width="50%"
+                  alt="Accounting System"
+                />
+                <p class="" style="font-size: 14px; font-weight: bold">
+                  Passionate
+                </p>
+                <p>We love what we do.<br />We do what we love.</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="500">
+              <div class="custom-card text-center p-3 bg-white">
+                <img
+                  src="assets/about_img/icon/9.png"
+                  class="img-fluid"
+                  width="50%"
+                  alt="Business Intelligence"
+                />
+                <p class="" style="font-size: 14px; font-weight: bold">
+                  Innovation
+                </p>
+                <p>
+                  For us, Innovation is a must to<br />make business still
+                  relevant.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="600">
+              <div class="custom-card text-center p-3 bg-white">
+                <img
+                  src="assets/about_img/icon/10.png"
+                  class="img-fluid"
+                  width="50%"
+                  alt="Accounting System"
+                />
+                <p class="" style="font-size: 14px; font-weight: bold">Fun</p>
+                <p>
+                  Business with us is serious fun. We<br />believe a positive
+                  environment<br />boosts productivity.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="700">
+              <div class="custom-card text-center p-3 bg-white">
+                <img
+                  src="assets/about_img/icon/11.png"
+                  class="img-fluid"
+                  width="50%"
+                  alt="Business Intelligence"
+                />
+                <p class="" style="font-size: 14px; font-weight: bold">
+                  Career in IDMETAFORA
+                </p>
+                <p>Join With Us!</p>
               </div>
             </div>
           </div>
@@ -886,20 +1185,30 @@
         <img
           src="assets/imgAccF1.png"
           alt=""
-          class="position-absolute"
-          style="bottom: -20px; left: 150px; width: 100%"
+          class="position-absolute img-fluid"
+          style="top: 0px; right: 0px; width: 80%"
         />
 
         <div class="row">
           <div class="col-md-6 d-flex flex-column justify-content-end">
-            <p class="" style="color: white; font-size: 18px">
+            <p class="" style="font-size: 18px">
               <b>IDMETAFORA</b>
             </p>
-            <p class="" style="color: white; font-size: 16px">
+            <p class="" style="font-size: 16px">
               <b>IDMETAFORA</b> adalah Perusahaan Solusi TI, bisnis utama kami
               adalah Pengembangan ERP. Kami juga mendukung klien kami dalam
               bidang Internet of Things, dan Desain & Pengembangan Web.
             </p>
+
+            <div class="mb-5">
+              <span class="mr-3">
+                <i class="fa-solid fa-phone"></i> +62 896 6423 0232</span
+              >
+
+              <span>
+                <i class="fa-solid fa-envelope"></i> info@idmetafora.com</span
+              >
+            </div>
           </div>
           <div class="col-md-6">
             <div
@@ -971,21 +1280,21 @@
 
     <footer class="py-3" style="background-color: #e7f4fa">
       <div class="container">
-        <div class="row">
-          <div class="col-md-4">
+        <div class="row align-items-center text-center text-md-left">
+          <div class="col-md-4 mb-3 mb-md-0">
             <img
               src="assets/logo.png"
               alt="Logo"
               width="50%"
-              class="img-fluid mb-3"
+              class="img-fluid"
             />
           </div>
-          <div class="col-md-4 text-center">
+          <div class="col-md-4 mb-3 mb-md-0">
             <h6>© 2014-2024 PT Metafora Indonesia Teknologi</h6>
           </div>
 
-          <div class="col-md-4 text-right">
-            <div class="mx-4">
+          <div class="col-md-4 text-center text-md-right">
+            <div class="mx-2 mx-md-4">
               <a href="#"><i class="bi bi-instagram mx-2"></i></a>
               <a href="#"><i class="bi bi-facebook mx-2"></i></a>
               <a href="#"> <i class="bi bi-linkedin mx-2"></i></a>
