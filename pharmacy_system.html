@@ -24,135 +24,10 @@
       href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
       rel="stylesheet"
     />
-
-    <style>
-      .custom-border {
-        background-color: #e0f7ff;
-        padding: 20px;
-        border-radius: 100px;
-        border: 2px solid black;
-        /* position: relative; */
-      }
-
-      .custom-card {
-        border-radius: 80px;
-        border: 2px solid #1090cb;
-        padding: 50px;
-      }
-
-      .rocket {
-        position: absolute;
-        top: -30px;
-        left: -50px;
-        width: 100px;
-      }
-
-      .circle {
-        position: absolute;
-        bottom: -40px;
-        left: -60px;
-        width: 150px;
-        height: 150px;
-        background-color: white;
-        border-radius: 50%;
-        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
-      }
-
-      .circle1 {
-        position: absolute;
-        bottom: 240px;
-        right: -300px;
-        width: 300px;
-        height: 300px;
-        background-color: white;
-        border-radius: 50%;
-        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
-      }
-
-      .circle2 {
-        position: absolute;
-        bottom: 150px;
-        right: 350px;
-        width: 50px;
-        height: 50px;
-        background-color: red;
-        border-radius: 50px 0 0 5px;
-        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
-      }
-
-      .glow {
-        position: absolute;
-        top: -20px;
-        right: -40px;
-        width: 50px;
-        height: 50px;
-        background-color: rgba(255, 255, 255, 0.3);
-        border-radius: 50%;
-        filter: blur(20px);
-      }
-
-      /* Ubah warna tombol prev dan next */
-      .carousel-control-prev-icon,
-      .carousel-control-next-icon {
-        background-color: black;
-        /* Ubah warna sesuai keinginan, ini adalah warna biru */
-        border-radius: 50%;
-        border: 2px solid black;
-        width: 40px;
-        height: 40px;
-      }
-
-      /* Ubah warna latar belakang area di sekitar ikon */
-      .carousel-control-prev,
-      .carousel-control-next {
-        background-color: rgba(255, 255, 255, 0.5);
-        /* Ubah warna background tombol */
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-      }
-
-      .card-custom-1 {
-        width: 300px;
-        height: 200px;
-        background-color: #3498db;
-        border-radius: 50% 30% 60% 40% / 40% 60% 30% 50%;
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-        margin: 20px;
-      }
-
-      .card-custom-2 {
-        width: 300px;
-        height: 200px;
-        background-color: #3498db;
-        border-radius: 30% 50% 40% 60% / 60% 40% 50% 30%;
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-        margin: 20px;
-      }
-
-      .card-custom-3 {
-        width: 300px;
-        height: 200px;
-        background-color: #3498db;
-        border-radius: 60% 40% 30% 50% / 50% 30% 60% 40%;
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-        margin: 20px;
-      }
-
-      .card-custom-4 {
-        width: 300px;
-        height: 200px;
-        background-color: #3498db;
-        border-radius: 40% 60% 50% 30% / 30% 50% 40% 60%;
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-        margin: 20px;
-      }
-    </style>
   </head>
 
   <body>
     <!-- Navbar -->
-
     <nav
       class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow border-bottom animate__animated animate__fadeIn"
     >
@@ -262,8 +137,26 @@
           <li class="nav-item">
             <a class="nav-link" href="tech_news.html">Tech News</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Our Company</a>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Our Company
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="about_us.html">About Us</a>
+              <a class="dropdown-item" href="our_team.html">Our Teams</a>
+              <a class="dropdown-item" href="career.html"
+                >Career in IDMETAFORA</a
+              >
+              <a class="dropdown-item" href="contact_us.html">Contact</a>
+            </div>
           </li>
           <!-- Tambahkan margin pada tombol untuk memberikan jarak dari menu -->
           <li class="nav-item">
@@ -282,21 +175,20 @@
         </ul>
       </div>
     </nav>
-
     <!-- End Navbar -->
 
     <!-- Content -->
 
     <header
       class="border-bottom border-top py-5"
-      style="background-color: #d8eafe"
+      style="background-color: #e7f4fa"
     >
-      <div class="container col-md-10 pb-5">
+      <div class="container col-md-12 pb-5">
         <img
           src="assets/pharma_img/acc/1.png"
           alt=""
           class="position-absolute"
-          style="top: -8%; right: -105px"
+          style="top: 0%; right: 0px"
           width="8%"
         />
 
@@ -304,269 +196,321 @@
           src="assets/pharma_img/acc/2.png"
           alt=""
           class="position-absolute"
-          style="bottom: -35%; left: -110px"
+          style="bottom: -35%; left: 0px"
           width="5%"
         />
 
-        <div class="row align-items-center">
-          <div class="col-md-6">
-            <p class="font-weight-bold h3">
-              <span class="text-danger">Jasa </span>
-              Pembuatan Sistem<br />
-              <span class="text-success">Manajemen Apotek </span>
-              <span class="text-primary">IDMETAFORA</span>
-            </p>
-            <p class="font-weight-normal h6 py-3">
-              Jasa Pembuatan Sistem Manajemen Apotek merupakan salah satu
-              layanan yang ditawarkan oleh Tim IDMETAFORA.
-            </p>
-            <a href="#"
-              ><button
-                type="button"
-                style="
-                  color: white;
-                  background-color: #007bff;
-                  border-color: #007bff;
-                  border-radius: 20px;
-                  padding: 5px 20px;
-                "
-              >
-                Hubungi Kami
-              </button></a
-            >
-          </div>
-          <div class="col-md-6 d-none d-md-block">
-            <img
-              src="assets/pharma_img/imgHeader.png"
-              alt=""
-              class="img-fluid"
-              width="100%"
-            />
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <div class="row align-items-center">
+              <div class="col-md-6">
+                <p
+                  class="font-weight-bold h3"
+                  data-aos="fade-right"
+                  data-aos-delay="100"
+                >
+                  <span class="text-danger">Jasa </span>
+                  Pembuatan Sistem<br />
+                  <span class="text-success">Manajemen Apotek </span>
+                  <span class="text-primary">IDMETAFORA</span>
+                </p>
+                <p
+                  class="font-weight-normal h6 py-3"
+                  data-aos="fade-right"
+                  data-aos-delay="200"
+                >
+                  Jasa Pembuatan Sistem Manajemen Apotek merupakan salah satu
+                  layanan yang ditawarkan oleh Tim IDMETAFORA.
+                </p>
+                <a href="#"
+                  ><button
+                    type="button"
+                    style="
+                      color: white;
+                      background-color: #007bff;
+                      border-color: #007bff;
+                      border-radius: 20px;
+                      padding: 5px 20px;
+                    "
+                    data-aos="fade-right"
+                    data-aos-delay="300"
+                  >
+                    Hubungi Kami
+                  </button></a
+                >
+              </div>
+              <div class="col-md-6" data-aos="fade-down" data-aos-delay="200">
+                <img
+                  src="assets/pharma_img/imgHeader.png"
+                  alt=""
+                  class="img-fluid"
+                  width="100%"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </header>
 
-    <section class="py-5 border-bottom">
-      <div class="container col-md-10">
-        <div class="d-flex justify-content-center" style="gap: 30px">
-          <img
-            src="assets/company/pertamina.png"
-            width="10%"
-            alt=""
-            class="img-fluid"
-          />
-          <img
-            src="assets/company/mubadala.png"
-            width="10%"
-            alt=""
-            class="img-fluid"
-          />
-          <img
-            src="assets/company/candra.png"
-            width="10%"
-            alt=""
-            class="img-fluid"
-          />
-          <img
-            src="assets/company/molindo.png"
-            width="10%"
-            alt=""
-            class="img-fluid"
-          />
-          <img
-            src="assets/company/indonesia_power.png"
-            width="10%"
-            alt=""
-            class="img-fluid"
-          />
-          <img
-            src="assets/company/pesona.png"
-            width="5%"
-            alt=""
-            class="img-fluid"
-          />
-          <img
-            src="assets/company/brin.png"
-            width="5%"
-            alt=""
-            class="img-fluid"
-          />
-          <img
-            src="assets/company/batan.png"
-            width="5%"
-            alt=""
-            class="img-fluid"
-          />
-          <img
-            src="assets/company/semen.png"
-            width="5%"
-            alt=""
-            class="img-fluid"
-          />
+    <!-- Company -->
+    <section class="py-4 border-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div
+              class="d-flex flex-wrap justify-content-center align-items-center"
+              style="gap: 15px"
+            >
+              <img
+                src="assets/company/pertamina.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+              <img
+                src="assets/company/mubadala.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+              <img
+                src="assets/company/candra.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+              <img
+                src="assets/company/molindo.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+              <img
+                src="assets/company/indonesia_power.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+              <img
+                src="assets/company/pesona.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+              <img
+                src="assets/company/brin.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+              <img
+                src="assets/company/batan.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+              <img
+                src="assets/company/semen.png"
+                alt=""
+                class="img-fluid"
+                style="height: 40px"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
+    <!-- End Company -->
 
-    <section class="pb-5 border-bottom" style="background-color: #d8eafe">
+    <section class="pb-5 border-bottom">
       <img
         src="assets/accounting_img/acc/1.png"
         alt=""
         width="100%"
-        class="position-absolute"
+        class="img-fluid position-absolute"
       />
 
-      <div class="container col-md-8">
-        <img
-          src="assets/bi_img/acc/3.png"
-          alt=""
-          class="position-absolute"
-          style="top: 5%; right: -25%"
-          width="10%"
-        />
+      <div class="container col-md-12">
         <div class="row">
-          <div class="col-md-12 py-3">
-            <h1 class="text-center font-weight-bold">
+          <div class="col-md-12 pt-5">
+            <h1
+              class="text-center font-weight-bold"
+              data-aos="fade-down"
+              data-aos-delay="100"
+            >
               Core <span class="text-danger">Erp</span>
             </h1>
           </div>
         </div>
-        <div class="row py-5">
-          <div class="col-md-12 text-justify p-5">
-            <h4 class="text-center" style="font-size: 20px">
+        <div class="row py-5 justify-content-center">
+          <div class="col-md-8 text-justify p-5">
+            <h4
+              class="text-center"
+              style="font-size: 20px"
+              data-aos="fade-down"
+              data-aos-delay="200"
+            >
               <span class="font-weight-bold pb-5"
-                >"ERP (Enterprise Resource Planning)</span
+                ><i class="fa-solid fa-quote-left"></i> ERP (Enterprise Resource
+                Planning)</span
               >
               adalah sebuah model system informasi yang memberikan kemungkinan
               bagi sebuah organisasi atau perusahaan untuk mengotomisasi dan
               mengintegrasikan proses-proses dalam bisnis utamanya. Sistem ini
               membantu perusahaan atau organisasi dalam mengatur proses
               bisnisnya agar menjadi satu kesatuan yang terintegrasi seperti
-              purchasing, warehouse, finance, audit, sales, dan lain
-              sebagainya."
+              purchasing, warehouse, finance, audit, sales, dan lain sebagainya.
+              <i class="fa-solid fa-quote-right"></i>
             </h4>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="py-5 border-bottom">
-      <div class="container col-md-10 py-5">
-        <div
-          style="
-            border-radius: 20px;
-            width: 105%;
-            height: 500px;
-            background-color: #bae9ff;
-            position: absolute;
-            bottom: -0px;
-            left: -100px;
-          "
-        ></div>
+    <section class="py-5 border-bottom" style="background-color: #e7f4fa">
+      <div class="container col-md-12">
+        <img
+          src="assets/tax_img/acc/4.png"
+          alt=""
+          class="position-absolute"
+          style="bottom: 0px; left: -210px"
+          width=" 10%"
+        />
+
+        <img
+          src="assets/pharma_img/acc/5.png"
+          alt=""
+          class="position-absolute"
+          style="top: -50px; right: 0px"
+          width=" 13%"
+        />
         <div class="row">
-          <div class="col-md-12 pt-5">
-            <img
-              src="assets/tax_img/acc/4.png"
-              alt=""
-              class="position-absolute"
-              style="bottom: 0px; left: -210px"
-              width=" 10%"
-            />
-
-            <img
-              src="assets/pharma_img/acc/5.png"
-              alt=""
-              class="position-absolute"
-              style="top: -50px; right: -105px"
-              width=" 13%"
-            />
-
-            <p class="font-weight-bold h3">
+          <div class="col-md-12 pt-5 text-center">
+            <p
+              class="font-weight-bold h3"
+              style="color: #3a556a"
+              data-aos="fade-down"
+              data-aos-delay="100"
+            >
               Manfaat Sistem Manajemen Apotek <br />
-              <span class="text-primary">IDMETAFORA</span>
+              <span class="text-danger">IDMETAFORA</span>
             </p>
-            <div class="text-right" style="padding-right: 110px">
-              <p>View All Categories <i class="bi bi-arrow-right"></i></p>
-            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-11 d-flex">
-            <div class="col-md-3">
+        <div class="row py-5 justify-content-center">
+          <div class="col-md-10">
+            <div class="row">
               <div
-                class="shadow p-2 text-center"
-                style="border-radius: 20px; background-color: #eff4f6"
+                class="col-md-3 mb-4"
+                data-aos="fade-down"
+                data-aos-delay="200"
               >
-                <div class="">
-                  <img src="assets/pharma_img/icon/1.png" alt="" width="30%" />
-                </div>
-                <div>
-                  <p class="font-weight-bold">
-                    Manfaat Sistem Manajemen Apotek 1
-                  </p>
-                  <p style="font-size: 12px">
-                    Pencatatan transaksi dapat tetap berlangsung tanpa internet
-                    dan sistem akan menyingkronkan data ketika koneksi internet
-                    kembali.
-                  </p>
+                <div
+                  class="bg-white shadow p-3 text-center"
+                  style="border-radius: 20px 0px 20px 0px"
+                >
+                  <div class="">
+                    <img
+                      src="assets/pharma_img/icon/1.png"
+                      alt=""
+                      width="30%"
+                    />
+                  </div>
+                  <div>
+                    <p class="font-weight-bold">
+                      Manfaat Sistem Manajemen Apotek 1
+                    </p>
+                    <p style="font-size: 12px">
+                      Pencatatan transaksi dapat tetap berlangsung tanpa
+                      internet dan sistem akan menyingkronkan data ketika
+                      koneksi internet kembali.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-3">
               <div
-                class="shadow p-2 text-center"
-                style="border-radius: 20px; background-color: #eff4f6"
+                class="col-md-3 mb-4"
+                data-aos="fade-down"
+                data-aos-delay="300"
               >
-                <div class="">
-                  <img src="assets/pharma_img/icon/2.png" alt="" width="30%" />
-                </div>
-                <div>
-                  <p class="font-weight-bold">
-                    Manfaat Sistem Manajemen Apotek 2
-                  </p>
-                  <p style="font-size: 12px">
-                    Anda bisa mengelola pelanggan dan penjualan dari semua
-                    cabang, serta mengaskses informasi lainnya secara real-time.
-                  </p>
+                <div
+                  class="bg-white shadow p-3 text-center"
+                  style="border-radius: 20px 0px 20px 0px"
+                >
+                  <div class="">
+                    <img
+                      src="assets/pharma_img/icon/2.png"
+                      alt=""
+                      width="30%"
+                    />
+                  </div>
+                  <div>
+                    <p class="font-weight-bold">
+                      Manfaat Sistem Manajemen Apotek 2
+                    </p>
+                    <p style="font-size: 12px">
+                      Anda bisa mengelola pelanggan dan penjualan dari semua
+                      cabang, serta mengaskses informasi lainnya secara
+                      real-time.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-3">
               <div
-                class="shadow p-2 text-center"
-                style="border-radius: 20px; background-color: #eff4f6"
+                class="col-md-3 mb-4"
+                data-aos="fade-down"
+                data-aos-delay="400"
               >
-                <div class="">
-                  <img src="assets/pharma_img/icon/3.png" alt="" width="30%" />
-                </div>
-                <div>
-                  <p class="font-weight-bold">
-                    Manfaat Sistem Manajemen Apotek 3
-                  </p>
-                  <p style="font-size: 12px">
-                    Software kasir ini dapat digunakan di perangkat apapun
-                    selama terkoneksi internet. Anda bisa memantau penjualan
-                    kapanpun dan di manapun.
-                  </p>
+                <div
+                  class="bg-white shadow p-3 text-center"
+                  style="border-radius: 20px 0px 20px 0px"
+                >
+                  <div class="">
+                    <img
+                      src="assets/pharma_img/icon/3.png"
+                      alt=""
+                      width="30%"
+                    />
+                  </div>
+                  <div>
+                    <p class="font-weight-bold">
+                      Manfaat Sistem Manajemen Apotek 3
+                    </p>
+                    <p style="font-size: 12px">
+                      Software kasir ini dapat digunakan di perangkat apapun
+                      selama terkoneksi internet. Anda bisa memantau penjualan
+                      kapanpun dan di manapun.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-3">
               <div
-                class="shadow p-2 text-center"
-                style="border-radius: 20px; background-color: #eff4f6"
+                class="col-md-3 mb-4"
+                data-aos="fade-down"
+                data-aos-delay="500"
               >
-                <div class="">
-                  <img src="assets/pharma_img/icon/4.png" alt="" width="30%" />
-                </div>
-                <div>
-                  <p class="font-weight-bold">
-                    Manfaat Sistem Manajemen Apotek 4
-                  </p>
-                  <p style="font-size: 12px">
-                    Dengan data yang tersentralisasi, Anda bisa meninjau
-                    performa bisnis Anda melalui tampilan analitik yang lengkap.
-                  </p>
+                <div
+                  class="bg-white shadow p-3 text-center"
+                  style="border-radius: 20px 0px 20px 0px"
+                >
+                  <div class="">
+                    <img
+                      src="assets/pharma_img/icon/4.png"
+                      alt=""
+                      width="30%"
+                    />
+                  </div>
+                  <div>
+                    <p class="font-weight-bold">
+                      Manfaat Sistem Manajemen Apotek 4
+                    </p>
+                    <p style="font-size: 12px">
+                      Dengan data yang tersentralisasi, Anda bisa meninjau
+                      performa bisnis Anda melalui tampilan analitik yang
+                      lengkap.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -575,6 +519,7 @@
       </div>
     </section>
 
+    <!--Fitur-->
     <section
       class="py-5 border-bottom"
       style="
@@ -589,27 +534,32 @@
             <img
               src="assets/bi_img/acc/5.png"
               alt=""
-              class="position-absolute"
-              style="top: -100px; right: 100px"
+              class="img-fluid"
+              style="position: absolute; bottom: 0px; right: 0px"
               width="10%"
             />
-            <h2 class="text-center mb-5 font-weight-bold pt-5">
-              <span class="text-danger">Fitur-Fitur <br /></span> Sistem Apotik
-              <span class="text-primary"> IDMETAFORA</span>
-            </h2>
-          </div>
-        </div>
-        <div class="row justify-content-end">
-          <div class="col-md-10">
             <img
               src="assets/pharma_img/acc/3.png"
-              class="position-absolute"
-              width="15%"
+              class="img-fluid"
+              width="12%"
               alt=""
-              style="left: -220px"
+              style="position: absolute; top: 50%; left: 0px"
             />
+
+            <p
+              class="text-center mb-5 font-weight-bold pt-5 h2"
+              data-aos="fade-down"
+              data-aos-delay="100"
+            >
+              <span class="text-danger">Fitur-Fitur <br /></span> Sistem Apotik
+              <span class="text-primary"> IDMETAFORA</span>
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-7">
             <div
-              class="d-flex justify-content-around shadow"
+              class="row shadow"
               style="
                 border-radius: 200px;
                 background-color: #f4f9ff;
@@ -618,9 +568,13 @@
                 padding: 60px;
               "
             >
-              <div class="cold-md-4 mr-2">
+              <div
+                class="col-md-6 mb-4"
+                data-aos="fade-down"
+                data-aos-delay="200"
+              >
                 <div
-                  class="p-3 text-center"
+                  class="p-4 text-center"
                   style="
                     border-radius: 50px;
                     background-color: white;
@@ -628,7 +582,9 @@
                   "
                 >
                   <img src="assets/pharma_img/icon/5.png" alt="" width="50%" />
-                  <p>Fitur Sistem Manajemen Apotek 1</p>
+                  <p class="font-weight-bold">
+                    Fitur Sistem Manajemen Apotek 1
+                  </p>
                   <p>
                     Fitur yang memudahkan anda dalam pengkategorian sebuah
                     produk yang anda miliki.
@@ -636,9 +592,13 @@
                 </div>
               </div>
 
-              <div class="cold-md-4 mr-2">
+              <div
+                class="col-md-6 mb-4"
+                data-aos="fade-down"
+                data-aos-delay="300"
+              >
                 <div
-                  class="p-3 text-center"
+                  class="p-4 text-center"
                   style="
                     border-radius: 50px;
                     background-color: white;
@@ -647,17 +607,23 @@
                 >
                   <img src="assets/pharma_img/icon/6.png" alt="" width="50%" />
 
-                  <p>Fitur Sistem Manajemen Apotek 1</p>
+                  <p class="font-weight-bold">
+                    Fitur Sistem Manajemen Apotek 2
+                  </p>
                   <p>
-                    Fitur yang memudahkan anda dalam pengkategorian sebuah
-                    produk yang anda miliki.
+                    Fitur pencarian untuk memudahkan anda dalam mencari produk
+                    yang ingin anda tampilkan.
                   </p>
                 </div>
               </div>
 
-              <div class="cold-md-4 mr-2">
+              <div
+                class="col-md-6 mb-4"
+                data-aos="fade-down"
+                data-aos-delay="400"
+              >
                 <div
-                  class="p-3 text-center"
+                  class="p-4 text-center"
                   style="
                     border-radius: 50px;
                     background-color: white;
@@ -666,10 +632,37 @@
                 >
                   <img src="assets/pharma_img/icon/7.png" alt="" width="50%" />
 
-                  <p>Fitur Sistem Manajemen Apotek 1</p>
+                  <p class="font-weight-bold">
+                    Fitur Sistem Manajemen Apotek 3
+                  </p>
                   <p>
-                    Fitur yang memudahkan anda dalam pengkategorian sebuah
-                    produk yang anda miliki.
+                    Kelola data barang setiap saat yang masuk kedalam gudang
+                    penyimpanan anda.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="col-md-6 mb-4"
+                data-aos="fade-down"
+                data-aos-delay="500"
+              >
+                <div
+                  class="p-4 text-center"
+                  style="
+                    border-radius: 50px;
+                    background-color: white;
+                    border: 2px solid #1090cb;
+                  "
+                >
+                  <img src="assets/pharma_img/icon/8.png" alt="" width="50%" />
+
+                  <p class="font-weight-bold">
+                    Fitur Sistem Manajemen Apotek 4
+                  </p>
+                  <p>
+                    Kelola data barang setiap saat yang keluar kedalam gudang
+                    pneyimpanan anda.
                   </p>
                 </div>
               </div>
@@ -678,6 +671,7 @@
         </div>
       </div>
     </section>
+    <!--End Fitur-->
 
     <section
       class="pb-5 border-bottom"
@@ -687,134 +681,150 @@
         background-position: center;
       "
     >
-      <div class="container col-md-8">
+      <div class="container col-md-12">
         <div class="row">
           <div class="col-md-12 text-center">
-            <p class="mb-5 font-weight-bold py-5 h3">
+            <p
+              class="mb-5 font-weight-bold py-5 h4"
+              data-aos="fade-down"
+              data-aos-delay="100"
+            >
               NIlai-Nilai Perusahaan Kami
             </p>
-
-            <!-- <img
-              src="assets/bi_img/acc/6.png"
-              alt=""
-              class="position-absolute"
-              style="top: 0; left: 0"
-              width="25%"
-            /> -->
           </div>
         </div>
-        <div class="col-md-12">
-          <div class="row">
-            <div class="col-md-6 mb-4">
-              <div class="text-center p-3">
-                <img
-                  src="assets/accounting_img/acc/4.png"
-                  alt=""
-                  class="position-absolute"
-                  style="bottom: 50px; left: -5px"
-                  width="30%"
-                />
-                <img
-                  src="assets/audit_img/acc/8.png"
-                  alt=""
-                  class="position-absolute"
-                  style="bottom: 100px; left: -30%"
-                  width="20%"
-                />
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 mb-4">
+                <div class="text-center p-3">
+                  <img
+                    src="assets/accounting_img/acc/4.png"
+                    alt=""
+                    class="img-fluid position-absolute"
+                    style="bottom: 50px; left: -5px"
+                    width="30%"
+                  />
+                  <img
+                    src="assets/audit_img/acc/8.png"
+                    alt=""
+                    class="img-fluid position-absolute"
+                    style="bottom: 100px; left: -30%"
+                    width="20%"
+                  />
 
-                <img
-                  src="assets/pharma_img/acc/4.png"
-                  alt=""
-                  class="position-absolute"
-                  style="bottom: -50px; left: -60%"
-                  width="30%"
-                />
-                <img
-                  src="assets/pharma_img/imgPeople.png"
-                  class="img-fluid mb-4"
-                  width="100%"
-                  alt="image nilai"
-                />
+                  <img
+                    src="assets/pharma_img/acc/4.png"
+                    alt=""
+                    class="position-absolute"
+                    style="bottom: -50px; left: -60%"
+                    width="30%"
+                  />
+                  <img
+                    src="assets/pharma_img/imgPeople.png"
+                    class="img-fluid mb-4"
+                    width="100%"
+                    alt="image nilai"
+                    data-aos="fade-right"
+                    data-aos-delay="200"
+                  />
+                </div>
               </div>
-            </div>
-            <div class="col-md-6 mb-4">
-              <div class="row">
-                <div class="col-md-12 d-flex justify-content-center">
-                  <div class="">
-                    <img
-                      src="assets/iot_img/value/img.png"
-                      alt=""
-                      width="80px"
-                    />
-                  </div>
-                  <div class="row px-3">
-                    <div class="col-md-12">
-                      <h5><b>Cepat</b></h5>
-                      <p class="font-weight-light">
-                        Meningkatnya jumlah perangkat yang terhubung memengaruhi
-                        setiap area kehidupan kita
-                      </p>
+              <div class="col-md-6 mb-4">
+                <div class="row">
+                  <div
+                    class="col-md-12 mb-4 d-flex justify-content-center"
+                    data-aos="fade-down"
+                    data-aos-delay="300"
+                  >
+                    <div class="">
+                      <img
+                        src="assets/iot_img/value/img.png"
+                        alt=""
+                        width="80px"
+                      />
+                    </div>
+                    <div class="row px-3">
+                      <div class="col-md-12">
+                        <h5><b>Cepat</b></h5>
+                        <p class="font-weight-light">
+                          Meningkatnya jumlah perangkat yang terhubung
+                          memengaruhi setiap area kehidupan kita
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="row">
-                <div class="col-md-12 d-flex justify-content-center">
-                  <div class="">
-                    <img
-                      src="assets/iot_img/value/img1.png"
-                      alt=""
-                      width="80px"
-                    />
-                  </div>
-                  <div class="row px-3">
-                    <div class="col-md-12">
-                      <h5><b>Spirit</b></h5>
-                      <p class="font-weight-light">
-                        Memberikan pekerjaan dan pelayanan terbaik.
-                      </p>
+                <div class="row">
+                  <div
+                    class="col-md-12 mb-4 d-flex justify-content-center"
+                    data-aos="fade-down"
+                    data-aos-delay="400"
+                  >
+                    <div class="">
+                      <img
+                        src="assets/iot_img/value/img1.png"
+                        alt=""
+                        width="80px"
+                      />
+                    </div>
+                    <div class="row px-3">
+                      <div class="col-md-12">
+                        <h5><b>Spirit</b></h5>
+                        <p class="font-weight-light">
+                          Memberikan pekerjaan dan pelayanan terbaik.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="row">
-                <div class="col-md-12 d-flex justify-content-center">
-                  <div class="">
-                    <img
-                      src="assets/iot_img/value/img3.png"
-                      alt=""
-                      width="80px"
-                    />
-                  </div>
-                  <div class="row px-3">
-                    <div class="col-md-12">
-                      <h5><b>Otomatisasi</b></h5>
-                      <p class="font-weight-light">
-                        Bagi kami, Inovasi adalah suatu keharusan untuk membuat
-                        bisnis tetap relevan.
-                      </p>
+                <div class="row">
+                  <div
+                    class="col-md-12 mb-4 d-flex justify-content-center"
+                    data-aos="fade-down"
+                    data-aos-delay="500"
+                  >
+                    <div class="">
+                      <img
+                        src="assets/iot_img/value/img3.png"
+                        alt=""
+                        width="80px"
+                      />
+                    </div>
+                    <div class="row px-3">
+                      <div class="col-md-12">
+                        <h5><b>Otomatisasi</b></h5>
+                        <p class="font-weight-light">
+                          Bagi kami, Inovasi adalah suatu keharusan untuk
+                          membuat bisnis tetap relevan.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="row">
-                <div class="col-md-12 d-flex justify-content-center">
-                  <div class="">
-                    <img
-                      src="assets/iot_img/value/img4.png"
-                      alt=""
-                      width="80px"
-                    />
-                  </div>
-                  <div class="row px-3">
-                    <div class="col-md-12">
-                      <h5><b>Terpercaya</b></h5>
-                      <p class="font-weight-light">
-                        Memberikan pekerjaan dan layanan terbaik.
-                      </p>
+                <div class="row">
+                  <div
+                    class="col-md-12 mb-4 d-flex justify-content-center"
+                    data-aos="fade-down"
+                    data-aos-delay="600"
+                  >
+                    <div class="">
+                      <img
+                        src="assets/iot_img/value/img4.png"
+                        alt=""
+                        width="80px"
+                      />
+                    </div>
+                    <div class="row px-3">
+                      <div class="col-md-12">
+                        <h5><b>Terpercaya</b></h5>
+                        <p class="font-weight-light">
+                          Memberikan pekerjaan dan layanan terbaik.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -825,93 +835,160 @@
       </div>
     </section>
 
-    <section class="py-5" style="background-color: #e7f4fa">
+    <style>
+      /* Default background color */
+      .custom-section {
+        background-color: #e7f4fa;
+      }
+
+      /* Adjust layout on smaller screens */
+      @media (max-width: 768px) {
+        .custom-section {
+          background-color: rgba(
+            16,
+            144,
+            203,
+            0.7
+          ); /* #1090CB with 70% opacity */
+        }
+
+        .imgAccF {
+          display: none;
+        }
+        .imgAccF1 {
+          display: none;
+        }
+
+        /* Center the content and adjust padding/margins */
+        .custom-section .container {
+          margin: 0 auto;
+          padding: 20px;
+        }
+
+        .custom-section .row {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+
+        /* Add margin above the title */
+        .custom-section .col-md-6 p:first-child {
+          margin-top: 20px;
+        }
+
+        /* Ensure form fields are full width and padding adjusted */
+        .custom-section .form-control {
+          width: 100%;
+          margin: 10px 0;
+        }
+
+        .custom-section .btn {
+          width: 100%;
+        }
+
+        /* Adjust the phone/email spacing */
+        .custom-section .mb-5 {
+          margin-bottom: 20px;
+        }
+      }
+    </style>
+
+    <section class="py-5 custom-section">
       <div class="container col-md-8">
         <img
           src="assets/imgAccF.png"
           alt=""
-          class="position-absolute"
+          class="position-absolute imgAccF"
           style="bottom: -20px; left: -100px; width: 120%"
         />
         <img
           src="assets/imgAccF1.png"
           alt=""
-          class="position-absolute"
-          style="bottom: -20px; left: 150px; width: 100%"
+          class="position-absolute imgAccF1 img-fluid"
+          style="top: 0px; right: 0px; width: 80%"
         />
 
         <div class="row">
           <div class="col-md-6 d-flex flex-column justify-content-end">
-            <p class="" style="color: white; font-size: 18px">
+            <p class="" style="font-size: 18px; color: #ffffff">
               <b>IDMETAFORA</b>
             </p>
-            <p class="" style="color: white; font-size: 16px">
+            <p class="" style="font-size: 16px; color: #ffffff">
               <b>IDMETAFORA</b> adalah Perusahaan Solusi TI, bisnis utama kami
               adalah Pengembangan ERP. Kami juga mendukung klien kami dalam
               bidang Internet of Things, dan Desain & Pengembangan Web.
             </p>
-          </div>
-          <div class="col-md-6">
-            <div
-              class="p-3"
-              style="
-                background-color: #ffffff;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                border-radius: 20px;
-              "
+
+            <div class="mb-5" style="color: #fff;"">
+            <span class="mr-3">
+              <i class="fa-solid fa-phone"></i> +62 896 6423 0232</span
             >
-              <div class="mt-3 mb-3">
-                <div class="m-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="name"
-                    placeholder="Namaa Lengkap"
-                  />
-                </div>
 
-                <div class="m-3">
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="email"
-                    placeholder="Email"
-                  />
-                </div>
+            <span>
+              <i class="fa-solid fa-envelope"></i> info@idmetafora.com</span
+            >
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div
+            class="p-3"
+            style="
+              background-color: #ffffff;
+              box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+              border-radius: 20px;
+            "
+          >
+            <div class="mt-3 mb-3">
+              <div class="m-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Nama Lengkap"
+                />
+              </div>
 
-                <div class="m-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="telepon"
-                    placeholder="No. Telepon"
-                  />
-                </div>
+              <div class="m-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Email"
+                />
+              </div>
 
-                <div class="m-3">
-                  <textarea
-                    class="form-control"
-                    id="pesan"
-                    placeholder="Pesan"
-                    rows="3"
-                  ></textarea>
-                </div>
+              <div class="m-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="telepon"
+                  placeholder="No. Telepon"
+                />
+              </div>
 
-                <div class="form-check m-3">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="flexCheckDefault"
-                  />
-                  <label class="form-check-label" for="flexCheckDefault">
-                    Saya telah membaca dan menerima kebijakan privasi.
-                  </label>
-                </div>
+              <div class="m-3">
+                <textarea
+                  class="form-control"
+                  id="pesan"
+                  placeholder="Pesan"
+                  rows="3"
+                ></textarea>
+              </div>
 
-                <div class="m-3">
-                  <button type="button" class="btn btn-primary">Kirim</button>
-                </div>
+              <div class="form-check m-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Saya telah membaca dan menerima kebijakan privasi.
+                </label>
+              </div>
+
+              <div class="m-3">
+                <button type="button" class="btn btn-primary">Kirim</button>
               </div>
             </div>
           </div>
@@ -921,21 +998,21 @@
 
     <footer class="py-3" style="background-color: #e7f4fa">
       <div class="container">
-        <div class="row">
-          <div class="col-md-4">
+        <div class="row align-items-center text-center text-md-left">
+          <div class="col-md-4 mb-3 mb-md-0">
             <img
               src="assets/logo.png"
               alt="Logo"
               width="50%"
-              class="img-fluid mb-3"
+              class="img-fluid"
             />
           </div>
-          <div class="col-md-4 text-center">
+          <div class="col-md-4 mb-3 mb-md-0">
             <h6>© 2014-2024 PT Metafora Indonesia Teknologi</h6>
           </div>
 
-          <div class="col-md-4 text-right">
-            <div class="mx-4">
+          <div class="col-md-4 text-center text-md-right">
+            <div class="mx-2 mx-md-4">
               <a href="#"><i class="bi bi-instagram mx-2"></i></a>
               <a href="#"><i class="bi bi-facebook mx-2"></i></a>
               <a href="#"> <i class="bi bi-linkedin mx-2"></i></a>
@@ -952,6 +1029,11 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.6/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script
+  src="https://kit.fontawesome.com/f606adbcd6.js"
+  crossorigin="anonymous"
+></script>
 
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>

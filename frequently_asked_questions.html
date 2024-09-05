@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Career - IDMETAFORA ERP</title>
+    <title>Software ERP Indonesia - IDMETAFORA ERP</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -25,12 +25,134 @@
       rel="stylesheet"
     />
 
-    <style></style>
+    <style>
+      .our-faq-wrapper {
+        float: left;
+        width: 100%;
+        padding: 89px 0 60px;
+        background: #f5f5f5;
+      }
+      .our-faq-wrapper {
+        position: relative;
+        z-index: 10; /* Adjust as needed */
+      }
+      .our-faq-wrapper {
+        padding: 90px 0 60px;
+        background: #fff;
+      }
+      .accordion .card {
+        border: none;
+        margin-bottom: 30px;
+      }
+      .our-faq-wrapper .btn-link {
+        display: block;
+        width: 100%;
+        text-align: left;
+        position: relative;
+        background: #242c42;
+        color: #fff;
+        border-radius: 0;
+        padding: 7px 15px 12px;
+        font-size: 16px;
+        overflow: hidden;
+        border: none;
+        font-weight: 600;
+      }
+      .our-faq-wrapper .btn-link:hover,
+      .our-faq-wrapper .btn-link:focus {
+        text-decoration: none;
+      }
+      .our-faq-wrapper .btn-link:after {
+        position: absolute;
+        content: "\f068";
+        right: 15px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        font-family: fontawesome;
+      }
+      .our-faq-wrapper .btn-link.collapsed:after {
+        content: "\f067";
+      }
+      .our-faq-wrapper .btn-link:before {
+        position: absolute;
+        content: "";
+        background: #bc4242;
+        -webkit-transform: skew(-35deg);
+        transform: skew(-35deg);
+        height: 100%;
+        width: 50%;
+        left: 90%;
+        top: 0;
+      }
+      .card-header {
+        padding: 0;
+        background: transparent;
+        border-bottom: none;
+      }
+      .card-body {
+        position: relative;
+      }
+      .card-body:after {
+        position: absolute;
+        content: "";
+        height: 2px;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        background: #242c42;
+      }
+      .card-body:before {
+        position: absolute;
+        content: "";
+        height: 2px;
+        width: 50%;
+        left: 0;
+        bottom: 0;
+        background: #bc4242;
+        z-index: 1;
+      }
+
+      .pagination-wrapper .pagination .page-item .page-link {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        line-height: 36px;
+        padding: 0;
+        margin: 0 5px;
+        text-align: center;
+        background-color: #fd6172; /* Updated initial color */
+        border: none;
+        color: #fff; /* White text color to contrast with the background */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      .pagination-wrapper .pagination .page-item .page-link:hover {
+        background-color: #e85665; /* Slightly darker color on hover */
+        color: #fff;
+      }
+
+      .pagination-wrapper .pagination .page-item.active .page-link {
+        background-color: #ff4d67; /* Active page color */
+        color: #fff;
+        border: none;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+      }
+
+      .pagination-wrapper .pagination .page-item .page-link:focus {
+        box-shadow: none;
+      }
+
+      .pagination-wrapper .pagination .page-item.disabled .page-link {
+        background-color: #f8f9fa;
+        color: #adb5bd;
+      }
+    </style>
   </head>
 
   <body>
     <!-- Navbar -->
-
     <nav
       class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow border-bottom animate__animated animate__fadeIn"
     >
@@ -178,48 +300,58 @@
         </ul>
       </div>
     </nav>
-
     <!-- End Navbar -->
-    <!-- Content -->
 
     <header
-      class="py-3 border-bottom border-top"
-      style="background-color: #e7f4fa"
+      class="py-5"
+      style="
+        background-image: url('assets/faq_img/bg/1.png');
+        background-size: cover;
+        background-position: center;
+      "
     >
-      <div class="container pt-5">
+      <div class="container py-5">
         <div class="row align-items-center">
           <div class="col-md-6">
-            <h1
-              class="font-weight-bold"
+            <p
+              class="font-weight-bold h1"
+              style="color: #41496e"
               data-aos="fade-right"
               data-aos-delay="100"
             >
-              <span class="text-danger">Careers</span>
-            </h1>
-            <p class="py-3" data-aos="fade-right" data-aos-delay="200">
-              Selamat datang di IDMETAFORA (PT Metafora Indonesia Teknologi),
-              tempat di mana potensi Anda bertemu dengan peluang tak terbatas!
-              Sebagai perusahaan software ERP yang berkembang pesat di
-              Indonesia, kami mencari individu yang bersemangat, kreatif, dan
-              berkomitmen untuk bergabung dengan tim kami.
+              Frequently Answer & Questions
             </p>
-            <a
-              href="#"
-              class="btn btn-primary"
+
+            <p></p>
+            <p
+              class="font-weight-normal py-3 h5"
               data-aos="fade-right"
               data-aos-delay="100"
-              ><i class="fa-solid fa-rocket"></i> Bergabunglah dengan kami
-              <i class="fa-solid fa-arrow-right"></i>
-            </a>
+            >
+              Apa yang bisa kami bantu?
+            </p>
+
+            <form class="form-inline my-2 my-lg-0">
+              <input
+                class="form-control mr-sm-2"
+                type="search"
+                placeholder="Ketik pertanyaan Anda"
+              />
+              <button
+                class="btn btn-outline-primary my-2 my-sm-0"
+                type="submit"
+              >
+                Search
+              </button>
+            </form>
           </div>
-          <div class="col-md-6" data-aos="fade-down" data-aos-delay="200">
-            <img src="assets/career_img/career.png" alt="" class="img-fluid" />
+          <div class="col-md-6" data-aos="fade-left" data-aos-delay="100">
+            <img src="assets/faq_img/imgHeader.png" alt="" class="img-fluid" />
           </div>
         </div>
       </div>
     </header>
 
-    <!-- Company -->
     <section class="py-4 border-bottom">
       <div class="container">
         <div class="row">
@@ -287,354 +419,200 @@
         </div>
       </div>
     </section>
-    <!-- End Company -->
 
-    <section class="py-5 border-bottom" style="background-color: #e7f4fa">
+    <div class="our-faq-wrapper" style="background-color: #e7f4fa">
       <div class="container">
         <div class="row">
-          <div class="col-md-12 text-center">
-            <img
-              src="assets/career_img/imgHire.png"
-              alt=""
-              width="80%"
-              class="img-fluid"
-              data-aos="fade-down"
-              data-aos-delay="100"
-            />
+          <div class="col-md-12">
+            <div class="faq-title text-center pb-3" data-aos="fade-up">
+              <p class="font-weight-bold h2 pb-5">FAQ contains about ERP</p>
+            </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="py-5 border-bottom">
-      <div class="container col-md-8 py-5">
-        <div class="row py-5">
-          <div class="col-md-12 text-center">
-            <p
-              class="font-weight-bold h2"
-              data-aos="fade-right"
-              data-aos-delay="100"
-            >
-              Deskripsi Perusahaan:
-            </p>
-            <p
-              class="font-weight-bold h5"
-              data-aos="fade-right"
-              data-aos-delay="200"
-            >
-              <span class="text-danger">IDMETAFORA</span> adalah pelopor dalam
-              penyediaan solusi perangkat lunak terpadu (ERP) di Indonesia.
-              Dengan fokus utama pada pengembangan teknologi terkini, kami
-              membantu perusahaan mengelola dan mengoptimalkan sumber daya
-              mereka dengan efisien. Sebagai bagian dari tim
-              <span class="text-primary">IDMETAFORA</span>, Anda akan menjadi
-              bagian integral dari perjalanan kami untuk memberikan solusi
-              inovatif kepada klien kami, membantu mereka mencapai kesuksesan
-              bisnis yang berkelanjutan.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="py-5 border-bottom" style="background-color: #e7f4fa">
-      <div class="container col-md-10">
-        <div class="row">
-          <div class="col-md-12 text-center py-5">
-            <h3
-              class="font-weight-bold"
-              data-aos="fade-down"
-              data-aos-delay="100"
-            >
-              Benefit Bekerja di
-              <span class="text-danger">IDMETAFORA</span>
-            </h3>
-          </div>
-        </div>
-        <div class="row col-md-12">
-          <img
-            src="assets/career_img/acc/1.png"
-            alt=""
-            class="position-absolute"
-            style="bottom: 0; left: 100px; width: 70%"
-          />
-          <div class="col-md-4">
-            <div
-              class="col-md-10 mb-4"
-              data-aos="fade-down"
-              data-aos-delay="200"
-            >
-              <div
-                class="card shadow"
-                style="
-                  border-radius: 0px 20px 0px 20px;
-                  background-color: white;
-                "
-              >
-                <div class="card-body text-right">
-                  <img
-                    src="assets/career_img/icon/1.png"
-                    alt="Proyek Kontrak"
-                    class="img-fluid mb-3"
-                    width="15%"
-                  />
-                  <h6 class="font-weight-bold">
-                    Lingkungan Kerja Kolaboratif :
-                  </h6>
-                  <p class="card-text" style="font-size: 12px">
-                     Kami percaya bahwa kolaborasi adalah kunci kesuksesan. Di
-                    IDMETAFORA, Anda akan bergabung dengan tim yang penuh
-                    semangat dan berdedikasi untuk mencapai tujuan bersama.
-                  </p>
+          <div class="col-lg-6">
+            <div class="accordion" id="accordion1" data-aos="fade-right">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button
+                      class="btn btn-link"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      How does ERP help customer satisfaction?
+                    </button>
+                  </h5>
                 </div>
-              </div>
-            </div>
-
-            <div
-              class="col-md-10 mb-4"
-              data-aos="fade-down"
-              data-aos-delay="300"
-            >
-              <div
-                class="card shadow"
-                style="
-                  border-radius: 0px 20px 0px 20px;
-                  background-color: white;
-                "
-              >
-                <div class="card-body text-right">
-                  <img
-                    src="assets/career_img/icon/2.png"
-                    alt="Proyek Kontrak"
-                    class="img-fluid mb-3"
-                    width="15%"
-                  />
-                  <h6 class="font-weight-bold">
-                     Peluang Pengembangan Karir :
-                  </h6>
-                  <p class="card-text" style="font-size: 12px">
-                    Kami memberikan dukungan penuh untuk pertumbuhan dan
-                    perkembangan profesional Anda. Melalui pelatihan dan
-                    pengembangan berkelanjutan, kami mendorong karyawan kami
-                    untuk mencapai potensi penuh mereka.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4" data-aos="fade-down" data-aos-delay="400">
-            <img
-              src="assets/architect_img/img2.png"
-              alt=""
-              width="100%"
-              class="img-fluid d-none d-md-block"
-            />
-          </div>
-
-          <div class="col-md-4">
-            <div
-              class="col-md-10 mb-4"
-              data-aos="fade-down"
-              data-aos-delay="500"
-            >
-              <div
-                class="card shadow"
-                style="
-                  border-radius: 20px 0px 20px 0px;
-                  background-color: white;
-                "
-              >
-                <div class="card-body text-left">
-                  <img
-                    src="assets/career_img/icon/3.png"
-                    alt="Proyek Kontrak"
-                    class="img-fluid mb-3"
-                    width="15%"
-                  />
-                  <h6 class="font-weight-bold">Proyek Menarik :</h6>
-                  <p class="card-text" style="font-size: 12px">
-                    Bergabunglah dengan kami dalam menghadapi tantangan
-                    teknologi terbaru. Dengan klien dari berbagai industri, Anda
-                    akan terlibat dalam proyek-proyek yang menantang dan
-                    beragam.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="col-md-10 mb-4"
-              data-aos="fade-down"
-              data-aos-delay="600"
-            >
-              <div
-                class="card shadow"
-                style="
-                  border-radius: 20px 0px 20px 0px;
-                  background-color: white;
-                "
-              >
-                <div class="card-body text-left">
-                  <img
-                    src="assets/career_img/icon/4.png"
-                    alt="Proyek Kontrak"
-                    class="img-fluid mb-3"
-                    width="15%"
-                  />
-                  <h6 class="font-weight-bold">
-                    Budaya Perusahaan yang Dinamis :
-                  </h6>
-                  <p class="card-text" style="font-size: 12px">
-                    Di IDMETAFORA, kami memahami bahwa keberagaman adalah
-                    kekuatan. Kami menciptakan lingkungan yang inklusif, di mana
-                    setiap suara dihargai dan dihormati.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="pb-5 border-bottom">
-      <div class="container col-md-8">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <p
-              class="mb-5 font-weight-bold py-5 h3"
-              data-aos="fade-down"
-              data-aos-delay="100"
-            >
-              Kami mengajak para talenta muda Indonesia yang kompeten di bidang
-              web development untuk bergabung bersama kami.
-            </p>
-          </div>
-        </div>
-        <div class="col-md-12">
-          <div class="row">
-            <div class="col-md-6 mb-4">
-              <div class="text-center p-3">
-                <img
-                  src="assets/accounting_img/acc/4.png"
-                  alt=""
-                  class="position-absolute"
-                  style="top: 50%; left: -5px"
-                  width="30%"
-                />
-
-                <img
-                  src="assets/career_img/img1.png"
-                  class="img-fluid mb-4"
-                  width="100%"
-                  alt="image nilai"
-                  data-aos="fade-right"
-                  data-aos-delay="300"
-                />
-              </div>
-            </div>
-            <div class="col-md-6 mb-4">
-              <div class="row">
                 <div
-                  class="col-md-12 d-flex justify-content-center"
-                  data-aos="fade-down"
-                  data-aos-delay="300"
+                  id="collapseOne"
+                  class="collapse show"
+                  aria-labelledby="headingOne"
+                  data-parent="#accordion1"
                 >
-                  <div class="">
-                    <img
-                      src="assets/career_img/icon/5.png"
-                      alt=""
-                      width="80px"
-                    />
-                  </div>
-                  <div class="row px-3">
-                    <div class="col-md-12">
-                      <h5><b>Tanggung Jawab Pekerjaan:</b></h5>
-                      <p class="font-weight-light">
-                        Mengembangkan website dan sistem informasi berbasis web.
-                      </p>
-                    </div>
+                  <div class="card-body" data-aos="fade-left">
+                    An ERP system helps companies: deliver goods to customers
+                    faster, improve productivity, and implement inventory
+                    control. A modern system also fosters better customer
+                    communication through reliable lead, opportunity, and quote
+                    tracking. Other business benefits of ERP include Streamlined
+                    shipping operations.
                   </div>
                 </div>
               </div>
-
-              <div class="row">
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      Why do we create customers in ERP?
+                    </button>
+                  </h5>
+                </div>
                 <div
-                  class="col-md-12 d-flex justify-content-center"
-                  data-aos="fade-down"
-                  data-aos-delay="400"
+                  id="collapseTwo"
+                  class="collapse"
+                  aria-labelledby="headingTwo"
+                  data-parent="#accordion1"
                 >
-                  <div class="">
-                    <img
-                      src="assets/career_img/icon/6.png"
-                      alt=""
-                      width="80px"
-                    />
-                  </div>
-                  <div class="row px-3">
-                    <div class="col-md-12">
-                      <h5><b>Syarat Pengalaman:</b></h5>
-                      <p class="font-weight-light">
-                        Pengalaman minimal 1 tahun di bidang web development.
-                      </p>
-                    </div>
+                  <div class="card-body" data-aos="fade-left">
+                    At a high level, integrating ERP and CRM empowers your
+                    employees to provide fast, informed and more personalized
+                    customer service. You can reduce inconsistencies between
+                    sales and inventory, increase the accuracy of quotes, reduce
+                    manual data entry, and increase the information available
+                    about each customer.
                   </div>
                 </div>
               </div>
-
-              <div class="row">
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h5 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      How does ERP improve customer experience?
+                    </button>
+                  </h5>
+                </div>
                 <div
-                  class="col-md-12 d-flex justify-content-center"
-                  data-aos="fade-down"
-                  data-aos-delay="500"
+                  id="collapseThree"
+                  class="collapse"
+                  aria-labelledby="headingThree"
+                  data-parent="#accordion1"
                 >
-                  <div class="">
-                    <img
-                      src="assets/career_img/icon/7.png"
-                      alt=""
-                      width="80px"
-                    />
-                  </div>
-                  <div class="row px-3">
-                    <div class="col-md-12">
-                      <h5><b>Keahlian:</b></h5>
-                      <p class="font-weight-light">
-                        – Menguasai framework CodeIgniter (syarat utama) <br />
-                        – Menguasai HTML, PHP, CSS, Javascript, dan MySQL <br />
-                        – Terbiasa menggunakan Git dan Trello <br />
-                        – Dapat berkomunikasi dengan baik <br />
-                        – Mampu bekerja sendiri ataupun bersama tim <br />
-                        – Memiliki portofolio yang sudah pernah dikerjakan
-                      </p>
-                    </div>
+                  <div class="card-body" data-aos="fade-left">
+                    Better Inventory and Order Management.<br />
+                    ERP software can help you spare your customers from this
+                    experience by keeping stock in check with re-order levels
+                    and automated notifications and by helping to predict
+                    customer demand. Another disappointing and frustrating
+                    customer experience is the delayed delivery of shipments.
                   </div>
                 </div>
               </div>
-
-              <div class="row">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="accordion" id="accordion2" data-aos="fade-left">
+              <div class="card">
+                <div class="card-header" id="headingFour">
+                  <h5 class="mb-0">
+                    <button
+                      class="btn btn-link"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseFour"
+                      aria-expanded="false"
+                      aria-controls="collapseFour"
+                    >
+                      What are the advantages of ERP?
+                    </button>
+                  </h5>
+                </div>
                 <div
-                  class="col-md-12 d-flex justify-content-center"
-                  data-aos="fade-down"
-                  data-aos-delay="600"
+                  id="collapseFour"
+                  class="collapse"
+                  aria-labelledby="headingFour"
+                  data-parent="#accordion2"
                 >
-                  <div class="">
-                    <img
-                      src="assets/career_img/icon/8.png"
-                      alt=""
-                      width="80px"
-                    />
+                  <div class="card-body" data-aos="fade-right">
+                    ERP increases efficiency and productivity by helping users
+                    navigate complex processes, preventing data re-entry, and
+                    improving functions such as production, order completion,
+                    and delivery. Streamlined, efficient processes throughout.
                   </div>
-                  <div class="row px-3">
-                    <div class="col-md-12">
-                      <h5><b>Otomatisasi</b></h5>
-                      <p class="font-weight-light">
-                        – Pria/Wanita <br />
-                        – Pendidikan minimal SLTA jurusan Rekayasa Perangkat
-                        Lunak atau Teknik Komputer Jaringan <br />
-                        – Usia 20–35 tahun
-                      </p>
-                    </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingFive">
+                  <h5 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseFive"
+                      aria-expanded="false"
+                      aria-controls="collapseFive"
+                    >
+                      How do you create an ERP customer?
+                    </button>
+                  </h5>
+                </div>
+                <div
+                  id="collapseFive"
+                  class="collapse"
+                  aria-labelledby="headingFive"
+                  data-parent="#accordion2"
+                >
+                  <div class="card-body" data-aos="fade-right">
+                    Creating a customer is very easy in IDMETAFORA ERP. To
+                    create a customer go to Admin Dashboard &rarr; Access &rarr;
+                    Users &rarr; Add Users. This page will let you create
+                    customers for your enterprise.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingSix">
+                  <h5 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseSix"
+                      aria-expanded="false"
+                      aria-controls="collapseSix"
+                    >
+                      Would you recommend an ERP to the client?
+                    </button>
+                  </h5>
+                </div>
+                <div
+                  id="collapseSix"
+                  class="collapse"
+                  aria-labelledby="headingSix"
+                  data-parent="#accordion2"
+                >
+                  <div class="card-body" data-aos="fade-right">
+                    An ERP system allows users to access information on their
+                    mobile devices from anywhere. So when your sales force is
+                    out in the field talking with customers or potential buyers,
+                    they can get immediate answers to questions about inventory,
+                    production schedules, order shipments, and incoming
+                    supplies.
                   </div>
                 </div>
               </div>
@@ -642,56 +620,27 @@
           </div>
         </div>
       </div>
-    </section>
-
-    <section class="py-5" style="background-color: #e7f4fa">
-      <div class="container">
-        <div class="row justify-content-center align-items-center">
-          <div class="col-md-5" data-aos="fade-right" data-aos-delay="100">
-            <div
-              class="p-3"
-              style="
-                background-color: #ffffff;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                border-radius: 20px;
-              "
-            >
-              <p>
-                <span class="font-weight-bold text-primary">Insentif :</span>
-                <br />
-                Uang lembur, Bonus Project.
-              </p>
-
-              <p>
-                <span class="font-weight-bold text-danger"
-                  >Waktu Bekerja :</span
-                >
-                <br />
-                Pukul 08.00–16.00 (Senin–Jumat), Pukul 08.00–14.00 (Sabtu)
-                <br />
-                Kami mengajak para talenta muda Indonesia yang kompeten di
-                bidang web development untuk bergabung bersama kami. <br />
-                Apply via link : https://idmetafora.com/apply atau kirimkan
-                email cv & lamaran ke hrd@idmetafora.com <br />
-                Contact Person: <br />
-                0896 6423 0232 (Hafidz - IDMETAFORA)
-              </p>
-            </div>
-          </div>
-
-          <div class="col-md-6" data-aos="fade-down" data-aos-delay="200">
-            <img
-              src="assets/career_img/imgPeople2.png"
-              alt=""
-              class="img-fluid"
-              width="100%"
-            />
-          </div>
-        </div>
+      <div class="pagination-wrapper text-center mt-4" data-aos="fade-up">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </section>
+    </div>
 
-    <!-- Footer -->
     <style>
       /* Default background color */
       .custom-section {
@@ -891,6 +840,7 @@
   src="https://kit.fontawesome.com/f606adbcd6.js"
   crossorigin="anonymous"
 ></script>
+
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
   // Inisialisasi AOS

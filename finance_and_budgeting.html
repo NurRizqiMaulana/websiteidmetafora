@@ -849,103 +849,160 @@
 
     <!-- End Content -->
 
-    <section class="py-5" style="background-color: #e7f4fa">
+    <style>
+      /* Default background color */
+      .custom-section {
+        background-color: #e7f4fa;
+      }
+
+      /* Adjust layout on smaller screens */
+      @media (max-width: 768px) {
+        .custom-section {
+          background-color: rgba(
+            16,
+            144,
+            203,
+            0.7
+          ); /* #1090CB with 70% opacity */
+        }
+
+        .imgAccF {
+          display: none;
+        }
+        .imgAccF1 {
+          display: none;
+        }
+
+        /* Center the content and adjust padding/margins */
+        .custom-section .container {
+          margin: 0 auto;
+          padding: 20px;
+        }
+
+        .custom-section .row {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+
+        /* Add margin above the title */
+        .custom-section .col-md-6 p:first-child {
+          margin-top: 20px;
+        }
+
+        /* Ensure form fields are full width and padding adjusted */
+        .custom-section .form-control {
+          width: 100%;
+          margin: 10px 0;
+        }
+
+        .custom-section .btn {
+          width: 100%;
+        }
+
+        /* Adjust the phone/email spacing */
+        .custom-section .mb-5 {
+          margin-bottom: 20px;
+        }
+      }
+    </style>
+
+    <section class="py-5 custom-section">
       <div class="container col-md-8">
         <img
           src="assets/imgAccF.png"
           alt=""
-          class="position-absolute"
+          class="position-absolute imgAccF"
           style="bottom: -20px; left: -100px; width: 120%"
         />
         <img
           src="assets/imgAccF1.png"
           alt=""
-          class="position-absolute img-fluid"
+          class="position-absolute imgAccF1 img-fluid"
           style="top: 0px; right: 0px; width: 80%"
         />
 
         <div class="row">
           <div class="col-md-6 d-flex flex-column justify-content-end">
-            <p class="" style="font-size: 18px">
+            <p class="" style="font-size: 18px; color: #ffffff">
               <b>IDMETAFORA</b>
             </p>
-            <p class="" style="font-size: 16px">
+            <p class="" style="font-size: 16px; color: #ffffff">
               <b>IDMETAFORA</b> adalah Perusahaan Solusi TI, bisnis utama kami
               adalah Pengembangan ERP. Kami juga mendukung klien kami dalam
               bidang Internet of Things, dan Desain & Pengembangan Web.
             </p>
 
-            <div class="mb-5">
-              <span class="mr-3">
-                <i class="fa-solid fa-phone"></i> +62 896 6423 0232</span
-              >
-
-              <span>
-                <i class="fa-solid fa-envelope"></i> info@idmetafora.com</span
-              >
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div
-              class="p-3"
-              style="
-                background-color: #ffffff;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                border-radius: 20px;
-              "
+            <div class="mb-5" style="color: #fff;"">
+            <span class="mr-3">
+              <i class="fa-solid fa-phone"></i> +62 896 6423 0232</span
             >
-              <div class="mt-3 mb-3">
-                <div class="m-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="name"
-                    placeholder="Namaa Lengkap"
-                  />
-                </div>
 
-                <div class="m-3">
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="email"
-                    placeholder="Email"
-                  />
-                </div>
+            <span>
+              <i class="fa-solid fa-envelope"></i> info@idmetafora.com</span
+            >
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div
+            class="p-3"
+            style="
+              background-color: #ffffff;
+              box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+              border-radius: 20px;
+            "
+          >
+            <div class="mt-3 mb-3">
+              <div class="m-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Nama Lengkap"
+                />
+              </div>
 
-                <div class="m-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="telepon"
-                    placeholder="No. Telepon"
-                  />
-                </div>
+              <div class="m-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Email"
+                />
+              </div>
 
-                <div class="m-3">
-                  <textarea
-                    class="form-control"
-                    id="pesan"
-                    placeholder="Pesan"
-                    rows="3"
-                  ></textarea>
-                </div>
+              <div class="m-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="telepon"
+                  placeholder="No. Telepon"
+                />
+              </div>
 
-                <div class="form-check m-3">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="flexCheckDefault"
-                  />
-                  <label class="form-check-label" for="flexCheckDefault">
-                    Saya telah membaca dan menerima kebijakan privasi.
-                  </label>
-                </div>
+              <div class="m-3">
+                <textarea
+                  class="form-control"
+                  id="pesan"
+                  placeholder="Pesan"
+                  rows="3"
+                ></textarea>
+              </div>
 
-                <div class="m-3">
-                  <button type="button" class="btn btn-primary">Kirim</button>
-                </div>
+              <div class="form-check m-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Saya telah membaca dan menerima kebijakan privasi.
+                </label>
+              </div>
+
+              <div class="m-3">
+                <button type="button" class="btn btn-primary">Kirim</button>
               </div>
             </div>
           </div>
