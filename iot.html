@@ -24,6 +24,36 @@
       href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
       rel="stylesheet"
     />
+
+    <style>
+      /* CSS untuk accordion icon */
+      #accordion .card-header button {
+        position: relative;
+        padding-left: 40px; /* Membuat ruang untuk tanda + atau - */
+        font-weight: bold;
+        text-align: left; /* Menjaga teks tetap rata kiri */
+        display: flex;
+        align-items: center; /* Menyelaraskan teks dengan ikon */
+        color: black; /* Mengubah warna teks pertanyaan menjadi hitam */
+        background-color: transparent; /* Menghilangkan background default */
+        border: none; /* Menghilangkan border default */
+      }
+
+      /* Tambahkan + sebelum setiap tombol */
+      #accordion .card-header button::before {
+        content: "+";
+        position: absolute;
+        left: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        color: black; /* Warna tanda + atau - */
+      }
+
+      /* Ganti tanda + menjadi - saat accordion dibuka */
+      #accordion .card-header button[aria-expanded="true"]::before {
+        content: "-";
+      }
+    </style>
   </head>
 
   <body>
@@ -1164,10 +1194,18 @@
 
           <div class="col-md-4 text-center text-md-right">
             <div class="mx-2 mx-md-4">
-              <a href="#"><i class="bi bi-instagram mx-2"></i></a>
-              <a href="#"><i class="bi bi-facebook mx-2"></i></a>
-              <a href="#"> <i class="bi bi-linkedin mx-2"></i></a>
-              <a href="#"><i class="bi bi-twitter mx-2"></i></a>
+              <a href="https://instagram.com/idmetafora"
+                ><i class="bi bi-instagram mx-2"></i
+              ></a>
+              <a href="https://facebook.com/idmetafora"
+                ><i class="bi bi-facebook mx-2"></i
+              ></a>
+              <a href="https://linkedin.com/company/idmetafora">
+                <i class="bi bi-linkedin mx-2"></i
+              ></a>
+              <a href="https://twitter.com/idmetafora"
+                ><i class="bi bi-twitter mx-2"></i
+              ></a>
             </div>
           </div>
         </div>
