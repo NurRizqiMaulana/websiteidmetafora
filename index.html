@@ -195,7 +195,7 @@
     >
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-md-6">
+          <div class="col-md-6 order-2 order-md-1">
             <h1
               class="font-weight-bold"
               data-aos="fade-right"
@@ -204,17 +204,26 @@
               <span class="text-danger">Software</span> ERP
               <span class="text-primary">IDMETAFORA</span>
             </h1>
-            <h6
-              class="font-weight-light py-3"
+
+            <img
+              src="assets/imgheader.png"
+              alt=""
+              class="img-fluid my-3 d-md-none text-center"
+              data-aos="fade-left"
+              data-aos-delay="100"
+            />
+
+            <p
+              class="font-weight-normal py-3"
               data-aos="fade-right"
               data-aos-delay="100"
             >
               Kami adalah pusat profesional teknologi di Jogja, menawarkan jasa
               pembuatan software, website, dan aplikasi IoT. Bersama kami,
               kembangkan potensi Anda dalam bisnis ERP & IoT.
-            </h6>
-            <a href="#"
-              ><button
+            </p>
+            <a href="#">
+              <button
                 type="button"
                 style="
                   color: white;
@@ -225,8 +234,8 @@
                 "
               >
                 Hubungi Kami
-              </button></a
-            >
+              </button>
+            </a>
 
             <a href="#">
               <button
@@ -240,11 +249,19 @@
                 "
               >
                 Lihat Detail
-              </button></a
-            >
+              </button>
+            </a>
           </div>
-          <div class="col-md-6" data-aos="fade-left" data-aos-delay="100">
-            <img src="assets/imgheader.png" alt="" class="img-fluid" />
+          <div
+            class="col-md-6 order-1 order-md-2"
+            data-aos="fade-left"
+            data-aos-delay="100"
+          >
+            <img
+              src="assets/imgheader.png"
+              alt=""
+              class="img-fluid d-none d-md-block"
+            />
           </div>
         </div>
       </div>
@@ -253,6 +270,11 @@
     <!-- Company -->
     <section class="py-4 border-bottom">
       <div class="container">
+        <div class="row py-4">
+          <div class="col-md-12 text-center">
+            <p class="h3 font-weight-bold">Klien Kami</p>
+          </div>
+        </div>
         <div class="row">
           <div class="col-md-12">
             <div
@@ -847,19 +869,18 @@
     <!-- End Program Kami-->
 
     <!-- Mengapa Memilih Kami -->
-    <section
-      class="py-5"
-      style="
-        background-image: url('assets/home_img/bg/1.png');
-        background-size: cover;
-      "
-    >
-      <div class="container col-md-10 py-5">
+    <section class="py-5">
+      <div class="container-fluid col-md-12">
         <div class="row">
-          <div class="col-md-12 text-center py-5">
+          <img
+            src="assets/home_img/bg/1.png"
+            class="img-fluid"
+            alt=""
+            width="100%"
+          />
+          <div class="col-md-12 text-center pb-5">
             <p
               class="font-weight-bold h4"
-              style="padding-top: 150px"
               data-aos="fade-up"
               data-aos-delay="100"
             >
@@ -868,233 +889,267 @@
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-            <div
-              class="p-4 mb-4 h-90"
-              style="background-color: #eff4f6; border-radius: 20px"
-            >
-              <div
-                class="d-flex flex-row justify-content-right align-items-center"
-              >
-                <img
-                  src="assets/services/img3.png"
-                  class="img-fluid mb-2 mr-2"
-                  width="20%"
-                  alt="Terpercaya"
-                />
-                <p class="font-weight-bold">Terpercaya</p>
+          <div class="col-md-10">
+            <div class="row justify-content-center">
+              <!-- Item 1 -->
+              <div class="col-md-6 mb-5">
+                <div
+                  class="p-3"
+                  style="border-radius: 20px; background-color: #f2f2f7"
+                >
+                  <div class="d-flex align-items-center justify-content-center">
+                    <div class="flex-shrink-0">
+                      <img
+                        src="assets/services/img3.png"
+                        class="img-fluid mb-2 mr-2"
+                        style="height: 100px; width: auto"
+                        alt="Terpercaya"
+                      />
+                    </div>
+                    <div class="p-3 flex-grow-1">
+                      <p class="font-weight-bold">Terpercaya</p>
+                      <p>
+                        Kami berkomitmen menjadikan IDMETAFORA sebagai Perangkat
+                        Lunak ERP terbaik di Indonesia.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <p>
-                Kami berkomitmen menjadikan IDMETAFORA sebagai Perangkat Lunak
-                ERP terbaik di Indonesia.
-              </p>
-            </div>
-          </div>
 
-          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
-            <div
-              class="p-4 mb-4"
-              style="background-color: #eff4f6; border-radius: 20px"
-            >
-              <div
-                class="d-flex flex-row justify-content-right align-items-center"
-              >
-                <img
-                  src="assets/services/img1.png"
-                  class="img-fluid mb-2 mr-2"
-                  width="20%"
-                  alt="Terpercaya"
-                />
-                <p class="font-weight-bold">Garansi Pemeliharaan</p>
+              <!-- Item 2 -->
+              <div class="col-md-6 mb-5">
+                <div
+                  class="p-3"
+                  style="border-radius: 20px; background-color: #f2f2f7"
+                >
+                  <div class="d-flex align-items-center justify-content-center">
+                    <div class="flex-shrink-0">
+                      <img
+                        src="assets/services/img1.png"
+                        class="img-fluid mb-2 mr-2"
+                        style="height: 100px; width: auto"
+                        alt="Garansi Pemeliharaan"
+                      />
+                    </div>
+                    <div class="p-3 flex-grow-1">
+                      <p class="font-weight-bold">Garansi Pemeliharaan</p>
+                      <p>
+                        Tim kami berkomitmen untuk mendukung setiap klien
+                        menyesuaikan ERP kami dengan alur bisnis Anda hingga
+                        berhasil.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <p>
-                Tim kami berkomitmen untuk mendukung setiap klien untuk
-                menyesuaikan ERP kami dengan alur bisnis Anda hingga berhasil.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
-            <div
-              class="p-4 mb-4"
-              style="background-color: #eff4f6; border-radius: 20px"
-            >
-              <div
-                class="d-flex flex-row justify-content-right align-items-center"
-              >
-                <img
-                  src="assets/services/img2.png"
-                  class="img-fluid mb-2 mr-2"
-                  width="20%"
-                  alt="Garansi Pemeliharaan"
-                />
-                <p class="font-weight-bold">Garansi Pemeliharaan</p>
-              </div>
-              <p>
-                Tanpa Biaya Tambahan Per Pengguna, Anda dapat dengan mudah
-                menambahkan pengguna baru di ERP tanpa dikenakan biaya tambahan.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-            <div
-              class="p-4 mb-4"
-              style="background-color: #eff4f6; border-radius: 20px"
-            >
-              <div
-                class="d-flex flex-row justify-content-right align-items-center"
-              >
-                <img
-                  src="assets/services/img4.png"
-                  class="img-fluid mb-2 mr-2"
-                  width="20%"
-                  alt="Pengguna Tanpa Batas"
-                />
-                <p class="font-weight-bold">Sistem Modular</p>
-              </div>
-              <p>
-                Kami dapat menginstal ERP kami di modul khusus perusahaan Anda
-                dengan fitur-fitur yang hanya Anda perlukan berdasarkan ukuran,
-                struktur, alur bisnis, dan rencana perusahaan Anda.
-              </p>
-            </div>
-          </div>
 
-          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
-            <div
-              class="p-4 mb-4"
-              style="background-color: #eff4f6; border-radius: 20px"
-            >
-              <div
-                class="d-flex flex-row justify-content-right align-items-center"
-              >
-                <img
-                  src="assets/services/img5.png"
-                  class="img-fluid mb-2 mr-2"
-                  width="20%"
-                  alt="Pengguna Tanpa Batas"
-                />
-                <p class="font-weight-bold">Berkelanjutan</p>
+              <!-- Item 3 -->
+              <div class="col-md-6 mb-5">
+                <div
+                  class="p-3"
+                  style="border-radius: 20px; background-color: #f2f2f7"
+                >
+                  <div class="d-flex align-items-center justify-content-center">
+                    <div class="flex-shrink-0">
+                      <img
+                        src="assets/services/img2.png"
+                        class="img-fluid mb-2 mr-2"
+                        style="height: 100px; width: auto"
+                        alt="Pengguna Tanpa Batas"
+                      />
+                    </div>
+                    <div class="p-3 flex-grow-1">
+                      <p class="font-weight-bold">Pengguna Tanpa Batas</p>
+                      <p>
+                        Tanpa Biaya Tambahan Per Pengguna, Anda dapat
+                        menambahkan pengguna baru di ERP tanpa biaya tambahan.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <p>
-                ERP framework kami dirancang dengan baik untuk membuat rencana
-                pengembangan yang kompleks. Ketika Anda memiliki rencana untuk
-                membuat perusahaan Anda lebih besar di masa depan, ERP Framework
-                kami dirancang untuk itu.
-              </p>
-            </div>
-          </div>
 
-          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
-            <div
-              class="p-4 mb-4"
-              style="background-color: #eff4f6; border-radius: 20px"
-            >
-              <div
-                class="d-flex flex-row justify-content-right align-items-center"
-              >
-                <img
-                  src="assets/services/img10.png"
-                  class="img-fluid mb-2 mr-2"
-                  width="20%"
-                  alt="Pengguna Tanpa Batas"
-                />
-                <p class="font-weight-bold">ERP Awan</p>
+              <!-- Item 4 -->
+              <div class="col-md-6 mb-5">
+                <div
+                  class="p-3"
+                  style="border-radius: 20px; background-color: #f2f2f7"
+                >
+                  <div class="d-flex align-items-center justify-content-center">
+                    <div class="flex-shrink-0">
+                      <img
+                        src="assets/services/img4.png"
+                        class="img-fluid mb-2 mr-2"
+                        style="height: 100px; width: auto"
+                        alt="Sistem Modular"
+                      />
+                    </div>
+                    <div class="p-3 flex-grow-1">
+                      <p class="font-weight-bold">Sistem Modular</p>
+                      <p>
+                        Kami dapat menginstal ERP kami di modul khusus
+                        perusahaan Anda dengan fitur yang hanya Anda perlukan.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <p>
-                Cloud ERP memungkinkan pengguna di perusahaan Anda mengakses
-                data terbaru secara real-time dari setiap departemen bisnis
-                dengan cepat dan mudah dari mana saja dan perangkat apa saja.
-              </p>
-            </div>
-          </div>
 
-          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-            <div
-              class="p-4 mb-4"
-              style="background-color: #eff4f6; border-radius: 20px"
-            >
-              <div
-                class="d-flex flex-row justify-content-right align-items-center"
-              >
-                <img
-                  src="assets/services/img7.png"
-                  class="img-fluid mb-2 mr-2"
-                  width="20%"
-                  alt="Pengguna Tanpa Batas"
-                />
-                <p class="font-weight-bold">Aman</p>
+              <!-- Item 5 -->
+              <div class="col-md-6 mb-5">
+                <div
+                  class="p-3"
+                  style="border-radius: 20px; background-color: #f2f2f7"
+                >
+                  <div class="d-flex align-items-center justify-content-center">
+                    <div class="flex-shrink-0">
+                      <img
+                        src="assets/services/img5.png"
+                        class="img-fluid mb-2 mr-2"
+                        style="height: 100px; width: auto"
+                        alt="Berkelanjutan"
+                      />
+                    </div>
+                    <div class="p-3 flex-grow-1">
+                      <p class="font-weight-bold">Berkelanjutan</p>
+                      <p>
+                        ERP framework kami dirancang untuk membuat rencana
+                        pengembangan yang kompleks dan berkelanjutan.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <p>
-                Dengan kerangka kerja berstandar tinggi, ERP kami dirancang
-                dengan kepedulian yang tinggi terhadap keamanan.
-              </p>
-            </div>
-          </div>
 
-          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
-            <div
-              class="p-4 mb-4"
-              style="background-color: #eff4f6; border-radius: 20px"
-            >
-              <div
-                class="d-flex flex-row justify-content-right align-items-center"
-              >
-                <img
-                  src="assets/services/img9.png"
-                  class="img-fluid mb-2 mr-2"
-                  width="20%"
-                  alt="Pengguna Tanpa Batas"
-                />
-                <p class="font-weight-bold">Dukungan Tim yang Kuat</p>
+              <!-- Item 6 -->
+              <div class="col-md-6 mb-5">
+                <div
+                  class="p-3"
+                  style="border-radius: 20px; background-color: #f2f2f7"
+                >
+                  <div class="d-flex align-items-center justify-content-center">
+                    <div class="flex-shrink-0">
+                      <img
+                        src="assets/services/img10.png"
+                        class="img-fluid mb-2 mr-2"
+                        style="height: 100px; width: auto"
+                        alt="ERP Awan"
+                      />
+                    </div>
+                    <div class="p-3 flex-grow-1">
+                      <p class="font-weight-bold">ERP Awan</p>
+                      <p>
+                        Cloud ERP memungkinkan pengguna mengakses data terbaru
+                        real-time dari mana saja dan perangkat apa saja.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <p>
-                Dengan tim yang sangat berpengalaman, tim pengembangan kami
-                berkomitmen untuk mendukung kebutuhan Anda.
-              </p>
-            </div>
-          </div>
 
-          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
-            <div
-              class="p-4 mb-4"
-              style="background-color: #eff4f6; border-radius: 20px"
-            >
-              <div
-                class="d-flex flex-row justify-content-right align-items-center"
-              >
-                <img
-                  src="assets/services/img6.png"
-                  class="img-fluid mb-2 mr-2"
-                  width="20%"
-                  alt="Pengguna Tanpa Batas"
-                />
-                <p class="font-weight-bold">Mudah untuk ditingkatkan</p>
+              <!-- Item 7 -->
+              <div class="col-md-6 mb-5">
+                <div
+                  class="p-3"
+                  style="border-radius: 20px; background-color: #f2f2f7"
+                >
+                  <div class="d-flex align-items-center justify-content-center">
+                    <div class="flex-shrink-0">
+                      <img
+                        src="assets/services/img7.png"
+                        class="img-fluid mb-2 mr-2"
+                        style="height: 100px; width: auto"
+                        alt="Aman"
+                      />
+                    </div>
+                    <div class="p-3 flex-grow-1">
+                      <p class="font-weight-bold">Aman</p>
+                      <p>
+                        ERP kami dirancang dengan standar keamanan tinggi untuk
+                        melindungi data perusahaan Anda.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <p>
-                Setelah Anda menginstal beberapa modul di perusahaan Anda, di
-                masa depan Anda dapat menambahkan lebih banyak modul tergantung
-                pada model bisnis Anda.
-              </p>
-            </div>
-          </div>
 
-          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-            <div
-              class="p-4 mb-4"
-              style="background-color: #eff4f6; border-radius: 20px"
-            >
-              <div
-                class="d-flex flex-row justify-content-right align-items-center"
-              >
-                <img
-                  src="assets/services/img8.png"
-                  class="img-fluid mb-2 mr-2"
-                  width="20%"
-                  alt="Pengguna Tanpa Batas"
-                />
-                <p class="font-weight-bold">Efisien Dalam Biaya</p>
+              <!-- Item 8 -->
+              <div class="col-md-6 mb-5">
+                <div
+                  class="p-3"
+                  style="border-radius: 20px; background-color: #f2f2f7"
+                >
+                  <div class="d-flex align-items-center justify-content-center">
+                    <div class="flex-shrink-0">
+                      <img
+                        src="assets/services/img9.png"
+                        class="img-fluid mb-2 mr-2"
+                        style="height: 100px; width: auto"
+                        alt="Dukungan Tim yang Kuat"
+                      />
+                    </div>
+                    <div class="p-3 flex-grow-1">
+                      <p class="font-weight-bold">Dukungan Tim yang Kuat</p>
+                      <p>
+                        Dengan tim yang berpengalaman, kami siap mendukung
+                        kebutuhan ERP Anda.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <p>Bayar hanya modul yang digunakan perusahaan Anda.</p>
+
+              <!-- Item 9 -->
+              <div class="col-md-6 mb-5">
+                <div
+                  class="p-3"
+                  style="border-radius: 20px; background-color: #f2f2f7"
+                >
+                  <div class="d-flex align-items-center justify-content-center">
+                    <div class="flex-shrink-0">
+                      <img
+                        src="assets/services/img6.png"
+                        class="img-fluid mb-2 mr-2"
+                        style="height: 100px; width: auto"
+                        alt="Mudah untuk ditingkatkan"
+                      />
+                    </div>
+                    <div class="p-3 flex-grow-1">
+                      <p class="font-weight-bold">Mudah untuk ditingkatkan</p>
+                      <p>
+                        ERP kami memungkinkan Anda untuk menambah lebih banyak
+                        modul sesuai kebutuhan di masa depan.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 10 -->
+              <div class="col-md-6 mb-5">
+                <div
+                  class="p-3"
+                  style="border-radius: 20px; background-color: #f2f2f7"
+                >
+                  <div class="d-flex align-items-center justify-content-center">
+                    <div class="flex-shrink-0">
+                      <img
+                        src="assets/services/img8.png"
+                        class="img-fluid mb-2 mr-2"
+                        style="height: 100px; width: auto"
+                        alt="Efisien Dalam Biaya"
+                      />
+                    </div>
+                    <div class="p-3 flex-grow-1">
+                      <p class="font-weight-bold">Efisien Dalam Biaya</p>
+                      <p>
+                        Bayar hanya untuk modul yang digunakan perusahaan Anda.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
