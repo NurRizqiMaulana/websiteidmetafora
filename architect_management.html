@@ -178,6 +178,70 @@
     <!-- End Navbar -->
 
     <!-- Content -->
+    <style>
+      /* Button styling */
+      .btn-custom {
+        background: linear-gradient(
+          45deg,
+          #00b4db,
+          #0082c8
+        ); /* Gradient background */
+        color: white;
+        padding: 10px 25px;
+        border-radius: 30px; /* Rounded corners */
+        border: none;
+        font-size: 16px;
+        font-weight: bold;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow */
+        transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+        text-align: center;
+        display: inline-flex;
+        align-items: center;
+      }
+
+      .btn-custom:hover {
+        background: linear-gradient(
+          45deg,
+          #037db6,
+          #037db6
+        ); /* Darker gradient on hover */
+        transform: translateY(-2px); /* Lift the button on hover */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Increase shadow on hover */
+      }
+
+      .btn-custom:active {
+        background: linear-gradient(
+          45deg,
+          #00b4db,
+          #00b4db
+        ); /* Even darker gradient on click */
+        transform: translateY(0); /* Return to original position on click */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Slightly reduce shadow on click */
+      }
+
+      /* Mobile-specific styles */
+      @media (max-width: 767.98px) {
+        .mobile-image {
+          width: 100%;
+          max-width: 300px;
+          border-radius: 10px; /* Rounded corners */
+          margin: 20px 0; /* Margin for spacing */
+        }
+
+        .btn-custom {
+          padding: 12px 20px; /* Adjust padding for better touch targets */
+          font-size: 18px; /* Larger font size for better readability */
+        }
+
+        .text-center {
+          text-align: center; /* Center align text on mobile */
+        }
+
+        .d-md-inline {
+          display: inline; /* Change display to inline on mobile */
+        }
+      }
+    </style>
 
     <header
       class="py-3 border-bottom border-top"
@@ -185,7 +249,7 @@
     >
       <div class="container pt-5">
         <div class="row align-items-center">
-          <div class="col-md-6">
+          <div class="col-md-6 order-2 order-md-1">
             <h1
               class="font-weight-bold"
               data-aos="fade-right"
@@ -194,7 +258,8 @@
               <span
                 class="text-center"
                 style="color: #38567f; font-weight: bold"
-                >Architect Management System Development
+              >
+                Architect Management System Development
                 <span
                   style="
                     text-decoration: underline;
@@ -202,25 +267,46 @@
                     text-decoration-color: red;
                   "
                   >Services</span
-                ></span
-              >
+                >
+              </span>
             </h1>
-            <h6 class="py-3" data-aos="fade-right" data-aos-delay="200">
+            <div class="d-md-none text-center my-3">
+              <img
+                src="assets/architect_img/imgHeader.png"
+                alt=""
+                class="img-fluid mobile-image"
+              />
+            </div>
+            <h6
+              class="py-3 px-3 px-md-0"
+              data-aos="fade-right"
+              data-aos-delay="200"
+            >
               Layanan Pengembangan Sistem Manajemen Arsitek adalah salah satu
               layanan yang ditawarkan oleh Tim IDMETAFORA.
             </h6>
-            <a href="#" data-aos="fade-right" data-aos-delay="300"
-              ><button
-                class="px-3 py-2"
-                style="
-                  background-color: #1090cb;
-                  border-radius: 20px;
-                  color: white;
-                "
-              >
-                <i class="fa-solid fa-rocket"></i> Hubungi Kami
-              </button></a
+            <a
+              href="#"
+              data-aos="fade-right"
+              data-aos-delay="300"
+              class="d-block text-center d-md-inline px-3"
             >
+              <button class="btn-custom">
+                <i class="fa-solid fa-rocket"></i> Hubungi Kami
+              </button>
+            </a>
+          </div>
+          <div
+            class="col-md-6 order-1 order-md-2 d-none d-md-block"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <img
+              src="assets/architect_img/imgHeader.png"
+              alt=""
+              class="img-fluid"
+              style="margin-top: 20px"
+            />
           </div>
           <img
             src="assets/architect_img/acc/0.png"
@@ -229,80 +315,145 @@
             style="top: 0; right: 0"
             width="35%"
           />
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <img
-              src="assets/architect_img/imgHeader.png"
-              alt=""
-              class="img-fluid"
-            />
-          </div>
         </div>
       </div>
     </header>
 
+    <style>
+      /* Only apply hover effect to images inside the 'Company' section */
+      .company-section img:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s ease;
+      }
+    </style>
+
     <!-- Company -->
-    <section class="py-4 border-bottom">
+    <section class="py-5 border-bottom company-section">
       <div class="container">
+        <div class="row pb-4">
+          <div class="col-md-12">
+            <h2
+              class="text-center font-weight-bold"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <span>Client Kami</span>
+            </h2>
+          </div>
+        </div>
         <div class="row">
           <div class="col-md-12">
             <div
-              class="d-flex flex-wrap justify-content-center align-items-center"
-              style="gap: 15px"
+              class="row justify-content-center align-items-center text-center"
             >
-              <img
-                src="assets/company/pertamina.png"
-                alt=""
-                class="img-fluid"
-                style="height: 40px"
-              />
-              <img
-                src="assets/company/mubadala.png"
-                alt=""
-                class="img-fluid"
-                style="height: 40px"
-              />
-              <img
-                src="assets/company/candra.png"
-                alt=""
-                class="img-fluid"
-                style="height: 40px"
-              />
-              <img
-                src="assets/company/molindo.png"
-                alt=""
-                class="img-fluid"
-                style="height: 40px"
-              />
-              <img
-                src="assets/company/indonesia_power.png"
-                alt=""
-                class="img-fluid"
-                style="height: 40px"
-              />
-              <img
-                src="assets/company/pesona.png"
-                alt=""
-                class="img-fluid"
-                style="height: 40px"
-              />
-              <img
-                src="assets/company/brin.png"
-                alt=""
-                class="img-fluid"
-                style="height: 40px"
-              />
-              <img
-                src="assets/company/batan.png"
-                alt=""
-                class="img-fluid"
-                style="height: 40px"
-              />
-              <img
-                src="assets/company/semen.png"
-                alt=""
-                class="img-fluid"
-                style="height: 40px"
-              />
+              <div
+                class="col-6 col-md-3 col-lg-2 p-3"
+                data-aos="zoom-in"
+                data-aos-delay="100"
+              >
+                <img
+                  src="assets/company/pertamina.png"
+                  alt="Pertamina"
+                  class="img-fluid"
+                  style="height: 40px"
+                />
+              </div>
+              <div
+                class="col-6 col-md-3 col-lg-2 p-3"
+                data-aos="zoom-in"
+                data-aos-delay="200"
+              >
+                <img
+                  src="assets/company/mubadala.png"
+                  alt="Mubadala"
+                  class="img-fluid"
+                  style="height: 40px"
+                />
+              </div>
+              <div
+                class="col-6 col-md-3 col-lg-2 p-3"
+                data-aos="zoom-in"
+                data-aos-delay="300"
+              >
+                <img
+                  src="assets/company/candra.png"
+                  alt="Candra"
+                  class="img-fluid"
+                  style="height: 40px"
+                />
+              </div>
+              <div
+                class="col-6 col-md-3 col-lg-2 p-3"
+                data-aos="zoom-in"
+                data-aos-delay="400"
+              >
+                <img
+                  src="assets/company/molindo.png"
+                  alt="Molindo"
+                  class="img-fluid"
+                  style="height: 40px"
+                />
+              </div>
+              <div
+                class="col-6 col-md-3 col-lg-2 p-3"
+                data-aos="zoom-in"
+                data-aos-delay="500"
+              >
+                <img
+                  src="assets/company/indonesia_power.png"
+                  alt="Indonesia Power"
+                  class="img-fluid"
+                  style="height: 40px"
+                />
+              </div>
+              <div
+                class="col-6 col-md-3 col-lg-2 p-3"
+                data-aos="zoom-in"
+                data-aos-delay="600"
+              >
+                <img
+                  src="assets/company/pesona.png"
+                  alt="Pesona"
+                  class="img-fluid"
+                  style="height: 60px"
+                />
+              </div>
+              <div
+                class="col-6 col-md-3 col-lg-2 p-3"
+                data-aos="zoom-in"
+                data-aos-delay="700"
+              >
+                <img
+                  src="assets/company/brin.png"
+                  alt="BRIN"
+                  class="img-fluid"
+                  style="height: 80px"
+                />
+              </div>
+              <div
+                class="col-6 col-md-3 col-lg-2 p-3"
+                data-aos="zoom-in"
+                data-aos-delay="800"
+              >
+                <img
+                  src="assets/company/batan.png"
+                  alt="BATAN"
+                  class="img-fluid"
+                  style="height: 60px"
+                />
+              </div>
+              <div
+                class="col-6 col-md-3 col-lg-2 p-3"
+                data-aos="zoom-in"
+                data-aos-delay="900"
+              >
+                <img
+                  src="assets/company/semen.png"
+                  alt="Semen"
+                  class="img-fluid"
+                  style="height: 60px"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -312,7 +463,7 @@
 
     <!-- Core Erp -->
     <section class="py-5 border-bottom" style="background-color: #e7f4fa">
-      <div class="container col-md-12 py-5">
+      <div class="container col-md-12">
         <img
           src="assets/architect_img/acc/1.png"
           alt=""
@@ -320,10 +471,12 @@
           style="position: absolute; left: 0px; bottom: 0px"
           width="8%"
         />
-        <div class="row justify-content-center">
+        <div class="row justify-content-center py-5">
           <div class="col-md-10">
             <div class="row">
-              <div class="col-md-6 d-flex flex-column justify-content-center">
+              <div
+                class="col-md-6 d-flex p-5 flex-column justify-content-center"
+              >
                 <h3
                   class="font-weight-bold"
                   data-aos="fade-right"
@@ -381,6 +534,7 @@
             </h3>
           </div>
         </div>
+
         <div class="row col-md-12">
           <img
             src="assets/architect_img/acc/2.png"
@@ -398,7 +552,7 @@
                 class="card shadow"
                 style="
                   border-radius: 0px 20px 0px 20px;
-                  background-color: #e7f4fa;
+                  background-color: #ffff;
                 "
               >
                 <div class="card-body text-right">
@@ -428,7 +582,7 @@
                 class="card shadow"
                 style="
                   border-radius: 0px 20px 0px 20px;
-                  background-color: #e7f4fa;
+                  background-color: #ffffff;
                 "
               >
                 <div class="card-body text-right">
@@ -469,7 +623,7 @@
                 class="card shadow"
                 style="
                   border-radius: 20px 0px 20px 0px;
-                  background-color: #e7f4fa;
+                  background-color: #ffffff;
                 "
               >
                 <div class="card-body text-left">
@@ -500,7 +654,7 @@
                 class="card shadow"
                 style="
                   border-radius: 20px 0px 20px 0px;
-                  background-color: #e7f4fa;
+                  background-color: #ffffff;
                 "
               >
                 <div class="card-body text-left">
@@ -532,24 +686,9 @@
         <img
           src="assets/architect_img/acc/4.png"
           alt=""
-          class="position-absolute"
+          class="position-absolute imgAccF"
           width="25%"
           style="top: 130px; left: -0px"
-        />
-        <img
-          src="assets/architect_img/acc/7.png"
-          alt=""
-          class="position-absolute"
-          width="5%"
-          style="top: 200px; left: 200px"
-        />
-
-        <img
-          src="assets/architect_img/acc/9.png"
-          alt=""
-          class="position-absolute"
-          width="5%"
-          style="top: 200px; left: 230px"
         />
 
         <img
@@ -593,72 +732,71 @@
                 alt=""
                 class="img-fluid d-none d-md-block"
                 style="position: absolute; left: 0px; bottom: -0px"
-                width="100%"
+                width="110%"
               />
-              <div class="col-md-4">
+              <!-- First Row -->
+              <div class="col-md-6 mb-4">
                 <div
-                  class="shadow mb-4 p-3 h-100"
+                  class="shadow p-3 h-100"
                   style="border-radius: 20px; background-color: #eff4f6"
                   data-aos="fade-down"
                   data-aos-delay="300"
                 >
-                  <div class="d-flex align-items-center">
+                  <div class="text-center">
                     <img
                       src="assets/architect_img/icon/5.png"
-                      alt=""
-                      width="20%"
+                      alt="Icon"
+                      style="width: 15%; height: auto; max-width: 50px"
+                      class="img-fluid mb-2"
                     />
-                    <p class="font-weight-bold mb-0 ms-2 px-2">
+                    <p class="font-weight-bold mb-2">
                       Fitur Sistem Manajemen Arsitek 1
                     </p>
-                  </div>
-                  <div>
                     <p>Memudahkan Anda dalam mengkategorikan produk Anda.</p>
                   </div>
                 </div>
               </div>
 
-              <div class="col-md-4">
+              <div class="col-md-6 mb-4">
                 <div
-                  class="shadow mb-4 p-3 h-100"
+                  class="shadow p-3 h-100"
                   style="border-radius: 20px; background-color: #eff4f6"
                   data-aos="fade-down"
                   data-aos-delay="400"
                 >
-                  <div class="d-flex align-items-center">
+                  <div class="text-center">
                     <img
                       src="assets/architect_img/icon/6.png"
-                      alt=""
-                      width="20%"
+                      alt="Icon"
+                      style="width: 15%; height: auto; max-width: 50px"
+                      class="img-fluid mb-2"
                     />
-                    <p class="font-weight-bold mb-0 ms-2 px-2">
+                    <p class="font-weight-bold mb-2">
                       Fitur Sistem Manajemen Arsitek 2
                     </p>
-                  </div>
-                  <div>
                     <p>Fitur pencarian untuk memudahkan Anda.</p>
                   </div>
                 </div>
               </div>
 
-              <div class="col-md-4">
+              <!-- Second Row -->
+              <div class="col-md-6 mb-4">
                 <div
-                  class="shadow mb-4 p-3 h-100"
+                  class="shadow p-3 h-100"
                   style="border-radius: 20px; background-color: #eff4f6"
                   data-aos="fade-down"
                   data-aos-delay="500"
                 >
-                  <div class="d-flex align-items-center">
+                  <div class="text-center">
                     <img
                       src="assets/architect_img/icon/7.png"
-                      alt=""
-                      width="20%"
+                      alt="Icon"
+                      style="width: 15%; height: auto; max-width: 50px"
+                      class="img-fluid mb-2"
                     />
-                    <p class="font-weight-bold mb-0 ms-2 px-2">
+                    <p class="font-weight-bold mb-2">
                       Fitur Sistem Manajemen Arsitek 3
                     </p>
-                  </div>
-                  <div>
                     <p>
                       Kelola data setiap barang yang masuk gudang penyimpanan.
                     </p>
@@ -666,24 +804,23 @@
                 </div>
               </div>
 
-              <div class="col-md-4">
+              <div class="col-md-6 mb-4">
                 <div
-                  class="shadow mb-4 p-3 h-100"
+                  class="shadow p-3 h-100"
                   style="border-radius: 20px; background-color: #eff4f6"
                   data-aos="fade-down"
                   data-aos-delay="600"
                 >
-                  <div class="d-flex align-items-center">
+                  <div class="text-center">
                     <img
                       src="assets/architect_img/icon/8.png"
-                      alt=""
-                      width="20%"
+                      alt="Icon"
+                      style="width: 15%; height: auto; max-width: 50px"
+                      class="img-fluid mb-2"
                     />
-                    <p class="font-weight-bold mb-0 ms-2 px-2">
+                    <p class="font-weight-bold mb-2">
                       Fitur Sistem Manajemen Arsitek 4
                     </p>
-                  </div>
-                  <div>
                     <p>
                       Kelola data setiap barang yang masuk gudang penyimpanan.
                     </p>
@@ -703,86 +840,120 @@
         <img
           src="assets/architect_img/acc/3.png"
           alt=""
-          class="img-fluid"
+          class="img-fluid imgAccF"
           style="position: absolute; top: 0px; right: -0px"
           width="30%"
         />
         <div class="row justify-content-center">
           <div class="col-md-8">
             <div class="row">
+              <!-- Text Section -->
               <div class="col-md-7">
-                <div data-aos="fade-down" data-aos-delay="100">
-                  <h4 class="font-weight-bold">Nilai-Nilai Perusahan Kami!</h4>
-                  <p class="font-weight-light py-3 h4">
+                <div
+                  data-aos="fade-down"
+                  data-aos-delay="100"
+                  class="text-center p-4 mb-4"
+                  style="border-radius: 15px"
+                >
+                  <h4 class="font-weight-bold mb-3" style="color: #343a40">
+                    Nilai-Nilai Perusahaan Kami!
+                  </h4>
+                  <p
+                    class="font-weight-light h5 mb-4"
+                    style="line-height: 1.6; color: #6c757d"
+                  >
                     Nilai yang kami miliki sebagai perusahaan ERP
                   </p>
                 </div>
 
-                <div class="row py-3">
-                  <div
-                    class="col-md-6 mb-3"
-                    data-aos="fade-up"
-                    data-aos-delay="200"
-                  >
-                    <div class="px-3">
-                      <img src="assets/fab_img/icon/v1.png" alt="" />
+                <!-- Values Section -->
+                <div class="row gy-4">
+                  <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div
+                      class="bg-light px-3 py-4 rounded shadow-sm text-center"
+                      style="min-height: 280px"
+                    >
+                      <img
+                        src="assets/fab_img/icon/v1.png"
+                        alt="Cepat Icon"
+                        class="mb-3"
+                      />
                       <p class="font-weight-bold">Cepat</p>
-                      <p class="">
-                        Waktu adalah uang, kita membuatnya lebih cepat dan
+                      <p>
+                        Waktu adalah uang, kami membuatnya lebih cepat dan
                         memperbaikinya menjadi lebih baik.
                       </p>
                     </div>
                   </div>
                   <div
-                    class="col-md-6 mb-3"
+                    class="col-md-6"
                     data-aos="fade-down"
                     data-aos-delay="300"
                   >
-                    <div class="px-3">
-                      <img src="assets/fab_img/icon/v2.png" alt="" />
+                    <div
+                      class="bg-light px-3 py-4 rounded shadow-sm text-center"
+                      style="min-height: 280px"
+                    >
+                      <img
+                        src="assets/fab_img/icon/v2.png"
+                        alt="Spirit Icon"
+                        class="mb-3"
+                      />
                       <p class="font-weight-bold">Spirit</p>
-                      <p class="">
-                        Memberikan pekerjaan dan pelayanan terbaik.
-                      </p>
+                      <p>Memberikan pekerjaan dan pelayanan terbaik.</p>
                     </div>
                   </div>
                 </div>
-                <div class="row">
+
+                <div class="row gy-4 mt-3">
                   <div
-                    class="col-md-6 mb-3"
+                    class="col-md-6"
                     data-aos="fade-down"
                     data-aos-delay="400"
                   >
-                    <div class="px-3">
-                      <img src="assets/fab_img/icon/v3.png" alt="" />
-                      <p class="font-weight-bold">Otomatisas</p>
-                      <p class="">
+                    <div
+                      class="bg-light px-3 py-4 rounded shadow-sm text-center"
+                      style="min-height: 280px"
+                    >
+                      <img
+                        src="assets/fab_img/icon/v3.png"
+                        alt="Otomatisasi Icon"
+                        class="mb-3"
+                      />
+                      <p class="font-weight-bold">Otomatisasi</p>
+                      <p>
                         Bagi kami, Inovasi adalah suatu keharusan untuk membuat
                         bisnis tetap relevan.
                       </p>
                     </div>
                   </div>
-
                   <div
-                    class="col-md-6 mb-3"
+                    class="col-md-6"
                     data-aos="fade-down"
                     data-aos-delay="500"
                   >
-                    <div class="px-3">
-                      <img src="assets/fab_img/icon/v4.png" alt="" />
+                    <div
+                      class="bg-light px-3 py-4 rounded shadow-sm text-center"
+                      style="min-height: 280px"
+                    >
+                      <img
+                        src="assets/fab_img/icon/v4.png"
+                        alt="Terpercaya Icon"
+                        class="mb-3"
+                      />
                       <p class="font-weight-bold">Terpercaya</p>
-                      <p class="">Memberikan pekerjaan dan layanan terbaik.</p>
+                      <p>Memberikan pekerjaan dan layanan terbaik.</p>
                     </div>
                   </div>
                 </div>
               </div>
 
+              <!-- Image Section -->
               <div class="col-md-5" data-aos="fade-down" data-aos-delay="600">
                 <img
                   src="assets/fab_img/img3.png"
-                  alt=""
-                  width="100%"
-                  class="img-fluid d-none d-md-block"
+                  alt="Company Values Image"
+                  class="img-fluid d-none d-md-block rounded"
                 />
               </div>
             </div>
@@ -801,7 +972,7 @@
     >
       <div class="container col-md-10">
         <div class="row">
-          <div class="col-md-12 text-center">
+          <div class="col-md-12 px-5 text-center">
             <p
               class="font-weight-bold h2"
               style="
@@ -927,6 +1098,20 @@
           margin-bottom: 20px;
         }
       }
+
+      /* Layout adjustment for desktop */
+      @media (min-width: 769px) {
+        .custom-section .logo-wrapper {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          margin-bottom: 15px;
+        }
+
+        .custom-section .logo-wrapper img {
+          margin-right: 10px; /* Add some space between the logo and the text */
+        }
+      }
     </style>
 
     <section class="py-5 custom-section">
@@ -946,85 +1131,144 @@
 
         <div class="row">
           <div class="col-md-6 d-flex flex-column justify-content-end">
-            <p class="" style="font-size: 18px; color: #ffffff">
-              <b>IDMETAFORA</b>
-            </p>
-            <p class="" style="font-size: 16px; color: #ffffff">
+            <div class="logo-wrapper">
+              <img
+                src="assets/white-logo.png"
+                alt="Logo"
+                width="45%"
+                class="img-fluid"
+              />
+            </div>
+            <p class="mt-3" style="font-size: 16px; color: #ffffff">
               <b>IDMETAFORA</b> adalah Perusahaan Solusi TI, bisnis utama kami
               adalah Pengembangan ERP. Kami juga mendukung klien kami dalam
               bidang Internet of Things, dan Desain & Pengembangan Web.
             </p>
 
-            <div class="mb-5" style="color: #fff;"">
-            <span class="mr-3">
-              <i class="fa-solid fa-phone"></i> +62 896 6423 0232</span
-            >
-
-            <span>
-              <i class="fa-solid fa-envelope"></i> info@idmetafora.com</span
-            >
+            <div class="mb-5" style="color: #fff">
+              <span class="mr-3">
+                <i class="fa-solid fa-phone"></i> +62 896 6423 0232
+              </span>
+              <span>
+                <i class="fa-solid fa-envelope"></i> info@idmetafora.com
+              </span>
+            </div>
           </div>
-        </div>
-        <div class="col-md-6">
-          <div
-            class="p-3"
-            style="
-              background-color: #ffffff;
-              box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-              border-radius: 20px;
-            "
-          >
-            <div class="mt-3 mb-3">
-              <div class="m-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  placeholder="Nama Lengkap"
-                />
-              </div>
 
-              <div class="m-3">
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  placeholder="Email"
-                />
-              </div>
+          <style>
+            /* Mobile-specific styling */
+            @media (max-width: 768px) {
+              .logo-wrapper {
+                margin-bottom: 20px; /* Adds space between logo and text on mobile */
+              }
+            }
 
-              <div class="m-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="telepon"
-                  placeholder="No. Telepon"
-                />
-              </div>
+            /* Desktop styling */
+            @media (min-width: 769px) {
+              .logo-wrapper {
+                margin-bottom: 10px; /* Adds space between logo and text on desktop */
+              }
+            }
+          </style>
 
-              <div class="m-3">
-                <textarea
-                  class="form-control"
-                  id="pesan"
-                  placeholder="Pesan"
-                  rows="3"
-                ></textarea>
-              </div>
+          <div class="col-md-6">
+            <div
+              class="p-3"
+              style="
+                background-color: #ffffff;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 20px;
+              "
+            >
+              <div class="mt-3 mb-3">
+                <div class="m-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Nama Lengkap"
+                  />
+                </div>
 
-              <div class="form-check m-3">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
-                />
-                <label class="form-check-label" for="flexCheckDefault">
-                  Saya telah membaca dan menerima kebijakan privasi.
-                </label>
-              </div>
+                <div class="m-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Email"
+                  />
+                </div>
 
-              <div class="m-3">
-                <button type="button" class="btn btn-primary">Kirim</button>
+                <div class="m-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="telepon"
+                    placeholder="No. Telepon"
+                  />
+                </div>
+
+                <div class="m-3">
+                  <textarea
+                    class="form-control"
+                    id="pesan"
+                    placeholder="Pesan"
+                    rows="3"
+                  ></textarea>
+                </div>
+
+                <div class="form-check m-3">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Saya telah membaca dan menerima kebijakan privasi.
+                  </label>
+                </div>
+
+                <div class="m-3">
+                  <button type="button" class="btn btn-custom">Kirim</button>
+                </div>
+
+                <style>
+                  .btn-custom {
+                    background: linear-gradient(
+                      45deg,
+                      #00b4db,
+                      #00b4db
+                    ); /* Gradient background */
+                    color: white;
+                    padding: 5px 30px;
+                    border-radius: 30px; /* Rounded corners */
+                    border: none;
+                    font-size: 16px;
+                    font-weight: bold;
+                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow */
+                    transition: transform 0.3s ease, box-shadow 0.3s ease,
+                      background-color 0.3s ease;
+
+                    display: flex; /* Flexbox for centering */
+                    justify-content: center; /* Horizontal centering */
+                    align-items: center; /* Vertical centering */
+                  }
+
+                  .btn-custom:hover {
+                    background-color: #0083b0; /* Darken background on hover */
+                    color: white; /* Keep text white */
+                    transform: translateY(-2px); /* Lift the button on hover */
+                    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+                  }
+
+                  .btn-custom:active {
+                    transform: translateY(
+                      0
+                    ); /* Return to original position on click */
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly reduce shadow on click */
+                  }
+                </style>
               </div>
             </div>
           </div>

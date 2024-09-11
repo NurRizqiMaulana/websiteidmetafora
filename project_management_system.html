@@ -179,8 +179,50 @@
     </nav>
     <!-- End Navbar -->
 
+    <style>
+      /* Button styling */
+      .btn-custom {
+        background: linear-gradient(
+          45deg,
+          #00b4db,
+          #0082c8
+        ); /* Gradient background */
+        color: white;
+        padding: 9px 25px;
+        border-radius: 30px; /* Rounded corners */
+        border: none;
+        font-size: 16px;
+        font-weight: bold;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow */
+        transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+        text-align: center;
+        display: inline-flex;
+        align-items: center;
+      }
+
+      .btn-custom:hover {
+        background: linear-gradient(
+          45deg,
+          #037db6,
+          #037db6
+        ); /* Darker gradient on hover */
+        transform: translateY(-2px); /* Lift the button on hover */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Increase shadow on hover */
+      }
+
+      .btn-custom:active {
+        background: linear-gradient(
+          45deg,
+          #00b4db,
+          #00b4db
+        ); /* Even darker gradient on click */
+        transform: translateY(0); /* Return to original position on click */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Slightly reduce shadow on click */
+      }
+    </style>
+
     <header
-      class="pt-3 border-bottom border-top"
+      class="pt-3 pb-5 border-bottom border-top"
       style="background-color: #eff6ff"
     >
       <div class="container">
@@ -188,19 +230,19 @@
           <img
             src="assets/pms_img/acc/2.png"
             alt=""
-            class="position-absolute"
+            class="position-absolute d-none d-md-block"
             style="top: 0; right: 0"
             width="35%"
           />
 
-          <div class="col-md-6">
+          <div class="col-md-6 order-2 order-md-1">
             <h1
               class="font-weight-bold"
               data-aos="fade-right"
               data-aos-delay="100"
             >
-              <span class="" style="color: #38567f; font-weight: bold"
-                >Project Management <br />
+              <span class="" style="color: #38567f; font-weight: bold">
+                Project Management <br />
                 System Development
                 <p
                   style="
@@ -213,29 +255,38 @@
                 </p>
               </span>
             </h1>
-            <h6 class="py-3" data-aos="fade-right" data-aos-delay="200">
+
+            <!-- Image appears here on mobile view -->
+            <div class="d-block d-md-none my-4">
+              <img
+                src="assets/pms_img/imgHeader.png"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+
+            <h6
+              class="py-3 px-3 px-md-0"
+              data-aos="fade-right"
+              data-aos-delay="200"
+            >
               Layanan Pengembangan Sistem Manajemen Proyek adalah salah satu
               layanan yang ditawarkan oleh Tim IDMETAFORA.
             </h6>
-            <a href="#"
-              ><button
-                type="button"
-                style="
-                  color: white;
-                  background-color: #007bff;
-                  border-color: #007bff;
-                  border-radius: 20px;
-                  padding: 5px 20px;
-                "
-                data-aos="fade-right"
-                data-aos-delay="300"
-              >
-                <i class="fa-solid fa-rocket"></i>
-                Hubungi Kami
-              </button></a
+            <a
+              href="#"
+              data-aos="fade-right"
+              data-aos-delay="300"
+              class="d-block text-center d-md-inline px-3"
             >
+              <button class="btn-custom">
+                <i class="fa-solid fa-rocket"></i> Hubungi Kami
+              </button>
+            </a>
           </div>
-          <div class="col-md-6">
+
+          <!-- Image remains here on desktop view -->
+          <div class="col-md-6 order-1 order-md-2 d-none d-md-block">
             <div data-aos="fade-up" data-aos-delay="200">
               <img
                 src="assets/pms_img/imgHeader.png"
@@ -248,69 +299,141 @@
       </div>
     </header>
 
+    <style>
+      /* Only apply hover effect to images inside the 'Company' section */
+      .company-section img:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s ease;
+      }
+    </style>
+
     <!-- Company -->
-    <section class="py-4 border-bottom">
+    <section class="py-5 border-bottom company-section">
       <div class="container">
+        <div class="row pb-4">
+          <div class="col-md-12">
+            <h2
+              class="text-center font-weight-bold"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <span>Client Kami</span>
+            </h2>
+          </div>
+        </div>
         <div class="row">
           <div class="col-md-12">
             <div
-              class="d-flex flex-wrap justify-content-center align-items-center"
-              style="gap: 15px"
+              class="row justify-content-center align-items-center text-center"
             >
-              <img
-                src="assets/company/pertamina.png"
-                alt=""
-                class="img-fluid"
-                style="height: 40px"
-              />
-              <img
-                src="assets/company/mubadala.png"
-                alt=""
-                class="img-fluid"
-                style="height: 40px"
-              />
-              <img
-                src="assets/company/candra.png"
-                alt=""
-                class="img-fluid"
-                style="height: 40px"
-              />
-              <img
-                src="assets/company/molindo.png"
-                alt=""
-                class="img-fluid"
-                style="height: 40px"
-              />
-              <img
-                src="assets/company/indonesia_power.png"
-                alt=""
-                class="img-fluid"
-                style="height: 40px"
-              />
-              <img
-                src="assets/company/pesona.png"
-                alt=""
-                class="img-fluid"
-                style="height: 40px"
-              />
-              <img
-                src="assets/company/brin.png"
-                alt=""
-                class="img-fluid"
-                style="height: 40px"
-              />
-              <img
-                src="assets/company/batan.png"
-                alt=""
-                class="img-fluid"
-                style="height: 40px"
-              />
-              <img
-                src="assets/company/semen.png"
-                alt=""
-                class="img-fluid"
-                style="height: 40px"
-              />
+              <div
+                class="col-6 col-md-3 col-lg-2 p-3"
+                data-aos="zoom-in"
+                data-aos-delay="100"
+              >
+                <img
+                  src="assets/company/pertamina.png"
+                  alt="Pertamina"
+                  class="img-fluid"
+                  style="height: 40px"
+                />
+              </div>
+              <div
+                class="col-6 col-md-3 col-lg-2 p-3"
+                data-aos="zoom-in"
+                data-aos-delay="200"
+              >
+                <img
+                  src="assets/company/mubadala.png"
+                  alt="Mubadala"
+                  class="img-fluid"
+                  style="height: 40px"
+                />
+              </div>
+              <div
+                class="col-6 col-md-3 col-lg-2 p-3"
+                data-aos="zoom-in"
+                data-aos-delay="300"
+              >
+                <img
+                  src="assets/company/candra.png"
+                  alt="Candra"
+                  class="img-fluid"
+                  style="height: 40px"
+                />
+              </div>
+              <div
+                class="col-6 col-md-3 col-lg-2 p-3"
+                data-aos="zoom-in"
+                data-aos-delay="400"
+              >
+                <img
+                  src="assets/company/molindo.png"
+                  alt="Molindo"
+                  class="img-fluid"
+                  style="height: 40px"
+                />
+              </div>
+              <div
+                class="col-6 col-md-3 col-lg-2 p-3"
+                data-aos="zoom-in"
+                data-aos-delay="500"
+              >
+                <img
+                  src="assets/company/indonesia_power.png"
+                  alt="Indonesia Power"
+                  class="img-fluid"
+                  style="height: 40px"
+                />
+              </div>
+              <div
+                class="col-6 col-md-3 col-lg-2 p-3"
+                data-aos="zoom-in"
+                data-aos-delay="600"
+              >
+                <img
+                  src="assets/company/pesona.png"
+                  alt="Pesona"
+                  class="img-fluid"
+                  style="height: 60px"
+                />
+              </div>
+              <div
+                class="col-6 col-md-3 col-lg-2 p-3"
+                data-aos="zoom-in"
+                data-aos-delay="700"
+              >
+                <img
+                  src="assets/company/brin.png"
+                  alt="BRIN"
+                  class="img-fluid"
+                  style="height: 80px"
+                />
+              </div>
+              <div
+                class="col-6 col-md-3 col-lg-2 p-3"
+                data-aos="zoom-in"
+                data-aos-delay="800"
+              >
+                <img
+                  src="assets/company/batan.png"
+                  alt="BATAN"
+                  class="img-fluid"
+                  style="height: 60px"
+                />
+              </div>
+              <div
+                class="col-6 col-md-3 col-lg-2 p-3"
+                data-aos="zoom-in"
+                data-aos-delay="900"
+              >
+                <img
+                  src="assets/company/semen.png"
+                  alt="Semen"
+                  class="img-fluid"
+                  style="height: 60px"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -319,42 +442,53 @@
     <!-- End Company -->
 
     <!-- Core Erp -->
-    <section class="pt-5 border-bottom" style="background-color: #e7f4fa">
+    <section class="py-5 border-bottom" style="background-color: #e7f4fa">
       <div class="container col-md-12">
-        <div class="row justify-content-center">
+        <img
+          src="assets/architect_img/acc/1.png"
+          alt=""
+          class="img-fluid"
+          style="position: absolute; left: 0px; bottom: 0px"
+          width="8%"
+        />
+        <div class="row justify-content-center py-5">
           <div class="col-md-10">
             <div class="row">
               <div
-                class="col-md-6 py-3"
-                data-aos="fade-right"
-                data-aos-delay="100"
+                class="col-md-6 d-flex p-5 flex-column justify-content-center"
               >
-                <img src="assets/pms_img/img1.png" alt="" width="80%" />
+                <h3
+                  class="font-weight-bold"
+                  data-aos="fade-right"
+                  data-aos-delay="100"
+                >
+                  Core <span class="text-danger">Erp</span>
+                </h3>
+                <p
+                  class=""
+                  style="font-size: 16px"
+                  data-aos="fade-right"
+                  data-aos-delay="200"
+                >
+                  <span class="font-weight-bold"
+                    ><i class="fa-solid fa-quote-left"></i> ERP (Enterprise
+                    Resource Planning) adalah</span
+                  >
+                  model sistem informasi yang memungkinkan sebuah organisasi
+                  atau perusahaan untuk mengotomatisasi dan mengintegrasikan
+                  proses-proses dalam bisnis utama.
+                  <i class="fa-solid fa-quote-right"></i>
+                </p>
               </div>
-
-              <div class="col-md-6 d-flex align-items-end">
-                <div>
-                  <div data-aos="fade-down" data-aos-delay="200">
-                    <p class="font-weight-bold h2">
-                      Core <span class="text-danger">Erp</span>
-                    </p>
-                    <p class="" style="font-size: 16px">
-                      <span class="font-weight-bold"
-                        ><i class="fa-solid fa-quote-left"></i> ERP (Enterprise
-                        Resource Planning) adalah
-                      </span>
-                      model sistem informasi yang memungkinkan sebuah organisasi
-                      atau perusahaan untuk mengotomatisasi dan mengintegrasikan
-                      proses-proses dalam bisnis utama.
-                      <i class="fa-solid fa-quote-right"></i>
-                    </p>
-                  </div>
-
+              <div class="col-md-6">
+                <div class="d-flex justify-content-center">
                   <img
-                    src="assets/pms_img/acc/1.png"
+                    src="assets/pms_img/img1.png"
                     alt=""
+                    width="70%"
                     class="img-fluid"
-                    width="80%"
+                    data-aos="fade-down"
+                    data-aos-delay="300"
                   />
                 </div>
               </div>
@@ -365,25 +499,77 @@
     </section>
     <!-- End Core Erp -->
 
-    <!--Manfaat-->
+    <style>
+      .logo-large {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+
+      @media (max-width: 767.98px) {
+        .logo-large {
+          position: relative;
+          margin: 0 auto;
+          display: block;
+          width: 20%; /* Adjust the size for mobile view */
+          max-width: 150px; /* Maximum width to prevent it from being too large */
+        }
+
+        .card-img {
+          width: 15%; /* Adjust the size of images inside cards for mobile view */
+          max-width: 150px; /* Maximum width for images inside cards */
+        }
+
+        .card-body {
+          text-align: center; /* Center text inside cards */
+        }
+
+        .container {
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+
+        .row {
+          margin-left: 0;
+          margin-right: 0;
+        }
+
+        .col-md-6 {
+          text-align: center; /* Center text and content inside columns */
+        }
+      }
+
+      /* For desktop view */
+      @media (min-width: 768px) {
+        .card-img {
+          width: 25%; /* Adjust the size of images inside cards for desktop view */
+          max-width: 150px; /* Maximum width for images inside cards */
+        }
+      }
+    </style>
+
+    <!-- Manfaat -->
     <section class="py-5">
       <div class="container col-md-12 py-5">
         <img
           src="assets/pms_img/acc/3.png"
           alt=""
-          class="img-fluid d-none d-md-block"
-          style="position: absolute; bottom: 0px; left: 0px"
+          class="img-fluid d-none d-md-block logo-large"
           width="35%"
         />
         <div class="row justify-content-center">
           <div class="col-md-10">
             <div class="row">
-              <div class="col-md-6" data-aos="fade-right" data-aos-delay="100">
+              <div
+                class="col-md-6 mb-4"
+                data-aos="fade-right"
+                data-aos-delay="100"
+              >
                 <img
                   src="assets/pms_img/img2.png"
                   alt=""
-                  width="70%"
                   class="img-fluid d-none d-md-block"
+                  width="100%"
                 />
               </div>
               <div class="col-md-6">
@@ -409,65 +595,98 @@
                 </div>
 
                 <div class="row">
-                  <div
-                    class="col-md-6 mb-4"
-                    data-aos="fade-up"
-                    data-aos-delay="200"
-                  >
-                    <img src="assets/pms_img/icon/1.png" alt="" width="20%" />
-                    <p class="font-weight-bold pt-3" style="font-size: 16px">
-                      Manfaat Sistem Manajemen Proyek 1
-                    </p>
-                    <p style="font-size: 14px">
-                      Pencatatan transaksi tanpa internet dan sinkronisasi
-                      sistem otomatis ketika terhubung kembali ke internet.
-                    </p>
+                  <div class="col-md-6 mb-4">
+                    <div
+                      class="card shadow"
+                      style="border-radius: 20px; background-color: #fff"
+                    >
+                      <div class="card-body text-left">
+                        <img
+                          src="assets/pms_img/icon/1.png"
+                          alt=""
+                          class="card-img mb-3"
+                          width="25%"
+                        />
+                        <h6 class="font-weight-bold">
+                          Manfaat Sistem Manajemen Proyek 1
+                        </h6>
+                        <p class="card-text" style="font-size: 14px">
+                          Pencatatan transaksi tanpa internet dan sinkronisasi
+                          sistem otomatis ketika terhubung kembali ke internet.
+                        </p>
+                      </div>
+                    </div>
                   </div>
 
-                  <div
-                    class="col-md-6 mb-4"
-                    data-aos="fade-up"
-                    data-aos-delay="300"
-                  >
-                    <img src="assets/pms_img/icon/2.png" alt="" width="20%" />
-                    <p class="font-weight-bold pt-3" style="font-size: 16px">
-                      Manfaat Sistem Manajemen Proyek 2
-                    </p>
-                    <p style="font-size: 14px">
-                      Dapat mengelola pelanggan dan penjualan dari seluruh
-                      cabang dan mengakses informasi lainnya secara langsung.
-                    </p>
+                  <div class="col-md-6 mb-4">
+                    <div
+                      class="card shadow"
+                      style="border-radius: 20px; background-color: #fff"
+                    >
+                      <div class="card-body text-left">
+                        <img
+                          src="assets/pms_img/icon/2.png"
+                          alt=""
+                          class="card-img mb-3"
+                          width="25%"
+                        />
+                        <h6 class="font-weight-bold">
+                          Manfaat Sistem Manajemen Proyek 2
+                        </h6>
+                        <p class="card-text" style="font-size: 14px">
+                          Dapat mengelola pelanggan dan penjualan dari seluruh
+                          cabang dan mengakses informasi lainnya secara
+                          langsung.
+                        </p>
+                      </div>
+                    </div>
                   </div>
 
-                  <div
-                    class="col-md-6 mb-4"
-                    data-aos="fade-up"
-                    data-aos-delay="400"
-                  >
-                    <img src="assets/pms_img/icon/3.png" alt="" width="20%" />
-                    <p class="font-weight-bold pt-3" style="font-size: 16px">
-                      Manfaat Sistem Manajemen Proyek 3
-                    </p>
-                    <p style="font-size: 14px">
-                      Dapat digunakan di semua perangkat asalkan terhubung ke
-                      internet. Anda dapat memantau penjualan kapan saja dan di
-                      mana saja.
-                    </p>
+                  <div class="col-md-6 mb-4">
+                    <div
+                      class="card shadow"
+                      style="border-radius: 20px; background-color: #fff"
+                    >
+                      <div class="card-body text-left">
+                        <img
+                          src="assets/pms_img/icon/3.png"
+                          alt=""
+                          class="card-img mb-3"
+                          width="25%"
+                        />
+                        <h6 class="font-weight-bold">
+                          Manfaat Sistem Manajemen Proyek 3
+                        </h6>
+                        <p class="card-text" style="font-size: 14px">
+                          Dapat digunakan di semua perangkat asalkan terhubung
+                          ke internet. Anda dapat memantau penjualan kapan saja
+                          dan di mana saja.
+                        </p>
+                      </div>
+                    </div>
                   </div>
 
-                  <div
-                    class="col-md-6 mb-4"
-                    data-aos="fade-up"
-                    data-aos-delay="500"
-                  >
-                    <img src="assets/pms_img/icon/4.png" alt="" width="20%" />
-                    <p class="font-weight-bold pt-3" style="font-size: 16px">
-                      Manfaat Sistem Manajemen Proyek 4
-                    </p>
-                    <p style="font-size: 14px">
-                      Dapat meninjau kinerja bisnis melalui tampilan analitik
-                      lengkap dengan data terpusat.
-                    </p>
+                  <div class="col-md-6 mb-4">
+                    <div
+                      class="card shadow"
+                      style="border-radius: 20px; background-color: #fff"
+                    >
+                      <div class="card-body text-left">
+                        <img
+                          src="assets/pms_img/icon/4.png"
+                          alt=""
+                          class="card-img mb-3"
+                          width="25%"
+                        />
+                        <h6 class="font-weight-bold">
+                          Manfaat Sistem Manajemen Proyek 4
+                        </h6>
+                        <p class="card-text" style="font-size: 14px">
+                          Dapat meninjau kinerja bisnis melalui tampilan
+                          analitik lengkap dengan data terpusat.
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -476,6 +695,7 @@
         </div>
       </div>
     </section>
+    <!-- End Manfaat -->
 
     <!--Fitur-->
     <section class="py-5 border-bottom" style="background-color: #e7f4fa">
@@ -483,7 +703,7 @@
         <img
           src="assets/architect_img/acc/4.png"
           alt=""
-          class="img-fluid"
+          class="img-fluid imgAccF"
           width="25%"
           style="position: absolute; top: 50px; left: -0px"
         />
@@ -521,78 +741,74 @@
             src="assets/fab_img/bgScreen.png"
             alt=""
             class="img-fluid d-none d-md-block"
-            style="position: absolute; left: 15%; bottom: -5%"
-            width="75%"
+            style="position: absolute; left: 17%; bottom: -2%"
+            width="65%"
           />
           <div class="col-md-6">
             <div class="row">
               <div class="col-md-6 mb-4">
                 <div
-                  class="shadow mb-4 p-3 h-100"
+                  class="shadow p-3 h-100"
                   style="border-radius: 20px; background-color: #eff4f6"
                   data-aos="fade-down"
                   data-aos-delay="300"
                 >
-                  <div class="d-flex align-items-center">
+                  <div class="text-center">
                     <img
                       src="assets/architect_img/icon/5.png"
-                      alt=""
-                      width="20%"
+                      alt="Icon"
+                      style="width: 15%; height: auto; max-width: 50px"
+                      class="img-fluid mb-2"
                     />
-                    <p class="font-weight-bold mb-0 ms-2 px-2">
+                    <p class="font-weight-bold mb-2">
                       Fitur Sistem Manajemen Proyek 1
                     </p>
-                  </div>
-                  <div>
-                    <p class="py-3">
-                      Memudahkan Anda dalam mengkategorikan produk Anda.
-                    </p>
+                    <p>Memudahkan Anda dalam mengkategorikan produk Anda.</p>
                   </div>
                 </div>
               </div>
 
               <div class="col-md-6 mb-4">
                 <div
-                  class="shadow mb-4 p-3 h-100"
+                  class="shadow p-3 h-100"
                   style="border-radius: 20px; background-color: #eff4f6"
                   data-aos="fade-down"
                   data-aos-delay="400"
                 >
-                  <div class="d-flex align-items-center">
+                  <div class="text-center">
                     <img
                       src="assets/architect_img/icon/6.png"
-                      alt=""
-                      width="20%"
+                      alt="Icon"
+                      style="width: 15%; height: auto; max-width: 50px"
+                      class="img-fluid mb-2"
                     />
-                    <p class="font-weight-bold mb-0 ms-2 px-2">
-                      Fitur Sistem Manajemen Proyek 2
+                    <p class="font-weight-bold mb-2">
+                      Sistem Manajemen Proyek 2
                     </p>
-                  </div>
-                  <div>
-                    <p class="py-3">Fitur pencarian untuk memudahkan Anda.</p>
+                    <p>Fitur pencarian untuk memudahkan Anda.</p>
                   </div>
                 </div>
               </div>
 
+              <!-- Second Row -->
               <div class="col-md-6 mb-4">
                 <div
-                  class="shadow mb-4 p-3 h-100"
+                  class="shadow p-3 h-100"
                   style="border-radius: 20px; background-color: #eff4f6"
                   data-aos="fade-down"
                   data-aos-delay="500"
                 >
-                  <div class="d-flex align-items-center">
+                  <div class="text-center">
                     <img
                       src="assets/architect_img/icon/7.png"
-                      alt=""
-                      width="20%"
+                      alt="Icon"
+                      style="width: 15%; height: auto; max-width: 50px"
+                      class="img-fluid mb-2"
                     />
-                    <p class="font-weight-bold mb-0 ms-2 px-2">
-                      Fitur Sistem Manajemen Proyek 3
+                    <p class="font-weight-bold mb-2">
+                      Sistem Manajemen Proyek 3
                     </p>
-                  </div>
-                  <div>
-                    <p class="py-3">
+                    <p>
                       Kelola data setiap barang yang masuk gudang penyimpanan.
                     </p>
                   </div>
@@ -601,23 +817,22 @@
 
               <div class="col-md-6 mb-4">
                 <div
-                  class="shadow mb-4 p-3 h-100"
+                  class="shadow p-3 h-100"
                   style="border-radius: 20px; background-color: #eff4f6"
                   data-aos="fade-down"
                   data-aos-delay="600"
                 >
-                  <div class="d-flex align-items-center">
+                  <div class="text-center">
                     <img
                       src="assets/architect_img/icon/8.png"
-                      alt=""
-                      width="20%"
+                      alt="Icon"
+                      style="width: 15%; height: auto; max-width: 50px"
+                      class="img-fluid mb-2"
                     />
-                    <p class="font-weight-bold mb-0 ms-2 px-2">
-                      Fitur Sistem Manajemen Proyek 4
+                    <p class="font-weight-bold mb-2">
+                      Sistem Manajemen Proyek 4
                     </p>
-                  </div>
-                  <div>
-                    <p class="py-3">
+                    <p>
                       Kelola data setiap barang yang masuk gudang penyimpanan.
                     </p>
                   </div>
@@ -636,7 +851,7 @@
         <img
           src="assets/fab_img/acc/2.png"
           alt=""
-          class="img-fluid"
+          class="img-fluid imgAccF"
           style="position: absolute; top: 0px; right: 0px"
           width="30%"
         />
@@ -734,7 +949,7 @@
     >
       <div class="container col-md-10">
         <div class="row">
-          <div class="col-md-12 text-center">
+          <div class="col-md-12 text-center px-5">
             <p
               class="font-weight-bold h2"
               style="
@@ -761,21 +976,39 @@
         <div class="row py-5">
           <div class="col-md-12">
             <div
-              class="shadow-lg p-3 mb-5 bg-white"
-              style="border-radius: 20px; padding: 20px"
+              class="shadow-lg p-4 rounded-lg"
+              style="background: linear-gradient(135deg, #ffffff, #f1f2f6)"
             >
               <div id="accordion">
-                <div class="card">
-                  <div class="card-header" id="headingOne">
+                <div
+                  class="card border-0 mb-3"
+                  style="background-color: #ffffff; border-radius: 20px"
+                >
+                  <div
+                    class="card-header bg-transparent"
+                    id="headingOne"
+                    style="border-radius: 20px"
+                  >
                     <h5 class="mb-0">
                       <button
-                        class="btn btn-link font-weight-bold"
+                        class="btn btn-link font-weight-bold text-dark d-flex align-items-center"
                         data-toggle="collapse"
                         data-target="#collapseOne"
                         aria-expanded="true"
                         aria-controls="collapseOne"
+                        style="
+                          text-decoration: none;
+                          font-size: 18px;
+                          padding-left: 0;
+                        "
                       >
-                        Project Management System Apa Yang Kami Tawarkan?
+                        <span class="icon-container mr-2">
+                          <i class="fas fa-cogs"></i>
+                        </span>
+                        <span
+                          >Project Management System Apa Yang Kami
+                          Tawarkan?</span
+                        >
                       </button>
                     </h5>
                   </div>
@@ -786,14 +1019,16 @@
                     aria-labelledby="headingOne"
                     data-parent="#accordion"
                   >
-                    <div class="card-body">
-                      Bidang Perdagangan/Distributor Sistem Manajemen Arsitek
-
-                      <ol type="1">
-                        <li>Halaman Data Pajak.</li>
-
-                        <li>Halaman Data dan Detail Kelompok Pengguna.</li>
-
+                    <div
+                      class="card-body"
+                      style="font-size: 16px; line-height: 1.7"
+                    >
+                      <p>
+                        Bidang Perdagangan/Distributor Sistem Manajemen Arsitek
+                      </p>
+                      <ol type="1" class="pl-3">
+                        <li>Halaman Data Pajak</li>
+                        <li>Halaman Data dan Detail Kelompok Pengguna</li>
                         <li>Halaman Data Faktur Pajak</li>
                       </ol>
                     </div>
@@ -803,6 +1038,107 @@
             </div>
           </div>
         </div>
+
+        <style>
+          @media (max-width: 767.98px) {
+            .shadow-lg {
+              padding: 20px 15px; /* Adjusted padding for mobile view */
+            }
+
+            .btn-link {
+              font-size: 16px; /* Adjusted font size for readability */
+              color: #343a40; /* Darker color for better contrast */
+            }
+
+            .card-body {
+              font-size: 14px; /* Adjusted font size for smaller screens */
+            }
+
+            .card-header {
+              padding: 10px 15px; /* Adjusted padding for smaller screens */
+            }
+          }
+
+          /* Enhanced desktop styling */
+          .card {
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+            background-color: #ffffff;
+            border: none;
+            border-radius: 20px;
+          }
+
+          .card:hover {
+            box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.15); /* Larger shadow on hover */
+            transform: translateY(-5px); /* Slight lift effect */
+          }
+
+          .card-header {
+            background-color: #f8f9fa;
+            padding: 20px 25px;
+            border-radius: 20px;
+            border: 1px solid #ddd;
+            transition: background-color 0.3s ease;
+          }
+
+          .card-header:hover {
+            background-color: #fd6172; /* Change background color on hover */
+            color: #ffffff;
+          }
+
+          .card-body {
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.05);
+            padding: 20px 25px;
+          }
+
+          /* Button styling */
+          .btn-link {
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            text-decoration: none;
+            color: #343a40;
+            transition: color 0.3s ease;
+          }
+
+          .btn-link:hover {
+            color: #ffffff; /* Change text color on hover */
+          }
+
+          .btn-link .icon-container {
+            background-color: #fd6172; /* Icon background */
+            padding: 10px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            margin-right: 10px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+          }
+
+          .btn-link:hover .icon-container {
+            background-color: #ffffff;
+            color: #fd6172;
+            transform: rotate(360deg); /* Icon rotation effect on hover */
+          }
+
+          .btn-link i {
+            font-size: 18px;
+          }
+
+          /* Accent border on the bottom of the header */
+          .card-header:after {
+            content: "";
+            display: block;
+            width: 50px;
+            height: 4px;
+            background-color: #fd6172;
+            margin-top: 10px;
+            border-radius: 2px;
+          }
+        </style>
       </div>
     </section>
     <!-- End Content -->
@@ -863,6 +1199,20 @@
           margin-bottom: 20px;
         }
       }
+
+      /* Layout adjustment for desktop */
+      @media (min-width: 769px) {
+        .custom-section .logo-wrapper {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          margin-bottom: 15px;
+        }
+
+        .custom-section .logo-wrapper img {
+          margin-right: 10px; /* Add some space between the logo and the text */
+        }
+      }
     </style>
 
     <section class="py-5 custom-section">
@@ -882,85 +1232,144 @@
 
         <div class="row">
           <div class="col-md-6 d-flex flex-column justify-content-end">
-            <p class="" style="font-size: 18px; color: #ffffff">
-              <b>IDMETAFORA</b>
-            </p>
-            <p class="" style="font-size: 16px; color: #ffffff">
+            <div class="logo-wrapper">
+              <img
+                src="assets/white-logo.png"
+                alt="Logo"
+                width="45%"
+                class="img-fluid"
+              />
+            </div>
+            <p class="mt-3" style="font-size: 16px; color: #ffffff">
               <b>IDMETAFORA</b> adalah Perusahaan Solusi TI, bisnis utama kami
               adalah Pengembangan ERP. Kami juga mendukung klien kami dalam
               bidang Internet of Things, dan Desain & Pengembangan Web.
             </p>
 
-            <div class="mb-5" style="color: #fff;"">
-            <span class="mr-3">
-              <i class="fa-solid fa-phone"></i> +62 896 6423 0232</span
-            >
-
-            <span>
-              <i class="fa-solid fa-envelope"></i> info@idmetafora.com</span
-            >
+            <div class="mb-5" style="color: #fff">
+              <span class="mr-3">
+                <i class="fa-solid fa-phone"></i> +62 896 6423 0232
+              </span>
+              <span>
+                <i class="fa-solid fa-envelope"></i> info@idmetafora.com
+              </span>
+            </div>
           </div>
-        </div>
-        <div class="col-md-6">
-          <div
-            class="p-3"
-            style="
-              background-color: #ffffff;
-              box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-              border-radius: 20px;
-            "
-          >
-            <div class="mt-3 mb-3">
-              <div class="m-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  placeholder="Nama Lengkap"
-                />
-              </div>
 
-              <div class="m-3">
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  placeholder="Email"
-                />
-              </div>
+          <style>
+            /* Mobile-specific styling */
+            @media (max-width: 768px) {
+              .logo-wrapper {
+                margin-bottom: 20px; /* Adds space between logo and text on mobile */
+              }
+            }
 
-              <div class="m-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="telepon"
-                  placeholder="No. Telepon"
-                />
-              </div>
+            /* Desktop styling */
+            @media (min-width: 769px) {
+              .logo-wrapper {
+                margin-bottom: 10px; /* Adds space between logo and text on desktop */
+              }
+            }
+          </style>
 
-              <div class="m-3">
-                <textarea
-                  class="form-control"
-                  id="pesan"
-                  placeholder="Pesan"
-                  rows="3"
-                ></textarea>
-              </div>
+          <div class="col-md-6">
+            <div
+              class="p-3"
+              style="
+                background-color: #ffffff;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 20px;
+              "
+            >
+              <div class="mt-3 mb-3">
+                <div class="m-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Nama Lengkap"
+                  />
+                </div>
 
-              <div class="form-check m-3">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
-                />
-                <label class="form-check-label" for="flexCheckDefault">
-                  Saya telah membaca dan menerima kebijakan privasi.
-                </label>
-              </div>
+                <div class="m-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Email"
+                  />
+                </div>
 
-              <div class="m-3">
-                <button type="button" class="btn btn-primary">Kirim</button>
+                <div class="m-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="telepon"
+                    placeholder="No. Telepon"
+                  />
+                </div>
+
+                <div class="m-3">
+                  <textarea
+                    class="form-control"
+                    id="pesan"
+                    placeholder="Pesan"
+                    rows="3"
+                  ></textarea>
+                </div>
+
+                <div class="form-check m-3">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Saya telah membaca dan menerima kebijakan privasi.
+                  </label>
+                </div>
+
+                <div class="m-3">
+                  <button type="button" class="btn btn-custom">Kirim</button>
+                </div>
+
+                <style>
+                  .btn-custom {
+                    background: linear-gradient(
+                      45deg,
+                      #00b4db,
+                      #00b4db
+                    ); /* Gradient background */
+                    color: white;
+                    padding: 5px 30px;
+                    border-radius: 30px; /* Rounded corners */
+                    border: none;
+                    font-size: 16px;
+                    font-weight: bold;
+                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow */
+                    transition: transform 0.3s ease, box-shadow 0.3s ease,
+                      background-color 0.3s ease;
+
+                    display: flex; /* Flexbox for centering */
+                    justify-content: center; /* Horizontal centering */
+                    align-items: center; /* Vertical centering */
+                  }
+
+                  .btn-custom:hover {
+                    background-color: #0083b0; /* Darken background on hover */
+                    color: white; /* Keep text white */
+                    transform: translateY(-2px); /* Lift the button on hover */
+                    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+                  }
+
+                  .btn-custom:active {
+                    transform: translateY(
+                      0
+                    ); /* Return to original position on click */
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly reduce shadow on click */
+                  }
+                </style>
               </div>
             </div>
           </div>

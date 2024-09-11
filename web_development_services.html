@@ -205,50 +205,48 @@
         <div class="row justify-content-center">
           <div class="col-md-10">
             <div class="row align-items-center">
-              <div class="col-md-6 p-5">
-                <p class="font-weight-bold h2">IDMETAFORA</p>
-                <h6
-                  class="font-weight-normal py-3"
+              <div class="col-md-6 p-5 order-2 order-md-1">
+                <p
+                  class="font-weight-bold h2"
                   data-aos="fade-right"
-                  data-aos-offset="300"
+                  data-aos-offset="200"
+                  data-aos-easing="ease-in-sine"
+                >
+                  IDMETAFORA
+                </p>
+                <p
+                  class="font-weight-normal py-3 h6"
+                  data-aos="fade-right"
+                  data-aos-offset="200"
                   data-aos-easing="ease-in-sine"
                 >
                   Web Design & Web Developer Indonesia. Kantor kami berlokasi di
                   Yogyakarta dan Jakarta.
-                </h6>
-                <a href="#"
-                  ><button
-                    type="button"
-                    style="
-                      color: white;
-                      background-color: #007bff;
-                      border-color: #007bff;
-                      border-radius: 20px;
-                      padding: 5px 20px;
-                    "
-                  >
-                    Hubungi Kami
-                  </button></a
-                >
+                </p>
 
-                <a href="#">
-                  <button
-                    type="button"
-                    style="
-                      color: #007bff;
-                      background-color: white;
-                      border-color: #007bff;
-                      border-radius: 20px;
-                      padding: 5px 20px;
-                    "
-                  >
-                    Lihat Detail
-                  </button></a
+                <a
+                  href="#"
+                  class="btn btn-primary px-4"
+                  style="border-radius: 20px"
+                  data-aos="fade-right"
+                  data-aos-delay="300"
                 >
+                  Hubungi Kami
+                </a>
+
+                <a
+                  href="#"
+                  class="btn btn-outline-primary px-4"
+                  style="border-radius: 20px"
+                  data-aos="fade-right"
+                  data-aos-delay="300"
+                >
+                  Lihat Detail
+                </a>
               </div>
               <div
-                class="col-md-6"
-                data-aos="fade-left"
+                class="col-md-6 p-5 order-1 order-md-2"
+                data-aos="fade-down"
                 data-aos-offset="300"
                 data-aos-easing="ease-in-sine"
               >
@@ -256,6 +254,7 @@
                   src="assets/webds_img/imgHeader.png"
                   alt=""
                   class="img-fluid"
+                  width="100%"
                 />
               </div>
             </div>
@@ -264,69 +263,142 @@
       </div>
     </header>
 
+    <style>
+      /* Only apply hover effect to images inside the 'Company' section */
+
+      .company-section img:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s ease;
+      }
+    </style>
+
     <!-- Company -->
-    <section class="py-4 border-bottom">
+    <section class="py-5 border-bottom company-section">
       <div class="container">
+        <div class="row pb-4">
+          <div class="col-md-12">
+            <h2
+              class="text-center font-weight-bold"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <span>Client Kami</span>
+            </h2>
+          </div>
+        </div>
         <div class="row">
           <div class="col-md-12">
             <div
-              class="d-flex flex-wrap justify-content-center align-items-center"
-              style="gap: 15px"
+              class="row justify-content-center align-items-center text-center"
             >
-              <img
-                src="assets/company/pertamina.png"
-                alt=""
-                class="img-fluid"
-                style="height: 40px"
-              />
-              <img
-                src="assets/company/mubadala.png"
-                alt=""
-                class="img-fluid"
-                style="height: 40px"
-              />
-              <img
-                src="assets/company/candra.png"
-                alt=""
-                class="img-fluid"
-                style="height: 40px"
-              />
-              <img
-                src="assets/company/molindo.png"
-                alt=""
-                class="img-fluid"
-                style="height: 40px"
-              />
-              <img
-                src="assets/company/indonesia_power.png"
-                alt=""
-                class="img-fluid"
-                style="height: 40px"
-              />
-              <img
-                src="assets/company/pesona.png"
-                alt=""
-                class="img-fluid"
-                style="height: 40px"
-              />
-              <img
-                src="assets/company/brin.png"
-                alt=""
-                class="img-fluid"
-                style="height: 40px"
-              />
-              <img
-                src="assets/company/batan.png"
-                alt=""
-                class="img-fluid"
-                style="height: 40px"
-              />
-              <img
-                src="assets/company/semen.png"
-                alt=""
-                class="img-fluid"
-                style="height: 40px"
-              />
+              <div
+                class="col-6 col-md-3 col-lg-2 p-3"
+                data-aos="zoom-in"
+                data-aos-delay="100"
+              >
+                <img
+                  src="assets/company/pertamina.png"
+                  alt="Pertamina"
+                  class="img-fluid"
+                  style="height: 40px"
+                />
+              </div>
+              <div
+                class="col-6 col-md-3 col-lg-2 p-3"
+                data-aos="zoom-in"
+                data-aos-delay="200"
+              >
+                <img
+                  src="assets/company/mubadala.png"
+                  alt="Mubadala"
+                  class="img-fluid"
+                  style="height: 40px"
+                />
+              </div>
+              <div
+                class="col-6 col-md-3 col-lg-2 p-3"
+                data-aos="zoom-in"
+                data-aos-delay="300"
+              >
+                <img
+                  src="assets/company/candra.png"
+                  alt="Candra"
+                  class="img-fluid"
+                  style="height: 40px"
+                />
+              </div>
+              <div
+                class="col-6 col-md-3 col-lg-2 p-3"
+                data-aos="zoom-in"
+                data-aos-delay="400"
+              >
+                <img
+                  src="assets/company/molindo.png"
+                  alt="Molindo"
+                  class="img-fluid"
+                  style="height: 40px"
+                />
+              </div>
+              <div
+                class="col-6 col-md-3 col-lg-2 p-3"
+                data-aos="zoom-in"
+                data-aos-delay="500"
+              >
+                <img
+                  src="assets/company/indonesia_power.png"
+                  alt="Indonesia Power"
+                  class="img-fluid"
+                  style="height: 40px"
+                />
+              </div>
+              <div
+                class="col-6 col-md-3 col-lg-2 p-3"
+                data-aos="zoom-in"
+                data-aos-delay="600"
+              >
+                <img
+                  src="assets/company/pesona.png"
+                  alt="Pesona"
+                  class="img-fluid"
+                  style="height: 60px"
+                />
+              </div>
+              <div
+                class="col-6 col-md-3 col-lg-2 p-3"
+                data-aos="zoom-in"
+                data-aos-delay="700"
+              >
+                <img
+                  src="assets/company/brin.png"
+                  alt="BRIN"
+                  class="img-fluid"
+                  style="height: 80px"
+                />
+              </div>
+              <div
+                class="col-6 col-md-3 col-lg-2 p-3"
+                data-aos="zoom-in"
+                data-aos-delay="800"
+              >
+                <img
+                  src="assets/company/batan.png"
+                  alt="BATAN"
+                  class="img-fluid"
+                  style="height: 60px"
+                />
+              </div>
+              <div
+                class="col-6 col-md-3 col-lg-2 p-3"
+                data-aos="zoom-in"
+                data-aos-delay="900"
+              >
+                <img
+                  src="assets/company/semen.png"
+                  alt="Semen"
+                  class="img-fluid"
+                  style="height: 60px"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -361,9 +433,13 @@
         <div class="row justify-content-center">
           <div class="col-md-8">
             <div class="row">
-              <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+              <div
+                class="col-md-4 mb-4"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
                 <div
-                  class="p-2 card shadow mb-5 bg-white"
+                  class="p-3 shadow bg-white h-100"
                   style="border-radius: 20px"
                 >
                   <div class="">
@@ -372,6 +448,7 @@
                         src="assets/webds_img/icon/1.png"
                         alt=""
                         class="img-fluid"
+                        width="50%"
                       />
                     </div>
                     <div class="text-center">
@@ -385,9 +462,13 @@
                 </div>
               </div>
 
-              <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+              <div
+                class="col-md-4 mb-4"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
                 <div
-                  class="p-2 card shadow mb-5 bg-white"
+                  class="p-3 shadow bg-white h-100"
                   style="border-radius: 20px"
                 >
                   <div class="">
@@ -396,6 +477,7 @@
                         src="assets/webds_img/icon/2.png"
                         alt=""
                         class="img-fluid"
+                        width="45%"
                       />
                     </div>
                     <div class="text-center">
@@ -409,9 +491,13 @@
                 </div>
               </div>
 
-              <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+              <div
+                class="col-md-4 mb-4"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
                 <div
-                  class="p-2 card shadow mb-5 bg-white"
+                  class="p-3 shadow bg-white h-100"
                   style="border-radius: 20px"
                 >
                   <div class="">
@@ -420,10 +506,11 @@
                         src="assets/webds_img/icon/3.png"
                         alt=""
                         class="img-fluid"
+                        width="60%"
                       />
                     </div>
                     <div class="text-center">
-                      <p class="py-2"><b>85%+ PESANAN BERULANG</b></p>
+                      <p class=""><b>85%+ PESANAN BERULANG</b></p>
                       <h6 class="text-center">
                         Lebih dari 85% klien kami kembali kepada kami dan
                         meminta proyek lain.
@@ -466,13 +553,17 @@
           >
             <p class="font-weight-bold h3">Pengalaman Kami</p>
 
-            <p class="font-weight-light h6 py-3">
+            <p class="font-weight-normal h6 py-3">
               Setiap pengalaman membuat kami lebih berani dan tahu apa yang
               dibutuhkan pasar untuk setiap klien.
             </p>
 
-            <a href="/portfolio" class="btn btn-primary"
-              >See portfolio <i class="fas fa-arrow-right"></i>
+            <a
+              href="/portfolio.html"
+              class="btn btn-primary px-4"
+              style="border-radius: 20px"
+            >
+              See Portfolio <i class="fa-solid fa-arrow-right"></i>
             </a>
           </div>
 
@@ -576,7 +667,7 @@
                 data-aos-delay="200"
               >
                 <div
-                  class="p-4 card shadow mb-5 bg-white h-100"
+                  class="p-4 shadow bg-white h-100"
                   style="border-radius: 20px"
                 >
                   <div class="">
@@ -598,12 +689,12 @@
                 data-aos-delay="300"
               >
                 <div
-                  class="p-4 card shadow mb-5 bg-white h-100"
+                  class="p-4 shadow bg-white h-100"
                   style="border-radius: 20px"
                 >
                   <div class="">
                     <div class="text-center">
-                      <img src="assets/webds_img/img2.jpg" alt="" width="80%" />
+                      <img src="assets/webds_img/img2.jpg" alt="" width="75%" />
                     </div>
                     <div class="text-center">
                       <p class="font-weight-bold">
@@ -619,7 +710,7 @@
                 data-aos-delay="400"
               >
                 <div
-                  class="p-4 card shadow mb-5 bg-white h-100"
+                  class="p-4 shadow bg-white h-100"
                   style="border-radius: 20px"
                 >
                   <div class="">
@@ -666,7 +757,7 @@
         />
 
         <div class="row align-items-center">
-          <div class="col-md-4">
+          <div class="col-md-4 p-3">
             <p class="font-weight-bold h3" style="color: #508ca5">
               Bagaimana Perjalanan Bekerja Bersama Kami?
             </p>
@@ -709,7 +800,7 @@
                       class="img-fluid mb-3"
                     />
                     <p class="card-title font-weight-bold h5">1.Konsultasi</p>
-                    <p class="card-text" style="font-size: 12px">
+                    <p class="card-text" style="font-size: 14px">
                       Perencanaan dan briefing dengan tim kami untuk membuat web
                       custom sesuai keinginan Anda dengan kualitas terbaik dan
                       harga tepat.
@@ -726,7 +817,7 @@
                 src="assets/home_img/flow/3M.png"
                 alt=""
                 class="img-fluid d-lg-none"
-                style="position: absolute; top: 33%; right: 50%; width: 3%"
+                style="position: absolute; top: 42%; right: 50%; width: 3%"
               />
               <img
                 src="assets/home_img/flow/2D.png"
@@ -752,7 +843,7 @@
                     <h5 class="card-title font-weight-bold">
                       2.Proyek Kontrak
                     </h5>
-                    <p class="card-text" style="font-size: 12px">
+                    <p class="card-text" style="font-size: 14px">
                       Membuat MoU dengan Anda dan kemudian tim kami akan
                       mengembangkan proyek khusus seperti permintaan Anda.
                     </p>
@@ -775,7 +866,7 @@
                     <p class="card-title font-weight-bold h5">
                       3.Layanan Pemeliharaan
                     </p>
-                    <p class="card-text p-1" style="font-size: 13px">
+                    <p class="card-text" style="font-size: 14px">
                       Setelah proyek selesai, kami akan memelihara web Anda agar
                       tetap berfungsi dan minim kesalahan.
                     </p>
@@ -799,10 +890,8 @@
               experience.
             </p>
             <p class="font-weight-light py-3 text-left">- Eleanor Roosevelt</p>
-            <a href="/portfolio.html"
-              ><button class="btn btn-primary">
-                Looks Our Portfolio <i class="fa-solid fa-arrow-right"></i>
-              </button>
+            <a href="/portfolio.html" class="btn btn-primary rounded px-4">
+              Looks Our Portfolio <i class="fa-solid fa-arrow-right"></i>
             </a>
           </div>
         </div>
@@ -867,6 +956,78 @@
       }
     </style>
 
+    <style>
+      /* Default background color */
+      .custom-section {
+        background-color: #e7f4fa;
+      }
+
+      /* Adjust layout on smaller screens */
+      @media (max-width: 768px) {
+        .custom-section {
+          background-color: rgba(
+            16,
+            144,
+            203,
+            0.7
+          ); /* #1090CB with 70% opacity */
+        }
+
+        .imgAccF {
+          display: none;
+        }
+        .imgAccF1 {
+          display: none;
+        }
+
+        /* Center the content and adjust padding/margins */
+        .custom-section .container {
+          margin: 0 auto;
+          padding: 20px;
+        }
+
+        .custom-section .row {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+
+        /* Add margin above the title */
+        .custom-section .col-md-6 p:first-child {
+          margin-top: 20px;
+        }
+
+        /* Ensure form fields are full width and padding adjusted */
+        .custom-section .form-control {
+          width: 100%;
+          margin: 10px 0;
+        }
+
+        .custom-section .btn {
+          width: 100%;
+        }
+
+        /* Adjust the phone/email spacing */
+        .custom-section .mb-5 {
+          margin-bottom: 20px;
+        }
+      }
+
+      /* Layout adjustment for desktop */
+      @media (min-width: 769px) {
+        .custom-section .logo-wrapper {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          margin-bottom: 15px;
+        }
+
+        .custom-section .logo-wrapper img {
+          margin-right: 10px; /* Add some space between the logo and the text */
+        }
+      }
+    </style>
+
     <section class="py-5 custom-section">
       <div class="container col-md-8">
         <img
@@ -884,85 +1045,144 @@
 
         <div class="row">
           <div class="col-md-6 d-flex flex-column justify-content-end">
-            <p class="" style="font-size: 18px; color: #ffffff">
-              <b>IDMETAFORA</b>
-            </p>
-            <p class="" style="font-size: 16px; color: #ffffff">
+            <div class="logo-wrapper">
+              <img
+                src="assets/white-logo.png"
+                alt="Logo"
+                width="45%"
+                class="img-fluid"
+              />
+            </div>
+            <p class="mt-3" style="font-size: 16px; color: #ffffff">
               <b>IDMETAFORA</b> adalah Perusahaan Solusi TI, bisnis utama kami
               adalah Pengembangan ERP. Kami juga mendukung klien kami dalam
               bidang Internet of Things, dan Desain & Pengembangan Web.
             </p>
 
-            <div class="mb-5" style="color: #fff;"">
-            <span class="mr-3">
-              <i class="fa-solid fa-phone"></i> +62 896 6423 0232</span
-            >
-
-            <span>
-              <i class="fa-solid fa-envelope"></i> info@idmetafora.com</span
-            >
+            <div class="mb-5" style="color: #fff">
+              <span class="mr-3">
+                <i class="fa-solid fa-phone"></i> +62 896 6423 0232
+              </span>
+              <span>
+                <i class="fa-solid fa-envelope"></i> info@idmetafora.com
+              </span>
+            </div>
           </div>
-        </div>
-        <div class="col-md-6">
-          <div
-            class="p-3"
-            style="
-              background-color: #ffffff;
-              box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-              border-radius: 20px;
-            "
-          >
-            <div class="mt-3 mb-3">
-              <div class="m-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  placeholder="Nama Lengkap"
-                />
-              </div>
 
-              <div class="m-3">
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  placeholder="Email"
-                />
-              </div>
+          <style>
+            /* Mobile-specific styling */
+            @media (max-width: 768px) {
+              .logo-wrapper {
+                margin-bottom: 20px; /* Adds space between logo and text on mobile */
+              }
+            }
 
-              <div class="m-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="telepon"
-                  placeholder="No. Telepon"
-                />
-              </div>
+            /* Desktop styling */
+            @media (min-width: 769px) {
+              .logo-wrapper {
+                margin-bottom: 10px; /* Adds space between logo and text on desktop */
+              }
+            }
+          </style>
 
-              <div class="m-3">
-                <textarea
-                  class="form-control"
-                  id="pesan"
-                  placeholder="Pesan"
-                  rows="3"
-                ></textarea>
-              </div>
+          <div class="col-md-6">
+            <div
+              class="p-3"
+              style="
+                background-color: #ffffff;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 20px;
+              "
+            >
+              <div class="mt-3 mb-3">
+                <div class="m-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Nama Lengkap"
+                  />
+                </div>
 
-              <div class="form-check m-3">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
-                />
-                <label class="form-check-label" for="flexCheckDefault">
-                  Saya telah membaca dan menerima kebijakan privasi.
-                </label>
-              </div>
+                <div class="m-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Email"
+                  />
+                </div>
 
-              <div class="m-3">
-                <button type="button" class="btn btn-primary">Kirim</button>
+                <div class="m-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="telepon"
+                    placeholder="No. Telepon"
+                  />
+                </div>
+
+                <div class="m-3">
+                  <textarea
+                    class="form-control"
+                    id="pesan"
+                    placeholder="Pesan"
+                    rows="3"
+                  ></textarea>
+                </div>
+
+                <div class="form-check m-3">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Saya telah membaca dan menerima kebijakan privasi.
+                  </label>
+                </div>
+
+                <div class="m-3">
+                  <button type="button" class="btn btn-custom">Kirim</button>
+                </div>
+
+                <style>
+                  .btn-custom {
+                    background: linear-gradient(
+                      45deg,
+                      #00b4db,
+                      #00b4db
+                    ); /* Gradient background */
+                    color: white;
+                    padding: 5px 30px;
+                    border-radius: 30px; /* Rounded corners */
+                    border: none;
+                    font-size: 16px;
+                    font-weight: bold;
+                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow */
+                    transition: transform 0.3s ease, box-shadow 0.3s ease,
+                      background-color 0.3s ease;
+
+                    display: flex; /* Flexbox for centering */
+                    justify-content: center; /* Horizontal centering */
+                    align-items: center; /* Vertical centering */
+                  }
+
+                  .btn-custom:hover {
+                    background-color: #0083b0; /* Darken background on hover */
+                    color: white; /* Keep text white */
+                    transform: translateY(-2px); /* Lift the button on hover */
+                    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+                  }
+
+                  .btn-custom:active {
+                    transform: translateY(
+                      0
+                    ); /* Return to original position on click */
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly reduce shadow on click */
+                  }
+                </style>
               </div>
             </div>
           </div>

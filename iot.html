@@ -209,35 +209,109 @@
 
     <!-- Content -->
 
+    <style>
+      /* Button styling */
+      .btn-custom {
+        background: linear-gradient(
+          45deg,
+          #00b4db,
+          #0082c8
+        ); /* Gradient background */
+        color: white;
+        padding: 9px 25px;
+        border-radius: 30px; /* Rounded corners */
+        border: none;
+        font-size: 16px;
+        font-weight: bold;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow */
+        transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+        text-align: center;
+        display: inline-flex;
+        align-items: center;
+      }
+
+      .btn-custom:hover {
+        background: linear-gradient(
+          45deg,
+          #037db6,
+          #037db6
+        ); /* Darker gradient on hover */
+        transform: translateY(-2px); /* Lift the button on hover */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Increase shadow on hover */
+      }
+
+      .btn-custom:active {
+        background: linear-gradient(
+          45deg,
+          #00b4db,
+          #00b4db
+        ); /* Even darker gradient on click */
+        transform: translateY(0); /* Return to original position on click */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Slightly reduce shadow on click */
+      }
+    </style>
+
     <!-- Header -->
     <header class="py-3 border-bottom" style="background-color: #e7f4fa">
       <div class="container">
         <img
           src="assets/iot_img/acc/1.png"
           alt=""
-          class="img-fluid d-block mx-auto"
+          class="img-fluid d-none d-md-block"
           style="position: absolute; right: 0; top: 0"
-          width="45%"
+          width="35%"
         />
 
         <img
           src="assets/iot_img/acc/2.png"
           alt=""
-          class="img-fluid d-block mx-auto"
+          class="img-fluid d-none d-md-block"
           style="position: absolute; left: 0; top: 0"
           width="20%"
         />
 
         <div class="row align-items-center">
-          <div class="col-md-6">
+          <div class="col-md-6 text-center d-block d-md-none mb-3">
+            <!-- Title, image, text, and button for mobile view -->
+            <p class="font-weight-bold h1" style="color: #181e4b">
+              Industrial IoT Developer Jakarta Indonesia
+            </p>
+            <img
+              src="assets/imgHeader1.png"
+              alt=""
+              class="img-fluid mt-2"
+              style="margin-bottom: 10px"
+              <!--
+              Reducing
+              margin
+              between
+              image
+              and
+              text
+              --
+            />
+            <h6 class="mb-3 text-justify font-weight-normal">
+              Mengembangkan solusi IoT untuk kebutuhan perusahaan dan industri.
+              Meningkatkan efisiensi dan produktifitas menggunakan teknologi
+              yang dapat di custom sesuai kebutuhan.
+            </h6>
+            <a href="#">
+              <button class="btn-custom">
+                <i class="fa-solid fa-rocket"></i> Hubungi Kami
+              </button>
+            </a>
+          </div>
+
+          <div class="col-md-6 d-none d-md-block">
+            <!-- Title, text, and button for desktop view -->
             <p
               class="font-weight-bold h1"
               data-aos="fade-right"
               data-aos-delay="100"
             >
-              <span class="" style="color: #181e4b"
-                >Industrial IoT Developer Jakarta Indonesia</span
-              >
+              <span class="" style="color: #181e4b">
+                Industrial IoT Developer Jakarta Indonesia
+              </span>
             </p>
             <h6
               class="my-4 text-justify font-weight-normal"
@@ -248,95 +322,166 @@
               Meningkatkan efisiensi dan produktifitas menggunakan teknologi
               yang dapat di custom sesuai kebutuhan.
             </h6>
-            <p></p>
-
-            <a href="#"
-              ><button
-                type="button"
-                style="
-                  color: white;
-                  background-color: #007bff;
-                  border-color: #007bff;
-                  border-radius: 20px;
-                  padding: 5px 20px;
-                "
-              >
-                Hubungi Kami
-              </button></a
+            <a
+              href="#"
+              data-aos="fade-right"
+              data-aos-delay="300"
+              class="d-block text-center d-md-inline px-3"
             >
+              <button class="btn-custom">
+                <i class="fa-solid fa-rocket"></i> Hubungi Kami
+              </button>
+            </a>
           </div>
-          <div class="col-md-6" data-aos="fade-left" data-aos-delay="100">
+
+          <div
+            class="col-md-6 d-none d-md-block"
+            data-aos="fade-left"
+            data-aos-delay="100"
+          >
+            <!-- Image for desktop view -->
             <img src="assets/imgHeader1.png" alt="" class="img-fluid" />
           </div>
         </div>
       </div>
     </header>
-
     <!-- End Header -->
 
+    <style>
+      /* Only apply hover effect to images inside the 'Company' section */
+      .company-section img:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s ease;
+      }
+    </style>
+
     <!-- Company -->
-    <section class="py-4 border-bottom border-top">
+    <section class="py-5 border-bottom company-section">
       <div class="container">
+        <div class="row pb-4">
+          <div class="col-md-12">
+            <h2
+              class="text-center font-weight-bold"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <span>Client Kami</span>
+            </h2>
+          </div>
+        </div>
         <div class="row">
           <div class="col-md-12">
             <div
-              class="d-flex flex-wrap justify-content-center align-items-center"
-              style="gap: 15px"
+              class="row justify-content-center align-items-center text-center"
             >
-              <img
-                src="assets/company/pertamina.png"
-                alt=""
-                class="img-fluid"
-                style="height: 40px"
-              />
-              <img
-                src="assets/company/mubadala.png"
-                alt=""
-                class="img-fluid"
-                style="height: 40px"
-              />
-              <img
-                src="assets/company/candra.png"
-                alt=""
-                class="img-fluid"
-                style="height: 40px"
-              />
-              <img
-                src="assets/company/molindo.png"
-                alt=""
-                class="img-fluid"
-                style="height: 40px"
-              />
-              <img
-                src="assets/company/indonesia_power.png"
-                alt=""
-                class="img-fluid"
-                style="height: 40px"
-              />
-              <img
-                src="assets/company/pesona.png"
-                alt=""
-                class="img-fluid"
-                style="height: 40px"
-              />
-              <img
-                src="assets/company/brin.png"
-                alt=""
-                class="img-fluid"
-                style="height: 40px"
-              />
-              <img
-                src="assets/company/batan.png"
-                alt=""
-                class="img-fluid"
-                style="height: 40px"
-              />
-              <img
-                src="assets/company/semen.png"
-                alt=""
-                class="img-fluid"
-                style="height: 40px"
-              />
+              <div
+                class="col-6 col-md-3 col-lg-2 p-3"
+                data-aos="zoom-in"
+                data-aos-delay="100"
+              >
+                <img
+                  src="assets/company/pertamina.png"
+                  alt="Pertamina"
+                  class="img-fluid"
+                  style="height: 40px"
+                />
+              </div>
+              <div
+                class="col-6 col-md-3 col-lg-2 p-3"
+                data-aos="zoom-in"
+                data-aos-delay="200"
+              >
+                <img
+                  src="assets/company/mubadala.png"
+                  alt="Mubadala"
+                  class="img-fluid"
+                  style="height: 40px"
+                />
+              </div>
+              <div
+                class="col-6 col-md-3 col-lg-2 p-3"
+                data-aos="zoom-in"
+                data-aos-delay="300"
+              >
+                <img
+                  src="assets/company/candra.png"
+                  alt="Candra"
+                  class="img-fluid"
+                  style="height: 40px"
+                />
+              </div>
+              <div
+                class="col-6 col-md-3 col-lg-2 p-3"
+                data-aos="zoom-in"
+                data-aos-delay="400"
+              >
+                <img
+                  src="assets/company/molindo.png"
+                  alt="Molindo"
+                  class="img-fluid"
+                  style="height: 40px"
+                />
+              </div>
+              <div
+                class="col-6 col-md-3 col-lg-2 p-3"
+                data-aos="zoom-in"
+                data-aos-delay="500"
+              >
+                <img
+                  src="assets/company/indonesia_power.png"
+                  alt="Indonesia Power"
+                  class="img-fluid"
+                  style="height: 40px"
+                />
+              </div>
+              <div
+                class="col-6 col-md-3 col-lg-2 p-3"
+                data-aos="zoom-in"
+                data-aos-delay="600"
+              >
+                <img
+                  src="assets/company/pesona.png"
+                  alt="Pesona"
+                  class="img-fluid"
+                  style="height: 60px"
+                />
+              </div>
+              <div
+                class="col-6 col-md-3 col-lg-2 p-3"
+                data-aos="zoom-in"
+                data-aos-delay="700"
+              >
+                <img
+                  src="assets/company/brin.png"
+                  alt="BRIN"
+                  class="img-fluid"
+                  style="height: 80px"
+                />
+              </div>
+              <div
+                class="col-6 col-md-3 col-lg-2 p-3"
+                data-aos="zoom-in"
+                data-aos-delay="800"
+              >
+                <img
+                  src="assets/company/batan.png"
+                  alt="BATAN"
+                  class="img-fluid"
+                  style="height: 60px"
+                />
+              </div>
+              <div
+                class="col-6 col-md-3 col-lg-2 p-3"
+                data-aos="zoom-in"
+                data-aos-delay="900"
+              >
+                <img
+                  src="assets/company/semen.png"
+                  alt="Semen"
+                  class="img-fluid"
+                  style="height: 60px"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -453,195 +598,176 @@
     </section>
     <!-- End Penawaran Kami -->
 
+    <style>
+      /* General Styles */
+      .solution-card {
+        border-radius: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        transition: transform 0.3s, box-shadow 0.3s;
+        padding: 20px;
+        max-width: 300px; /* Limit the box width */
+        margin: 0 auto; /* Center the card */
+      }
+
+      .solution-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+
+      .solution-card img {
+        width: 40%;
+        height: auto;
+        margin-bottom: 20px;
+      }
+
+      .solution-card-title {
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      .solution-card-text {
+        font-size: 14px;
+        line-height: 1.6;
+      }
+
+      /* Container Spacing */
+      .solution-section {
+        padding: 80px 15px;
+        position: relative;
+      }
+
+      .solution-section img.position-img {
+        position: absolute;
+        z-index: -1;
+      }
+
+      /* Responsive Styles */
+      @media (max-width: 768px) {
+        .solution-section {
+          padding: 60px 15px;
+        }
+
+        .solution-card {
+          max-width: 90%; /* Adjust card width for mobile */
+          padding: 15px;
+        }
+
+        .solution-card img {
+          width: 50%; /* Increase image size for mobile */
+        }
+
+        .solution-card-title {
+          font-size: 16px;
+        }
+
+        .solution-card-text {
+          font-size: 13px;
+        }
+
+        .solution-section img.position-img {
+          display: none;
+        }
+      }
+    </style>
+
     <!-- Kenapa IoT menjadi Solusi -->
-    <section class="py-5 border-bottom">
-      <div class="container col-md-12">
+    <section class="solution-section border-bottom">
+      <div class="container">
         <img
           src="assets/iot_img/acc/5.png"
           alt=""
-          class="img-fluid"
-          style="position: absolute; left: 0; top: -100px"
+          class="img-fluid position-img"
+          style="left: 0; top: -100px"
           width="5%"
         />
-
         <img
           src="assets/iot_img/acc/6.png"
           alt=""
-          class="img-fluid"
-          style="position: absolute; right: 0; top: -150px"
+          class="img-fluid position-img"
+          style="right: 0; top: -150px"
           width="6%"
         />
-
         <img
           src="assets/iot_img/acc/7.png"
           alt=""
-          class="img-fluid"
-          style="position: absolute; left: 0; bottom: -300px"
+          class="img-fluid position-img"
+          style="left: 0; bottom: -300px"
           width="20%"
         />
 
-        <div class="row">
-          <div
-            class="col-md-12 text-center py-5"
-            data-aos="fade-down"
-            data-aos-delay="100"
-          >
+        <div class="row text-center">
+          <div class="col-md-12 py-5">
             <h2 class="font-weight-bold">Kenapa IoT menjadi Solusi?</h2>
           </div>
         </div>
-        <div class="row justify-content-center align-items-center">
-          <div class="col-md-8">
-            <div class="row justify-content-center">
-              <div
-                class="col-md-4 mb-5"
-                data-aos="fade-down"
-                data-aos-delay="100"
-              >
-                <div
-                  class="shadow bg-white h-100 d-flex flex-column justify-content-between"
-                  style="border-radius: 20px"
-                >
-                  <div class="py-4 text-center">
-                    <img
-                      src="assets/iot_img/why/img.png"
-                      alt=""
-                      width="55%"
-                      class="img-fluid m-2"
-                    />
-                    <div class="px-3">
-                      <p class="font-weight-bold text-danger h5 text-center">
-                        Skalabilitas
-                      </p>
-                      <p class="text-center" style="font-size: 14px">
-                        Kemampuan suatu sistem, jaringan, atau proses untuk
-                        menangani peningkatan beban kerja atau jumlah pengguna
-                        secara efisien tanpa mengurangi kinerja.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
 
-              <div
-                class="col-md-4 mb-5"
-                data-aos="fade-down"
-                data-aos-delay="100"
-              >
-                <div
-                  class="shadow bg-white h-100 d-flex flex-column justify-content-between"
-                  style="border-radius: 20px"
-                >
-                  <div class="py-4 text-center">
-                    <img
-                      src="assets/iot_img/why/img1.jpg"
-                      alt=""
-                      width="50%"
-                      class="img-fluid m-2"
-                    />
-                    <div class="px-3">
-                      <p class="font-weight-bold text-success h5 text-center">
-                        Keandalan
-                      </p>
-                      <p class="text-center" style="font-size: 14px">
-                        Kemampuan sistem untuk terus beroperasi meskipun terjadi
-                        gangguan atau kegagalan.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-5" data-aos="fade-down" data-aos-delay="100">
+            <div class="solution-card d-flex flex-column align-items-center">
+              <img src="assets/iot_img/why/img.png" alt="" />
+              <p class="solution-card-title text-danger text-center">
+                Skalabilitas
+              </p>
+              <p class="solution-card-text text-center">
+                Kemampuan suatu sistem, jaringan, atau proses untuk menangani
+                peningkatan beban kerja atau jumlah pengguna secara efisien
+                tanpa mengurangi kinerja.
+              </p>
+            </div>
+          </div>
 
-              <div
-                class="col-md-4 mb-5"
-                data-aos="fade-down"
-                data-aos-delay="100"
-              >
-                <div
-                  class="shadow bg-white h-100 d-flex flex-column justify-content-between"
-                  style="border-radius: 20px"
-                >
-                  <div class="py-4 text-center">
-                    <img
-                      src="assets/iot_img/why/img2.png"
-                      alt=""
-                      width="60%"
-                      class="img-fluid m-2"
-                    />
-                    <div class="px-3">
-                      <p class="font-weight-bold text-warning h5 text-center">
-                        Integrasi
-                      </p>
-                      <p class="text-center" style="font-size: 14px">
-                        Melibatkan penyatuan perangkat IoT dengan sistem,
-                        aplikasi, atau jaringan yang ada untuk menciptakan
-                        solusi yang lebih cerdas, otomatis, dan terhubung.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <div class="col-md-4 mb-5" data-aos="fade-down" data-aos-delay="100">
+            <div class="solution-card d-flex flex-column align-items-center">
+              <img src="assets/iot_img/why/img1.jpg" alt="" />
+              <p class="solution-card-title text-success text-center">
+                Keandalan
+              </p>
+              <p class="solution-card-text text-center">
+                Kemampuan sistem untuk terus beroperasi meskipun terjadi
+                gangguan atau kegagalan.
+              </p>
+            </div>
+          </div>
 
-              <div
-                class="col-md-4 mb-5"
-                data-aos="fade-down"
-                data-aos-delay="100"
-              >
-                <div
-                  class="shadow bg-white h-100 d-flex flex-column justify-content-between"
-                  style="border-radius: 20px"
-                >
-                  <div class="py-4 text-center">
-                    <img
-                      src="assets/iot_img/why/img3.png"
-                      alt=""
-                      width="60%"
-                      class="img-fluid m-2"
-                    />
-                    <div class="px-3">
-                      <p
-                        class="font-weight-bold h5 text-center"
-                        style="color: #ff6126"
-                      >
-                        Kustomisasi
-                      </p>
-                      <p class="text-center" style="font-size: 14px">
-                        Proses penyesuaian suatu produk, sistem, atau layanan
-                        agar sesuai dengan kebutuhan, preferensi, atau
-                        spesifikasi tertentu dari pengguna atau pelanggan.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <div class="col-md-4 mb-5" data-aos="fade-down" data-aos-delay="100">
+            <div class="solution-card d-flex flex-column align-items-center">
+              <img src="assets/iot_img/why/img2.png" alt="" />
+              <p class="solution-card-title text-warning text-center">
+                Integrasi
+              </p>
+              <p class="solution-card-text text-center">
+                Melibatkan penyatuan perangkat IoT dengan sistem, aplikasi, atau
+                jaringan yang ada untuk menciptakan solusi yang lebih cerdas,
+                otomatis, dan terhubung.
+              </p>
+            </div>
+          </div>
 
-              <div
-                class="col-md-4 mb-5"
-                data-aos="fade-down"
-                data-aos-delay="100"
-              >
-                <div
-                  class="shadow bg-white h-100 d-flex flex-column justify-content-between"
-                  style="border-radius: 20px"
-                >
-                  <div class="py-4 text-center">
-                    <img
-                      src="assets/iot_img/why/img4.png"
-                      alt=""
-                      width="60%"
-                      class="img-fluid m-2"
-                    />
-                    <div class="px-3">
-                      <p class="font-weight-bold h5 text-center text-primary">
-                        Keunggulan Operasi
-                      </p>
-                      <p class="text-center" style="font-size: 14px">
-                        Kemampuan untuk menjalankan operasi bisnis secara lebih
-                        efisien, efektif, dan berkualitas tinggi.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <div class="col-md-4 mb-5" data-aos="fade-down" data-aos-delay="100">
+            <div class="solution-card d-flex flex-column align-items-center">
+              <img src="assets/iot_img/why/img3.png" alt="" />
+              <p class="solution-card-title text-center" style="color: #ff6126">
+                Kustomisasi
+              </p>
+              <p class="solution-card-text text-center">
+                Proses penyesuaian suatu produk, sistem, atau layanan agar
+                sesuai dengan kebutuhan, preferensi, atau spesifikasi tertentu
+                dari pengguna atau pelanggan.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-5" data-aos="fade-down" data-aos-delay="100">
+            <div class="solution-card d-flex flex-column align-items-center">
+              <img src="assets/iot_img/why/img4.png" alt="" />
+              <p class="solution-card-title text-primary text-center">
+                Keunggulan Operasi
+              </p>
+              <p class="solution-card-text text-center">
+                Kemampuan untuk menjalankan operasi bisnis secara lebih efisien,
+                efektif, dan berkualitas tinggi.
+              </p>
             </div>
           </div>
         </div>
@@ -694,7 +820,7 @@
                 >
                   <div class="text-center p-3">
                     <img
-                      src="assets/iot_img/imgPeople.png"
+                      src="assets/waho_img/imgPeople.png"
                       class="img-fluid mb-4"
                       width="100%"
                       alt="image nilai"
@@ -712,11 +838,11 @@
                 <div class="col-md-6 py-5 mb-4">
                   <div class="row">
                     <div
-                      class="col-md-12 d-flex justify-content-center"
+                      class="col-md-12 d-flex justify-content-center flex-column flex-md-row text-center text-md-left"
                       data-aos="fade-up"
                       data-aos-delay="400"
                     >
-                      <div class="">
+                      <div class="mb-3 mb-md-0 mr-md-3">
                         <img
                           src="assets/iot_img/value/img.png"
                           alt=""
@@ -737,11 +863,11 @@
 
                   <div class="row">
                     <div
-                      class="col-md-12 d-flex justify-content-center"
+                      class="col-md-12 d-flex justify-content-center flex-column flex-md-row text-center text-md-left"
                       data-aos="fade-up"
                       data-aos-delay="500"
                     >
-                      <div class="">
+                      <div class="mb-3 mb-md-0 mr-md-3">
                         <img
                           src="assets/iot_img/value/img1.png"
                           alt=""
@@ -761,11 +887,11 @@
 
                   <div class="row">
                     <div
-                      class="col-md-12 d-flex justify-content-center"
+                      class="col-md-12 d-flex justify-content-center flex-column flex-md-row text-center text-md-left"
                       data-aos="fade-up"
                       data-aos-delay="600"
                     >
-                      <div class="">
+                      <div class="mb-3 mb-md-0 mr-md-3">
                         <img
                           src="assets/iot_img/value/img3.png"
                           alt=""
@@ -786,11 +912,11 @@
 
                   <div class="row">
                     <div
-                      class="col-md-12 d-flex justify-content-center"
+                      class="col-md-12 d-flex justify-content-center flex-column flex-md-row text-center text-md-left"
                       data-aos="fade-up"
                       data-aos-delay="700"
                     >
-                      <div class="">
+                      <div class="mb-3 mb-md-0 mr-md-3">
                         <img
                           src="assets/iot_img/value/img4.png"
                           alt=""
@@ -816,6 +942,38 @@
     </section>
     <!-- End Nilai-Nilai Perusahaan Kami -->
 
+    <style>
+      @media (max-width: 768px) {
+        .card {
+          padding: 15px;
+          margin-bottom: 15px;
+          font-size: 1rem;
+        }
+        .accordion .btn {
+          font-size: 1.2rem;
+        }
+        .card-body {
+          font-size: 0.9rem;
+          padding: 10px;
+        }
+      }
+
+      @media (min-width: 769px) {
+        .card {
+          padding: 20px;
+          margin-bottom: 30px;
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+          border-radius: 12px;
+        }
+        .accordion .btn {
+          font-size: 1.5rem;
+        }
+        .card-body {
+          font-size: 1rem;
+          padding: 15px;
+        }
+      }
+    </style>
     <!-- Pertanyaan Seputar Internet of Things (IoT) -->
     <section
       class="py-5 border-bottom"
@@ -1072,6 +1230,20 @@
           margin-bottom: 20px;
         }
       }
+
+      /* Layout adjustment for desktop */
+      @media (min-width: 769px) {
+        .custom-section .logo-wrapper {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          margin-bottom: 15px;
+        }
+
+        .custom-section .logo-wrapper img {
+          margin-right: 10px; /* Add some space between the logo and the text */
+        }
+      }
     </style>
 
     <section class="py-5 custom-section">
@@ -1091,85 +1263,144 @@
 
         <div class="row">
           <div class="col-md-6 d-flex flex-column justify-content-end">
-            <p class="" style="font-size: 18px; color: #ffffff">
-              <b>IDMETAFORA</b>
-            </p>
-            <p class="" style="font-size: 16px; color: #ffffff">
+            <div class="logo-wrapper">
+              <img
+                src="assets/white-logo.png"
+                alt="Logo"
+                width="45%"
+                class="img-fluid"
+              />
+            </div>
+            <p class="mt-3" style="font-size: 16px; color: #ffffff">
               <b>IDMETAFORA</b> adalah Perusahaan Solusi TI, bisnis utama kami
               adalah Pengembangan ERP. Kami juga mendukung klien kami dalam
               bidang Internet of Things, dan Desain & Pengembangan Web.
             </p>
 
-            <div class="mb-5" style="color: #fff;"">
-            <span class="mr-3">
-              <i class="fa-solid fa-phone"></i> +62 896 6423 0232</span
-            >
-
-            <span>
-              <i class="fa-solid fa-envelope"></i> info@idmetafora.com</span
-            >
+            <div class="mb-5" style="color: #fff">
+              <span class="mr-3">
+                <i class="fa-solid fa-phone"></i> +62 896 6423 0232
+              </span>
+              <span>
+                <i class="fa-solid fa-envelope"></i> info@idmetafora.com
+              </span>
+            </div>
           </div>
-        </div>
-        <div class="col-md-6">
-          <div
-            class="p-3"
-            style="
-              background-color: #ffffff;
-              box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-              border-radius: 20px;
-            "
-          >
-            <div class="mt-3 mb-3">
-              <div class="m-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  placeholder="Nama Lengkap"
-                />
-              </div>
 
-              <div class="m-3">
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  placeholder="Email"
-                />
-              </div>
+          <style>
+            /* Mobile-specific styling */
+            @media (max-width: 768px) {
+              .logo-wrapper {
+                margin-bottom: 20px; /* Adds space between logo and text on mobile */
+              }
+            }
 
-              <div class="m-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="telepon"
-                  placeholder="No. Telepon"
-                />
-              </div>
+            /* Desktop styling */
+            @media (min-width: 769px) {
+              .logo-wrapper {
+                margin-bottom: 10px; /* Adds space between logo and text on desktop */
+              }
+            }
+          </style>
 
-              <div class="m-3">
-                <textarea
-                  class="form-control"
-                  id="pesan"
-                  placeholder="Pesan"
-                  rows="3"
-                ></textarea>
-              </div>
+          <div class="col-md-6">
+            <div
+              class="p-3"
+              style="
+                background-color: #ffffff;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 20px;
+              "
+            >
+              <div class="mt-3 mb-3">
+                <div class="m-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Nama Lengkap"
+                  />
+                </div>
 
-              <div class="form-check m-3">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
-                />
-                <label class="form-check-label" for="flexCheckDefault">
-                  Saya telah membaca dan menerima kebijakan privasi.
-                </label>
-              </div>
+                <div class="m-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Email"
+                  />
+                </div>
 
-              <div class="m-3">
-                <button type="button" class="btn btn-primary">Kirim</button>
+                <div class="m-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="telepon"
+                    placeholder="No. Telepon"
+                  />
+                </div>
+
+                <div class="m-3">
+                  <textarea
+                    class="form-control"
+                    id="pesan"
+                    placeholder="Pesan"
+                    rows="3"
+                  ></textarea>
+                </div>
+
+                <div class="form-check m-3">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Saya telah membaca dan menerima kebijakan privasi.
+                  </label>
+                </div>
+
+                <div class="m-3">
+                  <button type="button" class="btn btn-custom">Kirim</button>
+                </div>
+
+                <style>
+                  .btn-custom {
+                    background: linear-gradient(
+                      45deg,
+                      #00b4db,
+                      #00b4db
+                    ); /* Gradient background */
+                    color: white;
+                    padding: 5px 30px;
+                    border-radius: 30px; /* Rounded corners */
+                    border: none;
+                    font-size: 16px;
+                    font-weight: bold;
+                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow */
+                    transition: transform 0.3s ease, box-shadow 0.3s ease,
+                      background-color 0.3s ease;
+
+                    display: flex; /* Flexbox for centering */
+                    justify-content: center; /* Horizontal centering */
+                    align-items: center; /* Vertical centering */
+                  }
+
+                  .btn-custom:hover {
+                    background-color: #0083b0; /* Darken background on hover */
+                    color: white; /* Keep text white */
+                    transform: translateY(-2px); /* Lift the button on hover */
+                    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+                  }
+
+                  .btn-custom:active {
+                    transform: translateY(
+                      0
+                    ); /* Return to original position on click */
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly reduce shadow on click */
+                  }
+                </style>
               </div>
             </div>
           </div>
